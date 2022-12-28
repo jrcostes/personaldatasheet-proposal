@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // return view('home');
+        // $genderCount_form1 = DB::select("SELECT * FROM sheets WHERE sex = 'male'")->count();
+
+        $genderCount = DB::table('sheets')
+                ->where('sex', 'male')
+                ->count();
+
+
+        return view('home', compact('genderCount'));
     }
 
     public function pdf()
