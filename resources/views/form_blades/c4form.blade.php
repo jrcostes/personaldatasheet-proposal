@@ -442,33 +442,33 @@ $validID = [
     // for enabling/disabling reference forms
     $(function() {
     var refCount = 1;
-    $('#add-ref').on('click', function (e) {
-        e.preventDefault();
+        $('#add-ref').on('click', function (e) {
+            e.preventDefault();
 
-        if (refCount === 1) {
-            $('.41-b-container').removeClass('d-none');
-            $('#minus-ref').attr('disabled', false);
-            refCount++;
-        } else if (refCount === 2) {
-            $('.41-c-container').removeClass('d-none');
-            $('#add-ref').attr('disabled', true, required);
-            refCount++;
-        }
-    });
+            if (refCount === 1) {
+                $('.41-b-container').removeClass('d-none');
+                $('#minus-ref').attr('disabled', false);
+                refCount++;
+            } else if (refCount === 2) {
+                $('.41-c-container').removeClass('d-none');
+                $('#add-ref').attr('disabled', true, required);
+                refCount++;
+            }
+        });
 
-    $('#minus-ref').on('click', function (e) {
-        e.preventDefault();
+        $('#minus-ref').on('click', function (e) {
+            e.preventDefault();
 
-        if (refCount === 2) {
-            $('.41-c-container').addClass('d-none');
-            $('#add-ref').attr('disabled', false);
-            refCount--;
-        } else if (refCount === 1) {
-            $('.41-b-container').addClass('d-none');
-            $('#minus-ref').attr('disabled', true, required);
-            refCount--;
-        }
-    });
+            if (refCount === 2) {
+                $('.41-c-container').addClass('d-none');
+                $('#add-ref').attr('disabled', false);
+                refCount--;
+            } else if (refCount === 1) {
+                $('.41-b-container').addClass('d-none');
+                $('#minus-ref').attr('disabled', true, required);
+                refCount--;
+            }
+        });
 
     // enabling/disabling the text boxes for questions portion
     $('input[name="34-b-answer"]').change(function(){
