@@ -542,6 +542,7 @@ $group = [
                     </ul>
                 </div>
             @endif
+
             <form method="get" action="/c1formsubmit" autocomplete="off" class="form-horizontal">
 
                 <div id="C1FORM" class="tabcontent">
@@ -1453,7 +1454,7 @@ $group = [
 
                                         {{ Form::label('governmentserv', 'Government service (Y/N)') }}
                                         <select class="custom-select mr-sm-2" id="governmentserv" name="governmentserv"
-                                            required>
+                                            >
                                             <option value=''></option>
                                             <option value="Yes">YES</option>
                                             <option value="No">NO</option>

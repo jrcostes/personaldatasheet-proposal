@@ -69,7 +69,7 @@ class PostController extends Controller
             'firstname' => 'required|max:64',
             'nameext' => 'max:64|nullable',
             'midname' => 'max:64|nullable',
-            'birthdate' => 'required|before:today',
+            'birthdate' => 'required|before:18 years ago',
             'sex' => 'required',
             'placeofBirth' => 'required|max:64',
             'civilStatus' => 'required',
@@ -222,216 +222,224 @@ class PostController extends Controller
             'licenseno7' => 'max:12|nullable',
             'validity7' => 'required_with:licenseno7|nullable',
 
-            //datefrom
-            //dateto
+            'datefrom' => 'before:dateto|nullable',
+            'dateto' => 'required_with:datefrom|after:datefrom|nullable',
             'position' => 'max:64',
             'department' => 'max:64',
             //salary
             'paygrade' => 'max:64',
             'governmentserv'=> 'nullable',
 
-            //datefrom2
-            //dateto2
+            'datefrom2' => 'before:dateto2|nullable',
+            'dateto2' => 'required_with:datefrom2|after:datefrom2|nullable',
             'position2' => 'max:64',
             'department2' => 'max:64',
             //salary2
             'paygrade2' => 'max:64',
             'governmentserv2'=> 'nullable',
 
-            //datefrom3
-            //dateto3
+            'datefrom3' => 'before:dateto3|nullable',
+            'dateto3' => 'required_with:datefrom3|after:datefrom3|nullable',
             'position3' => 'max:64',
             'department3' => 'max:64',
             //salary3
             'paygrade3' => 'max:64',
             'governmentserv3'=> 'nullable',
 
-            //datefrom4
-            //dateto4
+            'datefrom4' => 'before:dateto4|nullable',
+            'dateto4' => 'required_with:datefrom4|after:datefrom4|nullable',
             'position4' => 'max:64',
             'department4' => 'max:64',
-            //salary
+            //salary4
+            'paygrade4' => 'max:64',
+            'governmentserv4'=> 'nullable',
+
+            'datefrom5' => 'before:dateto5|nullable',
+            'dateto5' => 'required_with:datefrom5|after:datefrom5|nullable',
+            'position5' => 'max:64',
+            'department5' => 'max:64',
+            //salary5
             'paygrade5' => 'max:64',
             'governmentserv5'=> 'nullable',
 
-            //datefrom6
-            //dateto6
+            'datefrom6' => 'before:dateto6|nullable',
+            'dateto6' => 'required_with:datefrom6|after:datefrom6|nullable',
             'position6' => 'max:64',
             'department6' => 'max:64',
             //salary6
             'paygrade6' => 'max:64',
             'governmentserv6'=> 'nullable',
 
-            //datefrom7
-            //dateto7
+            'datefrom7' => 'before:dateto7|nullable',
+            'dateto7' => 'required_with:datefrom7|after:datefrom7|nullable',
             'position7' => 'max:64',
             'department7' => 'max:64',
             //salary7
             'paygrade7' => 'max:64',
             'governmentserv7'=> 'nullable',
 
-            //datefrom8
-            //dateto8
+            'datefrom8' => 'before:dateto8|nullable',
+            'dateto8' => 'required_with:datefrom8|after:datefrom8|nullable',
             'position8' => 'max:64',
             'department8' => 'max:64',
             //salary8
             'paygrade8' => 'max:64',
             'governmentserv8'=> 'nullable',
 
-            //datefrom9
-            //dateto9
+            'datefrom9' => 'before:dateto9|nullable',
+            'dateto9' => 'required_with:datefrom9|after:datefrom9|nullable',
             'position9' => 'max:64',
             'department9' => 'max:64',
             //salary9
             'paygrade9' => 'max:64',
             'governmentserv9'=> 'nullable',
 
-            //datefrom10
-            //dateto10
+            'datefrom10' => 'before:dateto10|nullable',
+            'dateto10' => 'required_with:datefrom10|after:datefrom10|nullable',
             'position10' => 'max:64',
             'department10' => 'max:64',
             //salary10
             'paygrade10' => 'max:64',
             'governmentserv10'=> 'nullable',
 
-            //datefrom11
-            //dateto11
+            'datefrom11' => 'before:dateto11|nullable',
+            'dateto11' => 'required_with:datefrom11|after:datefrom11|nullable',
             'position11' => 'max:64',
             'department11' => 'max:64',
             //salary11
             'paygrade11' => 'max:64',
             'governmentserv11'=> 'nullable',
 
-            //datefrom12
-            //dateto12
+            'datefrom12' => 'before:dateto12|nullable',
+            'dateto12' => 'required_with:datefrom12|after:datefrom12|nullable',
             'position12' => 'max:64',
             'department12' => 'max:64',
             //salary12
             'paygrade12' => 'max:64',
             'governmentserv12'=> 'nullable',
 
-            //datefrom13
-            //dateto13
+            'datefrom13' => 'before:dateto13|nullable',
+            'dateto13' => 'required_with:datefrom13|after:datefrom13|nullable',
             'position13' => 'max:64',
             'department13' => 'max:64',
             //salary13
             'paygrade13' => 'max:64',
             'governmentserv13'=> 'nullable',
 
-            //datefrom14
-            //dateto14
+            'datefrom14' => 'before:dateto14|nullable',
+            'dateto14' => 'required_with:datefrom14|after:datefrom14|nullable',
             'position14' => 'max:64',
             'department14' => 'max:64',
             //salary14
             'paygrade14' => 'max:64',
             'governmentserv14'=> 'nullable',
 
-            //datefrom15
-            //dateto15
+            'datefrom15' => 'before:dateto15|nullable',
+            'dateto15' => 'required_with:datefrom15|after:datefrom15|nullable',
             'position15' => 'max:64',
             'department15' => 'max:64',
             //salary15
             'paygrade15' => 'max:64',
             'governmentserv15'=> 'nullable',
 
-            //datefrom16
-            //dateto16
+            'datefrom16' => 'before:dateto16|nullable',
+            'dateto16' => 'required_with:datefrom16|after:datefrom16|nullable',
             'position16' => 'max:64',
             'department16' => 'max:64',
             //salary16
             'paygrade16' => 'max:64',
             'governmentserv16'=> 'nullable',
 
-            //datefrom17
-            //dateto17
+            'datefrom17' => 'before:dateto17|nullable',
+            'dateto17' => 'required_with:datefrom17|after:datefrom17|nullable',
             'position17' => 'max:64',
             'department17' => 'max:64',
             //salary17
             'paygrade17' => 'max:64',
             'governmentserv17'=> 'nullable',
 
-            //datefrom18
-            //dateto18
+            'datefrom18' => 'before:dateto18|nullable',
+            'dateto18' => 'required_with:datefrom18|after:datefrom18|nullable',
             'position18' => 'max:64',
             'department18' => 'max:64',
             //salary18
             'paygrade18' => 'max:64',
             'governmentserv18'=> 'nullable',
 
-            //datefrom19
-            //dateto19
+            'datefrom19' => 'before:dateto19|nullable',
+            'dateto19' => 'required_with:datefrom19|after:datefrom19|nullable',
             'position19' => 'max:64',
             'department19' => 'max:64',
             //salary19
             'paygrade19' => 'max:64',
             'governmentserv19'=> 'nullable',
 
-            //datefrom20
-            //dateto20
+            'datefrom20' => 'before:dateto20|nullable',
+            'dateto20' => 'required_with:datefrom20|after:datefrom20|nullable',
             'position20' => 'max:64',
             'department20' => 'max:64',
             //salary20
             'paygrade20' => 'max:64',
             'governmentserv20'=> 'nullable',
 
-            //datefrom20
-            //dateto20
+            'datefrom21' => 'before:dateto21|nullable',
+            'dateto21' => 'required_with:datefrom21|after:datefrom21|nullable',
             'position21' => 'max:64',
             'department21' => 'max:64',
             //salary21
             'paygrade21' => 'max:64',
             'governmentserv21'=> 'nullable',
 
-            //datefrom22
-            //dateto22
+            'datefrom22' => 'before:dateto22|nullable',
+            'dateto22' => 'required_with:datefrom22|after:datefrom22|nullable',
             'position22' => 'max:64',
             'department22' => 'max:64',
             //salary22
             'paygrade22' => 'max:64',
             'governmentserv22'=> 'nullable',
 
-            //datefrom23
-            //dateto23
+            'datefrom23' => 'before:dateto23|nullable',
+            'dateto23' => 'required_with:datefrom23|after:datefrom23|nullable',
             'position23' => 'max:64',
             'department23' => 'max:64',
             //salary23
             'paygrade23' => 'max:64',
             'governmentserv23'=> 'nullable',
 
-            //datefrom24
-            //dateto24
+            'datefrom24' => 'before:dateto24|nullable',
+            'dateto24' => 'required_with:datefrom24|after:datefrom24|nullable',
             'position24' => 'max:64',
             'department24' => 'max:64',
             //salary24
             'paygrade24' => 'max:64',
             'governmentserv24'=> 'nullable',
 
-            //datefrom25
-            //dateto25
+            'datefrom25' => 'before:dateto25|nullable',
+            'dateto25' => 'required_with:datefrom25|after:datefrom25|nullable',
             'position25' => 'max:64',
             'department25' => 'max:64',
             //salary25
             'paygrade25' => 'max:64',
             'governmentserv25'=> 'nullable',
 
-            //datefrom26
-            //dateto26
+            'datefrom26' => 'before:dateto26|nullable',
+            'dateto26' => 'required_with:datefrom26|after:datefrom26|nullable',
             'position26' => 'max:64',
             'department26' => 'max:64',
             //salary26
             'paygrade26' => 'max:64',
             'governmentserv26'=> 'nullable',
 
-            //datefrom27
-            //dateto27
+            'datefrom27' => 'before:dateto27|nullable',
+            'dateto27' => 'required_with:datefrom27|after:datefrom27|nullable',
             'position27' => 'max:64',
             'department27' => 'max:64',
             //salary27
             'paygrade27' => 'max:64',
             'governmentserv27'=> 'nullable',
 
-            //datefrom28
-            //dateto28
+            'datefrom28' => 'before:dateto28|nullable',
+            'dateto28' => 'required_with:datefrom28|after:datefrom28|nullable',
             'position28' => 'max:64',
             'department28' => 'max:64',
             //salary28
@@ -587,7 +595,7 @@ class PostController extends Controller
             'contactno43' => 'max:11',
             'valid44' => 'max:16',
             'issuanceplace44' => 'max:64',
-            'issuancedate44' => 'before:today'
+            'issuancedate44' => 'before:today|nullable'
 
         ]);
         // c1form request data
@@ -714,8 +722,8 @@ class PostController extends Controller
         $placeofexam = $request->placeofexam;
         $licenseno = $request->licenseno;
         $validity = $request->validity;
-        $datefrom = $request->input('datefrom');
-        $dateto = $request->input('dateto');
+        $datefrom = $request->datefrom;
+        $dateto = $request->dateto;
         $position = $request->position;
         $department = $request->department;
         $salary = $request->input('salary');
@@ -759,8 +767,8 @@ class PostController extends Controller
         $placeofexam7 = $request->placeofexam7;
         $licenseno7 = $request->licenseno7;
         $validity7 = $request->validity7;
-        $datefrom2 = $request->input('datefrom2');
-        $dateto2 = $request->input('dateto2');
+        $datefrom2 = $request->datefrom2;
+        $dateto2 = $request->dateto2;
         $position2 = $request->position2;
         $department2 = $request->department2;
         $salary2 = $request->input('salary2');
@@ -768,48 +776,48 @@ class PostController extends Controller
         $appointment2 = $request->appointment2;
         $governmentserv2 = $request->governmentserv2;
 
-        $datefrom3 = $request->input('datefrom3');
-        $dateto3 = $request->input('dateto3');
+        $datefrom3 = $request->datefrom3;
+        $dateto3 = $request->dateto3;
         $position3 = $request->position3;
         $department3 = $request->department3;
         $salary3 = $request->input('salary3');
         $paygrade3 = $request->paygrade3;
         $appointment3 = $request->appointment3;
         $governmentserv3 = $request->governmentserv3;
-        $datefrom4 = $request->input('datefrom4');
-        $dateto4 = $request->input('dateto4');
+        $datefrom4 = $request->datefrom4;
+        $dateto4 = $request->dateto4;
         $position4 = $request->position4;
         $department4 = $request->department4;
         $salary4 = $request->input('salary4');
         $paygrade4 = $request->paygrade4;
         $appointment4 = $request->appointment4;
         $governmentserv4 = $request->governmentserv4;
-        $datefrom5 = $request->input('datefrom5');
-        $dateto5 = $request->input('dateto5');
+        $datefrom5 = $request->datefrom5;
+        $dateto5 = $request->dateto5;
         $position5 = $request->position5;
         $department5 = $request->department5;
         $salary5 = $request->input('salary5');
         $paygrade5 = $request->paygrade5;
         $appointment5 = $request->appointment5;
         $governmentserv5 = $request->governmentserv5;
-        $datefrom6 = $request->input('datefrom6');
-        $dateto6 = $request->input('dateto6');
+        $datefrom6 = $request->datefrom6;
+        $dateto6 = $request->dateto6;
         $position6 = $request->position6;
         $department6 = $request->department6;
         $salary6 = $request->input('salary6');
         $paygrade6 = $request->paygrade6;
         $appointment6 = $request->appointment6;
         $governmentserv6 = $request->governmentserv6;
-        $datefrom7 = $request->input('datefrom7');
-        $dateto7 = $request->input('dateto7');
+        $datefrom7 = $request->datefrom7;
+        $dateto7 = $request->dateto7;
         $position7 = $request->position7;
         $department7 = $request->department7;
         $salary7 = $request->input('salary7');
         $paygrade7 = $request->paygrade7;
         $appointment7 = $request->appointment7;
         $governmentserv7 = $request->governmentserv7;
-        $datefrom8 = $request->input('datefrom8');
-        $dateto8 = $request->input('dateto8');
+        $datefrom8 = $request->datefrom8;
+        $dateto8 = $request->dateto8;
         $position8 = $request->position8;
         $department8 = $request->department8;
         $salary8 = $request->input('salary8');
@@ -817,48 +825,48 @@ class PostController extends Controller
         $appointment8 = $request->appointment8;
         $governmentserv8 = $request->governmentserv8;
 
-        $datefrom9 = $request->input('datefrom9');
-        $dateto9 = $request->input('dateto9');
+        $datefrom9 = $request->datefrom9;
+        $dateto9 = $request->dateto9;
         $position9 = $request->position9;
         $department9 = $request->department9;
         $salary9 = $request->input('salary9');
         $paygrade9 = $request->paygrade9;
         $appointment9 = $request->appointment9;
         $governmentserv9 = $request->governmentserv9;
-        $datefrom10 = $request->input('datefrom10');
-        $dateto10 = $request->input('dateto10');
+        $datefrom10 = $request->datefrom10;
+        $dateto10 = $request->dateto10;
         $position10 = $request->position10;
         $department10 = $request->department10;
         $salary10 = $request->input('salary10');
         $paygrade10 = $request->paygrade10;
         $appointment10 = $request->appointment10;
         $governmentserv10 = $request->governmentserv10;
-        $datefrom11 = $request->input('datefrom11');
-        $dateto11 = $request->input('dateto11');
+        $datefrom11 = $request->datefrom11;
+        $dateto11 = $request->dateto11;
         $position11 = $request->position11;
         $department11 = $request->department11;
         $salary11 = $request->input('salary11');
         $paygrade11 = $request->paygrade11;
         $appointment11 = $request->appointment11;
         $governmentserv11 = $request->governmentserv11;
-        $datefrom12 = $request->input('datefrom12');
-        $dateto12 = $request->input('dateto12');
+        $datefrom12 = $request->datefrom12;
+        $dateto12 = $request->dateto12;
         $position12 = $request->position12;
         $department12 = $request->department12;
         $salary12 = $request->input('salary12');
         $paygrade12 = $request->paygrade12;
         $appointment12 = $request->appointment12;
         $governmentserv12 = $request->governmentserv12;
-        $datefrom13 = $request->input('datefrom13');
-        $dateto13 = $request->input('dateto13');
+        $datefrom13 = $request->datefrom13;
+        $dateto13 = $request->dateto13;
         $position13 = $request->position13;
         $department13 = $request->department13;
         $salary13 = $request->input('salary13');
         $paygrade13 = $request->paygrade13;
         $appointment13 = $request->appointment13;
         $governmentserv13 = $request->governmentserv13;
-        $datefrom14 = $request->input('datefrom14');
-        $dateto14 = $request->input('dateto14');
+        $datefrom14 = $request->datefrom14;
+        $dateto14 = $request->dateto14;
         $position14 = $request->position14;
         $department14 = $request->department14;
         $salary14 = $request->input('salary14');
@@ -866,48 +874,48 @@ class PostController extends Controller
         $appointment14 = $request->appointment14;
         $governmentserv14 = $request->governmentserv14;
 
-        $datefrom15 = $request->input('datefrom15');
-        $dateto15 = $request->input('dateto15');
+        $datefrom15 = $request->datefrom15;
+        $dateto15 = $request->dateto15;
         $position15 = $request->position15;
         $department15 = $request->department15;
         $salary15 = $request->input('salary15');
         $paygrade15 = $request->paygrade15;
         $appointment15 = $request->appointment15;
         $governmentserv15 = $request->governmentserv15;
-        $datefrom16 = $request->input('datefrom16');
-        $dateto16 = $request->input('dateto16');
+        $datefrom16 = $request->datefrom16;
+        $dateto16 = $request->dateto16;
         $position16 = $request->position16;
         $department16 = $request->department16;
         $salary16 = $request->input('salary16');
         $paygrade16 = $request->paygrade16;
         $appointment16 = $request->appointment16;
         $governmentserv16 = $request->governmentserv16;
-        $datefrom17 = $request->input('datefrom17');
-        $dateto17 = $request->input('dateto17');
+        $datefrom17 = $request->datefrom17;
+        $dateto17 = $request->dateto17;
         $position17 = $request->position17;
         $department17 = $request->department17;
         $salary17 = $request->input('salary17');
         $paygrade17 = $request->paygrade17;
         $appointment17 = $request->appointment17;
         $governmentserv17 = $request->governmentserv17;
-        $datefrom18 = $request->input('datefrom18');
-        $dateto18 = $request->input('dateto18');
+        $datefrom18 = $request->datefrom18;
+        $dateto18 = $request->dateto18;
         $position18 = $request->position18;
         $department18 = $request->department18;
         $salary18 = $request->input('salary18');
         $paygrade18 = $request->paygrade18;
         $appointment18 = $request->appointment18;
         $governmentserv18 = $request->governmentserv18;
-        $datefrom19 = $request->input('datefrom19');
-        $dateto19 = $request->input('dateto19');
+        $datefrom19 = $request->datefrom19;
+        $dateto19 = $request->dateto19;
         $position19 = $request->position19;
         $department19 = $request->department19;
         $salary19 = $request->input('salary19');
         $paygrade19 = $request->paygrade19;
         $appointment19 = $request->appointment19;
         $governmentserv19 = $request->governmentserv19;
-        $datefrom20 = $request->input('datefrom20');
-        $dateto20 = $request->input('dateto20');
+        $datefrom20 = $request->datefrom20;
+        $dateto20 = $request->dateto20;
         $position20 = $request->position20;
         $department20 = $request->department20;
         $salary20 = $request->input('salary20');
@@ -915,64 +923,64 @@ class PostController extends Controller
         $appointment20 = $request->appointment20;
         $governmentserv20 = $request->governmentserv20;
 
-        $datefrom21 = $request->input('datefrom21');
-        $dateto21 = $request->input('dateto21');
+        $datefrom21 = $request->datefrom21;
+        $dateto21 = $request->dateto21;
         $position21 = $request->position21;
         $department21 = $request->department21;
         $salary21 = $request->input('salary21');
         $paygrade21 = $request->paygrade21;
         $appointment21 = $request->appointment21;
         $governmentserv21 = $request->governmentserv21;
-        $datefrom22 = $request->input('datefrom22');
-        $dateto22 = $request->input('dateto22');
+        $datefrom22 = $request->datefrom22;
+        $dateto22 = $request->dateto22;
         $position22 = $request->position22;
         $department22 = $request->department22;
         $salary22 = $request->input('salary22');
         $paygrade22 = $request->paygrade22;
         $appointment22 = $request->appointment22;
         $governmentserv22 = $request->governmentserv22;
-        $datefrom23 = $request->input('datefrom23');
-        $dateto23 = $request->input('dateto23');
+        $datefrom23 = $request->datefrom23;
+        $dateto23 = $request->dateto23;
         $position23 = $request->position23;
         $department23 = $request->department23;
         $salary23 = $request->input('salary23');
         $paygrade23 = $request->paygrade23;
         $appointment23 = $request->appointment23;
         $governmentserv23 = $request->governmentserv23;
-        $datefrom24 = $request->input('datefrom24');
-        $dateto24 = $request->input('dateto24');
+        $datefrom24 = $request->datefrom24;
+        $dateto24 = $request->dateto24;
         $position24 = $request->position24;
         $department24 = $request->department24;
         $salary24 = $request->input('salary24');
         $paygrade24 = $request->paygrade24;
         $appointment24 = $request->appointment24;
         $governmentserv24 = $request->governmentserv24;
-        $datefrom25 = $request->input('datefrom25');
-        $dateto25 = $request->input('dateto25');
+        $datefrom25 = $request->datefrom25;
+        $dateto25 = $request->dateto25;
         $position25 = $request->position25;
         $department25 = $request->department25;
         $salary25 = $request->input('salary25');
         $paygrade25 = $request->paygrade25;
         $appointment25 = $request->appointment25;
         $governmentserv25 = $request->governmentserv25;
-        $datefrom26 = $request->input('datefrom26');
-        $dateto26 = $request->input('dateto26');
+        $datefrom26 = $request->datefrom26;
+        $dateto26 = $request->dateto26;
         $position26 = $request->position26;
         $department26 = $request->department26;
         $salary26 = $request->input('salary26');
         $paygrade26 = $request->paygrade26;
         $appointment26 = $request->appointment26;
         $governmentserv26 = $request->governmentserv26;
-        $datefrom27 = $request->input('datefrom27');
-        $dateto27 = $request->input('dateto27');
+        $datefrom27 = $request->datefrom27;
+        $dateto27 = $request->dateto27;
         $position27 = $request->position27;
         $department27 = $request->department27;
         $salary27 = $request->input('salary27');
         $paygrade27 = $request->paygrade27;
         $appointment27 = $request->appointment27;
         $governmentserv27 = $request->governmentserv27;
-        $datefrom28 = $request->input('datefrom28');
-        $dateto28 = $request->input('dateto28');
+        $datefrom28 = $request->datefrom28;
+        $dateto28 = $request->dateto28;
         $position28 = $request->position28;
         $department28 = $request->department28;
         $salary28 = $request->input('salary28');
