@@ -1,0 +1,35 @@
+{
+  "hash": "485841b1",
+  "browserHash": "4ada4b9a",
+  "optimized": {
+    "alpinejs": {
+      "src": "../../alpinejs/dist/module.esm.js",
+      "file": "alpinejs.js",
+      "fileHash": "1f6fd112",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../axios/index.js",
+      "file": "axios.js",
+      "fileHash": "24eb6fb3",
+      "needsInterop": true
+    },
+    "bootstrap": {
+      "src": "../../bootstrap/dist/js/bootstrap.esm.js",
+      "file": "bootstrap.js",
+      "fileHash": "4e3506c0",
+      "needsInterop": false
+    },
+    "lodash": {
+      "src": "../../lodash/lodash.js",
+      "file": "lodash.js",
+      "fileHash": "74dbdeef",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-FAW2VN4A": {
+      "file": "chunk-FAW2VN4A.js"
+    }
+  }
+}
