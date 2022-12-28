@@ -621,16 +621,16 @@ $group = [
                                 <div class="col-sm">
                                     <div class="col-auto my-1">
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Civil Status</label>
-                                        <select class="form-select" aria-label="Default select example" id="civilStatus"
-                                            name="civilStatus">
+                                        <select class="form-control" aria-label="Default select example" id="civilStatus"
+                                            name='civilStatus'>
                                             <option selected>Select one...</option>
-                                            <option value="single">Single</option>
-                                            <option value="married">Married</option>
-                                            <option value="separated">Separated</option>
-                                            <option value="widowed">Widowed</option>
-                                            <option value="other">Other/s</option>
+                                            <option value='single'>Single</option>
+                                            <option value='married'>Married</option>
+                                            <option value='separated'>Separated</option>
+                                            <option value='widowed'>Widowed</option>
+                                            <option value='other'>Other/s</option>
                                         </select>
-                                        {{ Form::text('civilothers', null, ['class' => 'form-control', 'id' => 'civilothers', 'placeholder' => 'If others, specify.']) }}
+                                        {{ Form::text('civilothers', null, [ 'class' => 'form-control', 'id' => 'civilothers', 'placeholder' => 'If others, specify.']) }}
                                     </div>
 
                                 </div>
@@ -3069,7 +3069,7 @@ $group = [
                             {{ Form::label('b35details', 'If YES, give details: ') }}<br>
                             {{ Form::label('b35date', 'Date Field: ') }}
                             {{ Form::date('b35date', null, ['disabled']) }}<br>
-                            {{ Form::label('b35case', 'Status of Case/s: ') }}
+                            {{ Form::label('b35cases', 'Status of Case/s: ') }}
                             {{ Form::select('b35case', $case, null, ['class' => 'form-control', 'id' => '35-b-answer-case', 'placeholder' => 'Status', 'disabled']) }}
 
                             <b>{{ Form::label('36a', '36. Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?') }}<br></b>
@@ -3109,7 +3109,7 @@ $group = [
                             {{ Form::label('38a', 'NO') }}<br>
 
                             {{ Form::label('38a', 'If YES, give details: ') }}
-                            {{ Form::text('38a', null, ['class' => 'form-control', 'id' => '38-a-answer-details', 'disabled', 'autocomplete' => 'off']) }}
+                            {{ Form::text('a38details', null, ['class' => 'form-control', 'id' => '38-a-answer-details', 'disabled', 'autocomplete' => 'off']) }}
 
                             <b>{{ Form::label(
                                 '38b',
@@ -3279,6 +3279,215 @@ $group = [
                 }
             </script>
 
+            {{-- c4 increment button--}}
+            <script>
+                $(function(){
+                    var refCount = 1;
+                    $('#addc4-ref').on('click', function (e) {
+                    e.preventDefault();
+
+                    if (refCount === 1) {
+                        $('.41-b-container').removeClass('d-none');
+                        $('#minusc4-ref').attr('disabled', false);
+                        refCount++;
+                    } else if (refCount === 2) {
+                        $('.41-c-container').removeClass('d-none');
+                        $('#addc4-ref').attr('disabled', true, required);
+                        refCount++;
+                    }
+                    });
+                    $('#minusc4-ref').on('click', function (e) {
+                    e.preventDefault();
+
+                    if (refCount === 2) {
+                        $('.41-c-container').addClass('d-none');
+                        $('#addc4-ref').attr('disabled', false);
+                        refCount--;
+                    } else if (refCount === 1) {
+                        $('.41-b-container').addClass('d-none');
+                        $('#minusc4-ref').attr('disabled', true, required);
+                        }
+                    });
+                });
+            </script>
+
+            {{-- c4 hidden form scripts --}}
+            <script>
+                $(function(){
+                    $('input[name="34b"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="b34details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="b34details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="35a"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="a35details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="a35details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="35b"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="b35date"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                            $('select[name="b35case"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="b35date"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                            $('select[name="b35case"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="36a"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="a36details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="a36details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="37a"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="a37details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="a37details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="38a"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="a38details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="a38details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="38b"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="b38details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="b38details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="39a"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="a39details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="a39details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="40a"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('select[name="a40details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('select[name="a40details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="40b"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="b40details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="b40details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+                $(function(){
+                    $('input[name="40c"]').change(function(){
+                        if ($(this).is(':checked') && $(this).val() == '1') {
+                            $('input[name="c40details"]').attr({
+                                'disabled': false,
+                                'required': true
+                            })
+                        } else {
+                            $('input[name="c40details"]').attr({
+                                'disabled': true,
+                                'required': false
+                            })
+                        }
+                    });
+                });
+
+            </script>
 
             {{-- c3 first incrementing button --}}
             <script>
