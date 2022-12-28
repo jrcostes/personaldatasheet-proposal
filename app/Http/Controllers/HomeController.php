@@ -23,11 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('form_blades.c1form');
+        return view('home');
     }
 
     public function pdf()
     {
         return view('print_forms.pdftemplate');
+    }
+    public function forms(){
+        return view('form_blades.formss');
     }
 }

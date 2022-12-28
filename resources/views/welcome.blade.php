@@ -123,7 +123,11 @@
             </svg>
         </div>
         <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
-            <li class="nav-item"><a class="nav-link" href="/formss"></span><svg class="nav-icon">
+            <li class="nav-item"><a class="nav-link" href="/home">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-book"></use>
+                </svg> Statistics</a></li>
+            <li class="nav-item"><a class="nav-link" href="/forms"></span><svg class="nav-icon">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-pencil"></use>
                     </svg> Forms</a></li>
             {{-- <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
