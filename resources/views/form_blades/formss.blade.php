@@ -624,7 +624,6 @@ $group = [
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Civil Status</label>
                                         <select class="form-control" aria-label="Default select example" id="civilStatus"
                                             name='civilStatus'>
-                                            <option selected>Select one...</option>
                                             <option value='single'>Single</option>
                                             <option value='married'>Married</option>
                                             <option value='separated'>Separated</option>
@@ -642,7 +641,6 @@ $group = [
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Bloodtype</label>
                                         <select class="form-select" aria-label="Default select example" id="bloodType"
                                             name="bloodType">
-                                            <option selected>Select one...</option>
                                             <option value="A+">A+</option>
                                             <option value="A-">A-</option>
                                             <option value="B+">B+</option>
