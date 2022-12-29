@@ -132,12 +132,130 @@ return [
             'rule-name' => 'custom-message',
         ],
         //C1 validation error messages
-        'surname' => [
-            'max' => 'Maximum amount of characters reached',
-        ],
-        'birthdate' => [
-            'before' => 'You must be at legal age to submit this form',
-        ],
+        'surname' => ['max' => 'Maximum amount of characters reached',],
+        'firstname' => ['max' => 'Maximum amount of characters reached',],
+        'birthdate' => ['before' => 'You must be at legal age to submit this form',],
+        'placeofBirth' => ['max' => 'Maximum amount of characters reached',],
+        'residentialhouse' => ['max' => 'Maximum amount of characters reached',],
+        'residentialst' => ['max' => 'Maximum amount of characters reached',],
+        'residentialsudv' => ['max' => 'Maximum amount of characters reached',],
+        'residentialcity' => ['max' => 'Maximum amount of characters reached',],
+        'residentialprv' => ['max' => 'Maximum amount of characters reached',],
+        'residentialzip' => ['max' => 'Maximum amount of characters reached',],
+        'permanenthouse' => ['max' => 'Maximum amount of characters reached',],
+        'permanentst' => ['max' => 'Maximum amount of characters reached',],
+        'permanentsubdv' => ['max' => 'Maximum amount of characters reached',],
+        'permanentbrgy' => ['max' => 'Maximum amount of characters reached',],
+        'permenentcity' => ['max' => 'Maximum amount of characters reached',],
+        'permanentprv' => ['max' => 'Maximum amount of characters reached',],
+        'permanentzip' => ['max' => 'Maximum amount of characters reached',],
+        'telno' => ['max' => 'Maximum amount of characters reached',],
+        'mobno' => ['max' => 'Maximum amount of characters reached',],
+        'spousesn' => ['max' => 'Maximum amount of characters reached',],
+        'spousefn' => ['max' => 'Maximum amount of characters reached',],
+        'spousemn' => ['max' => 'Maximum amount of characters reached',],
+        'spousenmext' => ['max' => 'Maximum amount of characters reached',],
+        'spouseocc' => ['max' => 'Maximum amount of characters reached',],
+        'spouseempadd' => ['max' => 'Maximum amount of characters reached',],
+        'spousetel' => ['max' => 'Maximum amount of characters reached',],
+        'fathersn' => ['max' => 'Maximum amount of characters reached',],
+        'fatherfn' => ['max' => 'Maximum amount of characters reached',],
+        'fathermn' => ['max' => 'Maximum amount of characters reached',],
+        'fatherext' => ['max' => 'Maximum amount of characters reached',],
+        'mothernm' => ['max' => 'Maximum amount of characters reached',],
+        'mothersn' => ['max' => 'Maximum amount of characters reached',],
+        'motherfn' => ['max' => 'Maximum amount of characters reached',],
+        'mothermn' => ['max' => 'Maximum amount of characters reached',],
+        'child0' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild0' => ['before' => 'Enter a valid date',],
+        'child1' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild1' => ['before' => 'Enter a valid date',],
+        'child2' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild2' => ['before' => 'Enter a valid date',],
+        'child3' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild3' => ['before' => 'Enter a valid date',],
+        'child4' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild4' => ['before' => 'Enter a valid date',],
+        'child5' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild5' => ['before' => 'Enter a valid date',],
+        'child6' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild6' => ['before' => 'Enter a valid date',],
+        'child7' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild7' => ['before' => 'Enter a valid date',],
+        'child8' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild8' => ['before' => 'Enter a valid date',],
+        'child9' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild9' => ['before' => 'Enter a valid date',],
+        'child10' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild10' => ['before' => 'Enter a valid date',],
+        'child11' => ['max' => 'Maximum amount of characters reached',],
+        'birthchild11' => ['before' => 'Enter a valid date',],
+        'elemname' => ['max' => 'Maximum amount of characters reached',],
+        'elemdeg' => ['max' => 'Maximum amount of characters reached',],
+        //elemunitlevel
+        //attendancefrom
+        //attendanceto
+        //yeargradelem
+        'scholarshipelem' => ['max' => 'Maximum amount of characters reached',],
+        'hsname' => ['max' => 'Maximum amount of characters reached',],
+        'hsdeg' => ['max' => 'Maximum amount of characters reached',],
+        //hsnitlevel
+        //attendancefromhs
+        //attendancetohs
+        //yeargradhs
+        'scholarshiphs' => ['max' => 'Maximum amount of characters reached',],
+        'vocname' => ['max' => 'Maximum amount of characters reached',],
+        'vocdeg' => ['max' => 'Maximum amount of characters reached',],
+        //vocunitlevel
+        //attendancefromvoc
+        //attendancetovoc
+        //yeargradvoc
+        'scholarshipvoc' => ['max' => 'Maximum amount of characters reached',],
+        'colname' => ['max' => 'Maximum amount of characters reached',],
+        'coldeg' => ['max' => 'Maximum amount of characters reached',],
+        //colunitlevel
+        //attendancefromcol
+        //attendancetovoc
+        //yeargradcol
+        'scholarshipcol' => ['max' => 'Maximum amount of characters reached',],
+        'gradname' => ['max' => 'Maximum amount of characters reached',],
+        'graddeg' => ['max' => 'Maximum amount of characters reached',],
+        //gradunitlevel
+        //attendnacefromgrad
+        //attendancefromgrad
+        //yeargrad
+        'scholarshipgrad' => ['max' => 'Maximum amount of characters reached',],
+
+        //C2 validation error messages
+        'eligibility' => ['max' => 'Maximum amount of characters reached',],
+        'rating' => ['max' => 'Maximum amount of characters reached',],
+        'placeofexam' => ['max' => 'Maximum amount of characters reached',],
+        'dateofexam' => ['before' => 'Enter a valid date',],
+        'licenseno' => ['max' => 'Maximum amount of characters reached',],
+
+        'eligibility2' => ['max' => 'Maximum amount of characters reached',],
+        'rating2' => ['max' => 'Maximum amount of characters reached',],
+        'placeofexam2' => ['max' => 'Maximum amount of characters reached',],
+        'dateofexam2' => ['before' => 'Enter a valid date',],
+        'licenseno2' => ['max' => 'Maximum amount of characters reached',],
+
+        'eligibility3' => ['max' => 'Maximum amount of characters reached',],
+        'rating3' => ['max' => 'Maximum amount of characters reached',],
+        'placeofexam3' => ['max' => 'Maximum amount of characters reached',],
+        'dateofexam3' => ['before' => 'Enter a valid date',],
+        'licenseno3' => ['max' => 'Maximum amount of characters reached',],
+
+        'eligibility4' => ['max' => 'Maximum amount of characters reached',],
+        'rating4' => ['max' => 'Maximum amount of characters reached',],
+        'placeofexam4' => ['max' => 'Maximum amount of characters reached',],
+        'dateofexam4' => ['before' => 'Enter a valid date',],
+        'licenseno4' => ['max' => 'Maximum amount of characters reached',],
+
+        'eligibility5' => ['max' => 'Maximum amount of characters reached',],
+        'rating5' => ['max' => 'Maximum amount of characters reached',],
+        'placeofexam5' => ['max' => 'Maximum amount of characters reached',],
+        'dateofexam5' => ['before' => 'Enter a valid date',],
+        'licenseno5' => ['max' => 'Maximum amount of characters reached',],
     ],
 
     /*
