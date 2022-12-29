@@ -131,6 +131,13 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        //C1 validation error messages
+        'surname' => [
+            'max' => 'Maximum amount of characters reached',
+        ],
+        'birthdate' => [
+            'before' => 'You must be at legal age to submit this form',
+        ],
     ],
 
     /*
