@@ -612,7 +612,6 @@ $group = [
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Sex</label>
                                         <select class="form-select" aria-label="Default select example" id="sex"
                                             name="sex">
-                                            <option selected>Select one...</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                         </select>
@@ -632,7 +631,6 @@ $group = [
                                         </select>
                                         {{ Form::text('civilothers', null, [ 'class' => 'form-control', 'id' => 'civilothers', 'placeholder' => 'If others, specify.']) }}
                                     </div>
-
                                 </div>
 
                                 <div class="col-sm">
@@ -640,7 +638,7 @@ $group = [
                                     <div class="col-auto my-1">
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Bloodtype</label>
                                         <select class="form-select" aria-label="Default select example" id="bloodType"
-                                            name="bloodType">
+                                            name="bloodType" placeholder="Select one...">
                                             <option value="A+">A+</option>
                                             <option value="A-">A-</option>
                                             <option value="B+">B+</option>
@@ -742,8 +740,7 @@ $group = [
                                     <label class="input-group-text" for="inputGroupSelect01">Select</label>
                                 </div>
                                 <select class="form-select" aria-label="Default select example" id="citizens2"
-                                    name="citizens2">
-                                    <option selected>Select one (Optional)...</option>
+                                    name="citizens2" aria-placeholder="Select one...">
                                     <option value="by birth">By Birth</option>
                                     <option value="by naturalization">By Naturalization</option>
                                 </select>
