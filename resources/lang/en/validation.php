@@ -270,84 +270,84 @@ return [
         'licenseno7' => ['max' => 'Maximum amount of characters reached',],
 
         'datefrom' => ['before' => 'Enter a valid date',],
-        //'dateto' => 'required_with:datefrom|after:datefrom|nullable',
+        'dateto' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position' => ['max' => 'Maximum amount of characters reached',],
         'department' => ['max' => 'Maximum amount of characters reached',],
         //salary
         'paygrade' => ['max' => 'Maximum amount of characters reached',],
 
         'datefrom2' => ['before' => 'Enter a valid date',],
-        //'dateto2' => 'required_with:datefrom2|after:datefrom2|nullable',
+        'dateto2' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position2' => ['max' => 'Maximum amount of characters reached',],
         'department2' => ['max' => 'Maximum amount of characters reached',],
         //salary2
         'paygrade2' => ['max' => 'Maximum amount of characters reached',],
 
         'datefrom3' => ['before' => 'Enter a valid date',],
-        // 'dateto3' => 'required_with:datefrom3|after:datefrom3|nullable',
+        'dateto3' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position3' => ['max' => 'Maximum amount of characters reached',],
         'department3' => ['max' => 'Maximum amount of characters reached',],
         //salary3
         'paygrade3' => ['max' => 'Maximum amount of characters reached',],
 
         'datefrom4' => ['before' => 'Enter a valid date',],
-        //'dateto4' => 'required_with:datefrom4|after:datefrom4|nullable',
+        'dateto4' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position4' => ['max' => 'Maximum amount of characters reached',],
         'department4' => ['max' => 'Maximum amount of characters reached',],
         //salary4
         'paygrade4' => ['max' => 'Maximum amount of characters reached',],
 
         'datefrom5' => ['before' => 'Enter a valid date',],
-        //'dateto5' => 'required_with:datefrom5|after:datefrom5|nullable',
+        'dateto5' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position5' => ['max' => 'Maximum amount of characters reached'],
         'department5' => ['max' => 'Maximum amount of characters reached'],
         //salary5
         'paygrade5' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom6' => ['before' => 'Enter a valid date',],
-        //'dateto6' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto6' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position6' => ['max' => 'Maximum amount of characters reached'],
         'department6' => ['max' => 'Maximum amount of characters reached'],
         //salary6
         'paygrade6' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom7' => ['before' => 'Enter a valid date',],
-        //'dateto7' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto7' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position7' => ['max' => 'Maximum amount of characters reached'],
         'department6' => ['max' => 'Maximum amount of characters reached'],
         //salary7
         'paygrade7' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom8' => ['before' => 'Enter a valid date',],
-        //'dateto8' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto8' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position8' => ['max' => 'Maximum amount of characters reached'],
         'department8' => ['max' => 'Maximum amount of characters reached'],
         //salary8
         'paygrade8' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom9' => ['before' => 'Enter a valid date',],
-        //'dateto9' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto9' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position9' => ['max' => 'Maximum amount of characters reached'],
         'department9' => ['max' => 'Maximum amount of characters reached'],
         //salary9
         'paygrade9' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom10' => ['before' => 'Enter a valid date',],
-        //'dateto10' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto10' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position10' => ['max' => 'Maximum amount of characters reached'],
         'department10' => ['max' => 'Maximum amount of characters reached'],
         //salary10
         'paygrade10' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom11' => ['before' => 'Enter a valid date',],
-        //'dateto11' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto11' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position11' => ['max' => 'Maximum amount of characters reached'],
         'department11' => ['max' => 'Maximum amount of characters reached'],
         //salary11
         'paygrade11' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom12' => ['before' => 'Enter a valid date',],
-        //'dateto12' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto12' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position12' => ['max' => 'Maximum amount of characters reached'],
         'department12' => ['max' => 'Maximum amount of characters reached'],
         //salary12
@@ -361,105 +361,105 @@ return [
         'paygrade13' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom14' => ['before' => 'Enter a valid date',],
-        //'dateto14' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto14' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position14' => ['max' => 'Maximum amount of characters reached'],
         'department14' => ['max' => 'Maximum amount of characters reached'],
         //salary14
         'paygrade14' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom15' => ['before' => 'Enter a valid date',],
-        //'dateto15' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto15' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position15' => ['max' => 'Maximum amount of characters reached'],
         'department15' => ['max' => 'Maximum amount of characters reached'],
         //salary15
         'paygrade15' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom16' => ['before' => 'Enter a valid date',],
-        //'dateto16' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto16' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position16' => ['max' => 'Maximum amount of characters reached'],
         'department16' => ['max' => 'Maximum amount of characters reached'],
         //salary16
         'paygrade16' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom17' => ['before' => 'Enter a valid date',],
-        //'dateto17' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto17' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position17' => ['max' => 'Maximum amount of characters reached'],
         'department17' => ['max' => 'Maximum amount of characters reached'],
         //salary17
         'paygrade17' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom18' => ['before' => 'Enter a valid date',],
-        //'dateto18' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto18' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position18' => ['max' => 'Maximum amount of characters reached'],
         'department18' => ['max' => 'Maximum amount of characters reached'],
         //salary18
         'paygrade18' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom19' => ['before' => 'Enter a valid date',],
-        //'dateto19' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto19' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position19' => ['max' => 'Maximum amount of characters reached'],
         'department19' => ['max' => 'Maximum amount of characters reached'],
         //salary19
         'paygrade19' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom20' => ['before' => 'Enter a valid date',],
-        //'dateto20' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto20' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position20' => ['max' => 'Maximum amount of characters reached'],
         'department20' => ['max' => 'Maximum amount of characters reached'],
         //salary20
         'paygrade20' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom21' => ['before' => 'Enter a valid date',],
-        //'dateto21' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto21' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position21' => ['max' => 'Maximum amount of characters reached'],
         'department21' => ['max' => 'Maximum amount of characters reached'],
         //salary21
         'paygrade21' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom22' => ['before' => 'Enter a valid date',],
-        //'dateto22' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto22' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position22' => ['max' => 'Maximum amount of characters reached'],
         'department22' => ['max' => 'Maximum amount of characters reached'],
         //salary22
         'paygrade22' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom23' => ['before' => 'Enter a valid date',],
-        //'dateto23' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto23' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position23' => ['max' => 'Maximum amount of characters reached'],
         'department23' => ['max' => 'Maximum amount of characters reached'],
         //salary23
         'paygrade23' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom24' => ['before' => 'Enter a valid date',],
-        //'dateto24' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto24' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position24' => ['max' => 'Maximum amount of characters reached'],
         'department24' => ['max' => 'Maximum amount of characters reached'],
         //salary24
         'paygrade24' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom25' => ['before' => 'Enter a valid date',],
-        //'dateto25' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto25' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position25' => ['max' => 'Maximum amount of characters reached'],
         'department25' => ['max' => 'Maximum amount of characters reached'],
         //salary25
         'paygrade25' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom26' => ['before' => 'Enter a valid date',],
-        //'dateto26' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto26' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position26' => ['max' => 'Maximum amount of characters reached'],
         'department26' => ['max' => 'Maximum amount of characters reached'],
         //salary26
         'paygrade26' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom27' => ['before' => 'Enter a valid date',],
-        //'dateto27' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto27' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position27' => ['max' => 'Maximum amount of characters reached'],
         'department27' => ['max' => 'Maximum amount of characters reached'],
         //salary27
         'paygrade27' => ['max' => 'Maximum amount of characters reached'],
 
         'datefrom28' => ['before' => 'Enter a valid date',],
-        //'dateto28' => 'required_with:datefrom6|after:datefrom6|nullable',
+        'dateto28' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         'position28' => ['max' => 'Maximum amount of characters reached'],
         'department28' => ['max' => 'Maximum amount of characters reached'],
         //salary28
