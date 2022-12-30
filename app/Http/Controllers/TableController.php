@@ -54,9 +54,13 @@ class TableController extends Controller
     public function pdf_print(){
         $id = $_GET['formid'];
         $data1 = Sheets::find($id);
+        $data2 = Sheets2::find($id);
 
+        $compact = array_merge(
+            $data1->toArray(), $data2->toArray()
+        );
         $pdf = App::make('snappy.pdf.wrapper');
-        $pdf = PDF::loadvIEW('pdf.pdftemplate', $data1);
+        $pdf = PDF::loadvIEW('pdf.pdftemplate', $compact);
 
         return $pdf->stream('pdsform.pdf');
     }
