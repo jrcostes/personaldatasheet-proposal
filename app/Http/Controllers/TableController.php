@@ -56,7 +56,7 @@ class TableController extends Controller
         $data1 = Sheets::find($id);
 
         $pdf = App::make('snappy.pdf.wrapper');
-        $pdf = PDF::loadvIEW('pdf.pds', $data1);
+        $pdf = PDF::loadvIEW('pdf.pdftemplate', $data1);
 
         return $pdf->stream('pdsform.pdf');
     }

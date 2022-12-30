@@ -605,7 +605,7 @@ return [
         'contactno43' => ['max' => 'Maximum amount of characters reached'],
         'valid44' => ['max' => 'Maximum amount of characters reached'],
         'issuanceplace44' => ['max' => 'Maximum amount of characters reached'],
-        'issuancedate44' => ['before' => 'Enter a valid date',],'
+        'issuancedate44' => ['before' => 'Enter a valid date',],
     ],
 
     /*
