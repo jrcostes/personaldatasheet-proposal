@@ -558,18 +558,9 @@ class PostController extends Controller
             'orgnameDistinct3' => 'max:64',
             'orgnameMembership3' => 'max:64',
 
-            'orgnameSkill3' => 'max:64',
-            'orgnameDistinct3' => 'max:64',
-            'orgnameMembership3' => 'max:64',
-
-            'orgnameSkill3' => 'max:64',
-            'orgnameDistinct3' => 'max:64',
-            'orgnameMembership3' => 'max:64',
-
-            'orgnameSkill3' => 'max:64',
-            'orgnameDistinct3' => 'max:64',
-            'orgnameMembership3' => 'max:64',
-
+            'orgnameSkill4' => 'max:64',
+            'orgnameDistinct4' => 'max:64',
+            'orgnameMembership4' => 'max:64',
 
             //C4 FORM VALIDATION
             'b34details' => 'max:64',
