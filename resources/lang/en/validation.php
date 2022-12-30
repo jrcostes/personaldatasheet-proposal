@@ -193,36 +193,36 @@ return [
         'elemname' => ['max' => 'Maximum amount of characters reached',],
         'elemdeg' => ['max' => 'Maximum amount of characters reached',],
         //elemunitlevel
-        //attendancefrom
-        //attendanceto
+        'attendancefrom' => ['before' => 'Enter a valid date',],
+        'attendanceto' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //yeargradelem
         'scholarshipelem' => ['max' => 'Maximum amount of characters reached',],
         'hsname' => ['max' => 'Maximum amount of characters reached',],
         'hsdeg' => ['max' => 'Maximum amount of characters reached',],
         //hsnitlevel
-        //attendancefromhs
-        //attendancetohs
+        'attendancefromhs' => ['before' => 'Enter a valid date',],
+        'attendancetohs' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //yeargradhs
         'scholarshiphs' => ['max' => 'Maximum amount of characters reached',],
         'vocname' => ['max' => 'Maximum amount of characters reached',],
         'vocdeg' => ['max' => 'Maximum amount of characters reached',],
         //vocunitlevel
-        //attendancefromvoc
-        //attendancetovoc
+        'attendancefromvoc' => ['before' => 'Enter a valid date',],
+        'attendancetovoc' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //yeargradvoc
         'scholarshipvoc' => ['max' => 'Maximum amount of characters reached',],
         'colname' => ['max' => 'Maximum amount of characters reached',],
         'coldeg' => ['max' => 'Maximum amount of characters reached',],
         //colunitlevel
-        //attendancefromcol
-        //attendancetovoc
+        'attendancefromcol' => ['before' => 'Enter a valid date',],
+        'attendancetocol' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //yeargradcol
         'scholarshipcol' => ['max' => 'Maximum amount of characters reached',],
         'gradname' => ['max' => 'Maximum amount of characters reached',],
         'graddeg' => ['max' => 'Maximum amount of characters reached',],
         //gradunitlevel
-        //attendnacefromgrad
-        //attendancefromgrad
+        'attendnacefromgrad' => ['before' => 'Enter a valid date',],
+        'attendancetograd' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //yeargrad
         'scholarshipgrad' => ['max' => 'Maximum amount of characters reached',],
 
@@ -467,50 +467,50 @@ return [
 
         //C3 validation error messages
         'orgnameAddress1' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom1
-        //orgdateTo1
+        'orgdateFrom1' => ['before' => 'Enter a valid date',],
+        'orgdateTo1' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours1
         'orgPosition1' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress2' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom2
-        //orgdateTo2
+        'orgdateFrom2' => ['before' => 'Enter a valid date',],
+        'orgdateTo2' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours2
         'orgPosition2' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress3' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom3
-        //orgdateTo3
+        'orgdateFrom4' => ['before' => 'Enter a valid date',],
+        'orgdateTo3' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours3
         'orgPosition3' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress4' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom4
-        //orgdateTo4
+        'orgdateFrom4' => ['before' => 'Enter a valid date',],
+        'orgdateTo4' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours4
         'orgPosition4' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress5' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom5
-        //orgdateTo5
+        'orgdateFrom5' => ['before' => 'Enter a valid date',],
+        'orgdateTo5' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours5
         'orgPosition5' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress6' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom6
-        //orgdateTo6
+        'orgdateFrom6' => ['before' => 'Enter a valid date',],
+        'orgdateTo6' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours6
         'orgPosition6' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress7' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom7
-        //orgdateTo7
+        'orgdateFrom7' => ['before' => 'Enter a valid date',],
+        'orgdateTo7' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours7
         'orgPosition7' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress8' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom8
-        //orgdateTo8
+        'orgdateFrom8' => ['before' => 'Enter a valid date',],
+        'orgdateTo8' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours8
         'orgPosition8' => ['max' => 'Maximum amount of characters reached'],
         'orgType8' => ['max' => 'Maximum amount of characters reached'],
@@ -518,48 +518,48 @@ return [
 
 
         'orgnameAddress9' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom9
-        //orgdateTo9
+        'orgdateFrom9' => ['before' => 'Enter a valid date',],
+        'orgdateTo9' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours9
         'orgPosition9' => ['max' => 'Maximum amount of characters reached'],
         'orgType9' => ['max' => 'Maximum amount of characters reached'],
         'orgnameSponsor9' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress10' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom10
-        //orgdateTo10
+        'orgdateFrom10' => ['before' => 'Enter a valid date',],
+        'orgdateTo10' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours10
         'orgPosition10' => ['max' => 'Maximum amount of characters reached'],
         'orgType10' => ['max' => 'Maximum amount of characters reached'],
         'orgnameSponsor10' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress11' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom11
-        //orgdateTo11
+        'orgdateFrom11' => ['before' => 'Enter a valid date',],
+        'orgdateTo11' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours11
         'orgPosition11' => ['max' => 'Maximum amount of characters reached'],
         'orgType11' => ['max' => 'Maximum amount of characters reached'],
         'orgnameSponsor11' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress12' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom12
-        //orgdateTo12
+        'orgdateFrom12' => ['before' => 'Enter a valid date',],
+        'orgdateTo12' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours12
         'orgPosition12' => ['max' => 'Maximum amount of characters reached'],
         'orgType12' => ['max' => 'Maximum amount of characters reached'],
         'orgnameSponsor12' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress13' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom13
-        //orgdateTo13
+        'orgdateFrom13' => ['before' => 'Enter a valid date',],
+        'orgdateTo13' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours13
         'orgPosition13' => ['max' => 'Maximum amount of characters reached'],
         'orgType13' => ['max' => 'Maximum amount of characters reached'],
         'orgnameSponsor13' => ['max' => 'Maximum amount of characters reached'],
 
         'orgnameAddress14' => ['max' => 'Maximum amount of characters reached'],
-        //orgdateFrom14
-        //orgdateTo14
+        'orgdateFrom14' => ['before' => 'Enter a valid date',],
+        'orgdateTo14' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
         //orgnumHours14
         'orgPosition14' => ['max' => 'Maximum amount of characters reached'],
         'orgType14' => ['max' => 'Maximum amount of characters reached'],
@@ -580,6 +580,14 @@ return [
         'orgnameSkill4' => ['max' => 'Maximum amount of characters reached'],
         'orgnameDistinct4' => ['max' => 'Maximum amount of characters reached'],
         'orgnameMembership4' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameSkill5' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameDistinct5' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameMembership5' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameSkill6' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameDistinct6' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameMembership6' => ['max' => 'Maximum amount of characters reached'],
 
         //C4 validation error messages
         'b34details' => ['max' => 'Maximum amount of characters reached'],
