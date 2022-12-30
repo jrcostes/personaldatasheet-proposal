@@ -139,36 +139,36 @@ class PostController extends Controller
             'elemname' => 'max:64',
             'elemdeg' => 'max:64',
             //elemunitlevel
-            //attendancefrom
-            //attendanceto
+            'attendancefrom' => 'before:attendanceto|nullable',
+            'attendanceto' => 'required_with:attendancefrom|after:attendanceto|nullable',
             //yeargradelem
             'scholarshipelem' => 'max:64',
             'hsname' => 'max:64',
             'hsdeg' => 'max:64',
             //hsnitlevel
-            //attendancefromhs
-            //attendancetohs
+            'attendancefromhs' => 'before:attendancetohs|nullable',
+            'attendancetohs' => 'required_with:attendancefromhs|after:attendancefromhs|nullable',
             //yeargradhs
             'scholarshiphs' => 'max:64',
             'vocname' => 'max:64',
             'vocdeg' => 'max:64',
             //vocunitlevel
-            //attendancefromvoc
-            //attendancetovoc
+            'attendancefromvoc' => 'before:attendancetovoc|nullable',
+            'attendancetovoc' => 'required_wuth:attendancefromvoc|after:attendancefromvoc|nullable',
             //yeargradvoc
             'scholarshipvoc' => 'max:64',
             'colname' => 'max:64',
             'coldeg' => 'max:64',
             //colunitlevel
-            //attendancefromcol
-            //attendancetovoc
+            'attendancefromcol' => 'before:attendancetocol|nullable',
+            'attendancetocol' => 'required_with:attendancefromcol|after:attendancefromcol|nullable',
             //yeargradcol
             'scholarshipcol' => 'max:64',
             'gradname' => 'max:64',
             'graddeg' => 'max:64',
             //gradunitlevel
-            //attendnacefromgrad
-            //attendancefromgrad
+            'attendnacefromgrad' => 'before:attendancetograd|nullable',
+            'attendancetograd' => 'required_with:attendnacefromgrad|after:attendancefromgrad|nullable',
             //yeargrad
             'scholarshipgrad' => 'max:64',
 
@@ -449,98 +449,98 @@ class PostController extends Controller
 
             //C3 FORM DATA VALIDATION
             'orgnameAddress1' => 'max:128',
-            //orgdateFrom1
-            //orgdateTo1
+            'orgdateFrom1' => 'before:orgdateTo1|nullable',
+            'orgdateTo1' => 'required_with:orgdateFrom1|after:orgdateFrom1|nullable',
             //orgnumHours1
             'orgPosition1' => 'max:64',
 
             'orgnameAddress2' => 'max:128',
-            //orgdateFrom2
-            //orgdateTo2
+            'orgdateFrom2' => 'before:orgdateTo2|nullable',
+            'orgdateTo2' => 'required_with:orgdateFrom2|after:orgdateFrom2|nullable',
             //orgnumHours2
             'orgPosition2' => 'max:64',
 
             'orgnameAddress3' => 'max:128',
-            //orgdateFrom3
-            //orgdateTo3
+            'orgdateFrom3' => 'before:orgdateTo3|nullable',
+            'orgdateTo3' => 'required_with:orgdateFrom3|after:orgdateFrom3|nullable',
             //orgnumHours3
             'orgPosition3' => 'max:64',
 
             'orgnameAddress4' => 'max:128',
-            //orgdateFrom4
-            //orgdateTo4
+            'orgdateFrom4' => 'before:orgdateTo4|nullable',
+            'orgdateTo4' => 'required_with:orgdateFrom4|after:orgdateFrom4|nullable',
             //orgnumHours4
             'orgPosition4' => 'max:64',
 
             'orgnameAddress5' => 'max:128',
-            //orgdateFrom5
-            //orgdateTo5
+            'orgdateFrom5' => 'before:orgdateTo5|nullable',
+            'orgdateTo5' => 'required_with:orgdateFrom5|after:orgdateFrom5|nullable',
             //orgnumHours5
             'orgPosition5' => 'max:64',
 
             'orgnameAddress6' => 'max:128',
-            //orgdateFrom6
-            //orgdateTo6
+            'orgdateFrom6' => 'before:orgdateTo6|nullable',
+            'orgdateTo6' => 'required_with:orgdateFrom6|after:orgdateFrom6|nullable',
             //orgnumHours6
             'orgPosition6' => 'max:64',
 
             'orgnameAddress7' => 'max:128',
-            //orgdateFrom7
-            //orgdateTo7
+            'orgdateFrom7' => 'before:orgdateTo7|nullable',
+            'orgdateTo7' => 'required_with:orgdateFrom7|after:orgdateFrom7|nullable',
             //orgnumHours7
             'orgPosition7' => 'max:64',
 
             'orgnameAddress8' => 'max:128',
-            //orgdateFrom8
-            //orgdateTo8
+            'orgdateFrom8' => 'before:orgdateTo8|nullable',
+            'orgdateTo8' => 'required_with:orgdateFrom8|after:orgdateFrom8|nullable',
             //orgnumHours8
             'orgPosition8' => 'max:64',
             'orgType8' => 'max:64',
             'orgnameSponsor8' => 'max:64',
 
             'orgnameAddress9' => 'max:128',
-            //orgdateFrom9
-            //orgdateTo9
+            'orgdateFrom9' => 'before:orgdateTo9|nullable',
+            'orgdateTo9' => 'required_with:orgdateFrom9|after:orgdateFrom9|nullable',
             //orgnumHours9
             'orgPosition9' => 'max:64',
             'orgType9' => 'max:64',
             'orgnameSponsor9' => 'max:64',
 
             'orgnameAddress10' => 'max:128',
-            //orgdateFrom10
-            //orgdateTo10
+            'orgdateFrom10' => 'before:orgdateTo10|nullable',
+            'orgdateTo10' => 'required_with:orgdateFrom10|after:orgdateFrom10|nullable',
             //orgnumHours10
             'orgPosition10' => 'max:64',
             'orgType10' => 'max:64',
             'orgnameSponsor10' => 'max:64',
 
             'orgnameAddress11' => 'max:128',
-            //orgdateFrom11
-            //orgdateTo11
+            'orgdateFrom11' => 'before:orgdateTo11|nullable',
+            'orgdateTo11' => 'required_with:orgdateFrom11|after:orgdateFrom11|nullable',
             //orgnumHours11
             'orgPosition11' => 'max:64',
             'orgType11' => 'max:64',
             'orgnameSponsor11' => 'max:64',
 
             'orgnameAddress12' => 'max:128',
-            //orgdateFrom12
-            //orgdateTo12
+            'orgdateFrom12' => 'before:orgdateTo12|nullable',
+            'orgdateTo12' => 'required_with:orgdateFrom12|after:orgdateFrom12|nullable',
             //orgnumHours12
             'orgPosition12' => 'max:64',
             'orgType12' => 'max:64',
             'orgnameSponsor12' => 'max:64',
 
             'orgnameAddress13' => 'max:128',
-            //orgdateFrom13
-            //orgdateTo13
+            'orgdateFrom13' => 'before:orgdateTo13|nullable',
+            'orgdateTo13' => 'required_with:orgdateFrom13|after:orgdateFrom13|nullable',
             //orgnumHours13
             'orgPosition13' => 'max:64',
             'orgType13' => 'max:64',
             'orgnameSponsor13' => 'max:64',
 
             'orgnameAddress14' => 'max:128',
-            //orgdateFrom14
-            //orgdateTo14
+            'orgdateFrom14' => 'before:orgdateTo14|nullable',
+            'orgdateTo14' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
             //orgnumHours14
             'orgPosition14' => 'max:64',
             'orgType14' => 'max:64',
@@ -558,17 +558,17 @@ class PostController extends Controller
             'orgnameDistinct3' => 'max:64',
             'orgnameMembership3' => 'max:64',
 
-            'orgnameSkill3' => 'max:64',
-            'orgnameDistinct3' => 'max:64',
-            'orgnameMembership3' => 'max:64',
+            'orgnameSkill4' => 'max:64',
+            'orgnameDistinct4' => 'max:64',
+            'orgnameMembership4' => 'max:64',
 
-            'orgnameSkill3' => 'max:64',
-            'orgnameDistinct3' => 'max:64',
-            'orgnameMembership3' => 'max:64',
+            'orgnameSkill5' => 'max:64',
+            'orgnameDistinct5' => 'max:64',
+            'orgnameMembership5' => 'max:64',
 
-            'orgnameSkill3' => 'max:64',
-            'orgnameDistinct3' => 'max:64',
-            'orgnameMembership3' => 'max:64',
+            'orgnameSkill6' => 'max:64',
+            'orgnameDistinct6' => 'max:64',
+            'orgnameMembership6' => 'max:64',
 
 
             //C4 FORM VALIDATION
@@ -679,36 +679,36 @@ class PostController extends Controller
         $birthchild11 = $request->birthchild11;
         $elemname = $request->elemname;
         $elemdeg = $request->elemdeg;
-        $attendancefrom = $request->input('attendancefrom');
-        $attendanceto = $request->input('attendanceto');
+        $attendancefrom = $request->attendancefrom;
+        $attendanceto = $request->attendanceto;
         $elemunitLevel = $request->input('elemunitLevel');
         $yeargradelem = $request->input('yeargradelem');
         $scholarshipelem = $request->scholarshipelem;
         $hsname = $request->hsname;
         $hsdeg = $request->hsdeg;
-        $attendancefromhs = $request->input('attendancefromhs');
-        $attendancetohs = $request->input('attendancetohs');
+        $attendancefromhs = $request->attendancefromhs;
+        $attendancetohs = $request->attendancetohs;
         $hsunitLevel = $request->input('hsunitLevel');
         $yeargradhs = $request->input('yeargradhs');
         $scholarshiphs = $request->scholarshiphs;
         $vocname = $request->vocname;
         $vocdeg = $request->vocdeg;
-        $attendancefromvoc = $request->input('attendancefromvoc');
-        $attendancetovoc = $request->input('attendancetovoc');
+        $attendancefromvoc = $request->attendancefromvoc;
+        $attendancetovoc = $request->attendancetovoc;
         $vocunitLevel = $request->input('vocunitLevel');
         $yeargradvoc = $request->input('yeargradvoc');
         $scholarshipvoc = $request->scholarshipvoc;
         $colname = $request->colname;
         $coldeg = $request->coldeg;
-        $attendancefromcol = $request->input('attendancefromcol');
-        $attendancetocol = $request->input('attendancetocol');
+        $attendancefromcol = $request->attendancefromcol;
+        $attendancetocol = $request->attendancetocol;
         $colunitLevel = $request->input('colunitLevel');
         $yeargradcol = $request->input('yeargradcol');
         $scholarshipcol = $request->scholarshipcol;
         $gradname = $request->gradname;
         $graddeg = $request->graddeg;
-        $attendancefromgrad = $request->input('attendancefromgrad');
-        $attendancetograd = $request->input('attendancetograd');
+        $attendancefromgrad = $request->attendancefromgrad;
+        $attendancetograd = $request->attendancetograd;
         $gradunitLevel = $request->input('gradunitLevel');
         $yeargrad = $request->input('yeargrad');
         $scholarshipgrad = $request->scholarshipgrad;
@@ -1019,92 +1019,92 @@ class PostController extends Controller
 
         // c3 form data
         $orgnameAddress1 = $request->orgnameAddess1;
-        $orgdateFrom1 = $request->input('orgdateFrom1');
-        $orgdateTo1 = $request->input('orgdateTo1');
+        $orgdateFrom1 = $request->orgdateFrom1;
+        $orgdateTo1 = $request->orgdateTo1;
         $orgnumHours1 = $request->input('orgnumHours1');
         $orgPosition1 = $request->orgPosition1;
 
         $orgnameAddress2 = $request->orgnameAddess2;
-        $orgdateFrom2 = $request->input('orgdateFrom2');
-        $orgdateTo2 = $request->input('orgdateTo2');
+        $orgdateFrom2 = $request->orgdateFrom2;
+        $orgdateTo2 = $request->orgdateTo2;
         $orgnumHours2 = $request->input('orgnumHours2');
         $orgPosition2 = $request->orgPosition2;
 
         $orgnameAddress3 = $request->orgnameAddess3;
-        $orgdateFrom3 = $request->input('orgdateFrom3');
-        $orgdateTo3 = $request->input('orgdateTo3');
+        $orgdateFrom3 = $request->orgdateFrom3;
+        $orgdateTo3 = $request->orgdateTo3;
         $orgnumHours3 = $request->input('orgnumHours3');
         $orgPosition3 = $request->orgPosition3;
 
         $orgnameAddress4 = $request->orgnameAddess4;
-        $orgdateFrom4 = $request->input('orgdateFrom4');
-        $orgdateTo4 = $request->input('orgdateTo4');
+        $orgdateFrom4 = $request->orgdateFrom4;
+        $orgdateTo4 = $request->orgdateTo4;
         $orgnumHours4 = $request->input('orgnumHours4');
         $orgPosition4 = $request->orgPosition4;
 
         $orgnameAddress5 = $request->orgnameAddess5;
-        $orgdateFrom5 = $request->input('orgdateFrom5');
-        $orgdateTo5 = $request->input('orgdateTo5');
+        $orgdateFrom5 = $request->orgdateFrom5;
+        $orgdateTo5 = $request->orgdateTo5;
         $orgnumHours5 = $request->input('orgnumHours5');
         $orgPosition5 = $request->orgPosition5;
 
         $orgnameAddress6 = $request->orgnameAddess6;
-        $orgdateFrom6 = $request->input('orgdateFrom6');
-        $orgdateTo6 = $request->input('orgdateTo6');
+        $orgdateFrom6 = $request->orgdateFrom6;
+        $orgdateTo6 = $request->orgdateTo6;
         $orgnumHours6 = $request->input('orgnumHours6');
         $orgPosition6 = $request->orgPosition6;
 
         $orgnameAddress7 = $request->orgnameAddess7;
-        $orgdateFrom7 = $request->input('orgdateFrom7');
-        $orgdateTo7 = $request->input('orgdateTo7');
+        $orgdateFrom7 = $request->orgdateFrom7;
+        $orgdateTo7 = $request->orgdateTo7;
         $orgnumHours7 = $request->input('orgnumHours7');
         $orgPosition7 = $request->orgPosition7;
 
         $orgnameAddress8 = $request->orgnameAddress8;
-        $orgdateFrom8 = $request->input('orgdateFrom8');
-        $orgdateTo8 = $request->input('orgdateTo8');
+        $orgdateFrom8 = $request->orgdateFrom8;
+        $orgdateTo8 = $request->orgdateTo8;
         $orgnumHours8 = $request->input('orgnumHours8');
         $orgType8 = $request->orgType8;
         $orgnameSponsor8 = $request->orgnameSponsor8;
 
-        $orgnameAddress9 = $request->input('orgnameAddress9');
-        $orgdateFrom9 = $request->input('orgdateFrom9');
-        $orgdateTo9 = $request->input('orgdateTo9');
+        $orgnameAddress9 = $request->orgnameAddress9;
+        $orgdateFrom9 = $request->orgdateFrom9;
+        $orgdateTo9 = $request->orgdateTo9;
         $orgnumHours9 = $request->input('orgnumHours9');
         $orgType9 = $request->orgType9;
         $orgnameSponsor9 = $request->orgnameSponsor9;
 
         $orgnameAddress10 = $request->orgnameAddress10;
-        $orgdateFrom10 = $request->input('orgdateFrom10');
-        $orgdateTo10 = $request->input('orgdateTo10');
+        $orgdateFrom10 = $request->orgdateFrom10;
+        $orgdateTo10 = $request->orgdateTo10;
         $orgnumHours10 = $request->input('orgnumHours10');
         $orgType10 = $request->orgType10;
         $orgnameSponsor10 = $request->orgnameSponsor10;
 
         $orgnameAddress11 = $request->orgnameAddress11;
-        $orgdateFrom11 = $request->input('orgdateFrom11');
-        $orgdateTo11 = $request->input('orgdateTo11');
+        $orgdateFrom11 = $request->orgdateFrom11;
+        $orgdateTo11 = $request->orgdateTo11;
         $orgnumHours11 = $request->input('orgnumHours11');
         $orgType11 = $request->orgType11;
         $orgnameSponsor11 = $request->orgnameSponsor11;
 
         $orgnameAddress12 = $request->orgnameAddress12;
-        $orgdateFrom12 = $request->input('orgdateFrom12');
-        $orgdateTo12 = $request->input('orgdateTo12');
+        $orgdateFrom12 = $request->orgdateFrom12;
+        $orgdateTo12 = $request->orgdateTo12;
         $orgnumHours12 = $request->input('orgnumHours12');
         $orgType12 = $request->orgType12;
         $orgnameSponsor12 = $request->orgnameSponsor12;
 
         $orgnameAddress13 = $request->orgnameAddress13;
-        $orgdateFrom13 = $request->input('orgdateFrom13');
-        $orgdateTo13 = $request->input('orgdateTo13');
+        $orgdateFrom13 = $request->orgdateFrom13;
+        $orgdateTo13 = $request->orgdateTo13;
         $orgnumHours13 = $request->input('orgnumHours13');
         $orgType13 = $request->orgType13;
         $orgnameSponsor13 = $request->orgnameSponsor13;
 
         $orgnameAddress14 = $request->orgnameAddress14;
-        $orgdateFrom14 = $request->input('orgdateFrom14');
-        $orgdateTo14 = $request->input('orgdateTo14');
+        $orgdateFrom14 = $request->orgdateFrom14;
+        $orgdateTo14 = $request->orgdateTo14;
         $orgnumHours14 = $request->input('orgnumHours14');
         $orgType14 = $request->orgType14;
         $orgnameSponsor14 = $request->orgnameSponsor14;
