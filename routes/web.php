@@ -44,7 +44,7 @@ Route::get('/test', function(){
 
 Route::get('/pdf1print', 'TableController@pdf_print')->name('print_data');
 Route::get('/pdf', function(){
-    return view('print_forms.pdftemplate');
+    return view('pdf.pdftemplate');
 });
 
 
