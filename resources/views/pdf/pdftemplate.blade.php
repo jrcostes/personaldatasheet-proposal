@@ -14863,29 +14863,29 @@ td
  <tr height='30' style='mso-height-source:userset;height:22.5pt'>
 <td height='30' class='x32' style='height:22.5pt;'><div style='float:right'>2.</div></td>
 <td colspan='2' class='x449' style='border-right:1px solid windowtext;'>SURNAME</td>
-<td colspan='11' class='x451' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='11' class='x451' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$surname}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='30' style='mso-height-source:userset;height:22.5pt'>
 <td height='30' class='x32' style='height:22.5pt;'></td>
 <td colspan='2' class='x454' style='border-right:1px solid windowtext;'>FIRST NAME</td>
-<td colspan='8' class='x456' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x459' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td colspan='8' class='x456' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$firstname}}</td>
+<td colspan='3' class='x459' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'> <br> <b></b> </span>{{$firstnameext}}</span></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='29' style='mso-height-source:userset;height:21.75pt'>
 <td height='27' class='x34' style='height:20.25pt;'></td>
 <td colspan='2' class='x462' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>MIDDLE NAME</td>
-<td colspan='11' class='x464' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='11' class='x464' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$midname}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
 <td height='30' class='x36' style='height:22.5pt;'><div style='float:right'>3.</div></td>
 <td colspan='2' class='x508' style='border-right:1px solid windowtext;'>DATE OF BIRTH <br>(mm/dd/yyyy)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;</span></td>
-<td colspan='3' class='x510' style='border-right:2px solid windowtext;'></td>
+<td colspan='3' class='x510' style='border-right:2px solid windowtext;'>{{$birthdate}}</td>
 <td colspan='2' class='x189' style='mso-ignore:colspan;'>16. CITIZENSHIP</td>
 <td class='x190'></td>
-<td colspan='5' height='30' width='376' style='text-align: left;border-right:2px solid windowtext;height:22.5pt;width:282pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:14;margin-left:182px;margin-top:26px;width:69px;height:35px'><img width='69' height='35' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAjCAYAAADCIMduAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAThJREFUaIHt1rtKA0EUANDjE8FCCxuxEHsbsbOx1MJGMCkFf8EfSPINNoKiHxAQC7GwiiAIIthqbSGIViJ2xmITkKAYTcYseg9ssTuvy2Xm7hBCCCGEEEIIf1/fRx8LhUKtncHVarWGcvfCyYcPk4J6qVT6cnClUmmdYwSjeOw4shyqtwP1lnErOOxBvF3V3+sA8ihFUiZxjHvs4ADz79pPGn1yK0VSxrCJGcxhChuNtgVZ3blLsG7XpEjKdeN5lu2SG6xhCOvYTbBmV6WuKa+4xSVWsYRq4jU7ljIpA1jGGfaxJas1LwnXTKqTX/IDzmXHpnlUhvAkqzG5N/hZQ7FYPG1j/GLL+xEmMC7bKc1L3Kyszlz9IMZf99mNtvyNOdrpu4cLbH9j3j9vGsO9DiKEEEIIIYT/4Q2xTHgAuyqvDAAAAABJRU5ErkJggg==" name='Check Box 11' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:251px;margin-top:26px;width:144px;height:37px'><img width='144' height='37' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAlCAYAAACtQWB+AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAVNJREFUeJzt2LtKA0EUgOHfS0Sw0MJGLMTeRuxsLLWwEUxKwVfwBZI8g42g6AMsiIVYWEUQBBFstbYQRCsRO2MxiUhMcGMcN4n/B1vszu0Uh5mzA5IkSZIkSZIkSZKkLwaafczn85U0g5MkqQCl3wtHvaZpAgHVYrH47eByudw4xygwBjx1HJl6WjUNoNowbhU4yiBeZWQw6wDU22Ik0BRwAjwAu8AhsPCp/bTWR30gRgKNA1vALDAPTAObtbZFQp10H2FdZSBGAt3UnhfC7nMLrAM5YAPYi7CmMhK7BnoD7oArYA1YBpLIa+oPxUygIWAFOAcOgG1CbfQacU11iU5+4x+BC8LRVT+ucsAzoSZSHxlu1VAoFM5SjF9qeD8GJoEJwg5Uv1CcI9RF1z+IUV2s1U10qY050vTdBy6BnTbmlT7MACNZByFJkiRJkiRJkqR/5R1L6HgAW2n3XQAAAABJRU5ErkJggg==" name='Check Box 12' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:113px;margin-top:4px;width:187px;height:46px'><img width='187' height='46' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAAAuCAYAAABwO2iaAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAXtJREFUeJzt2L+rT3Ecx/HH148MV5cuJYRsukqZJUoGi7LZlDIrg5SyGIz+ABksJmz+ARmUlIUyySBSRpLlGr633PBF1z3fcJ+POnXO53P6fN7D69T7fEiSJEmSJEmSJEmSJEmSJEmSJEmSPzWaML6wAmskf5V1kyYWFn6d99FoajnfgI14P60N8/9ZM+Da83iIB7iPy9i6zLUO49YK1ZVVasiwz2IOZ3AVW/AEOwbcM5loyLDDZ7zEI1zAXVzBcVxb8t4NHMQ+vMArPMeJgevLKjJ02L91D0ewCbuWjO/FDN7gKPbgLK5Pub78xyb+oA7kE9b/ZP4jTuOY8cewbRpFZXWYdtgPGfftC358ZHnR+Gf0PN4atzPJiphW2Ec4iUvGffgcdi/Obcb2xfv9uGPctx+YUm1ZJYYO+zxeG5+TP8YpPF18nsEzfPC1tbmJ2ziHdwPXlmDcZvzutVxrsdP37cysjieTJEmSJEmSJEmSJEmSJEmSJEmSf8sXvpE07GkL84MAAAAASUVORK5CYII=" name='Check Box 3' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;width:131px;height:42px'><img width='131' height='42' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAAAqCAYAAACQjuhAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAcZJREFUeJzt2M2LTWEcB/DP9ZppXAtTLJSlIlaykSkSFhL/gP/Af8HfoMSCUrLASnlJqUkZZeGlkY1kx0xZKBlyLc6ZOt267ts5Zsx8P/XUPb/n+T33OT1Pv3M6RERERERERERERERERERERKwsrR7xTg1zxH9mQ6+OTqf/eWi1xjoHmzGJhXEmifqsa3DuvZjpahdxo+w/gus4WYn1MsiYGFPPylCDNrbjXCX2Q1ERqmbxsc9cg4yJMTVZGSg2/12l7cCFrjF7KrFp3MZ9fMY1rK+MmcYt3MUXXC7zWrhU/sdbnG/kbla5JisD7FZs3pInZaxqshJr4wDO4hOeKirL13JMGwfL2AfFxu8rcw5hP7bhRdnm6r6h1azpw7CAq5Xr9gA5S1UE7ig2+WGl/w1el7/nsAsncBM/Ma+oLEflMAyl6cPwDY8r18eHzP+Nxb/0/1I8IjZ1jVssYzGEpt8ZRrG0po04o3hU9DOLU5W8Y2UshrASD8NhvMR7PMejAXKuYKoc/woP8KypBa41nSFanU7jHrZgYoT8KWytdUVrSK93huX+xPx9xLz5WlcRy2oCO5d7ERERERERERERERERERHxD/0BXQBVcMRHkfEAAAAASUVORK5CYII=" name='Check Box 2' shapeType='checkbox'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x759' width='376' style='height:22.5pt;width:282pt;'></td></tr></table></span></td>
+<td colspan='5' height='30' width='376' style='text-align: left;border-right:2px solid windowtext;height:22.5pt;width:282pt;vertical-align:top;' align='left'><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x759' width='376' style='height:22.5pt;width:282pt;'></td></tr></table></span></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='16' style='mso-height-source:userset;height:12pt'>
@@ -14906,7 +14906,7 @@ td
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td height='31' class='x44' style='height:23.25pt;'><div style='float:right'>4.</div></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;'>PLACE OF BIRTH</td>
-<td colspan='3' class='x515' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x515' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofBirth}}</td>
 <td colspan='3' class='x518' style='border-right:1px solid windowtext;'>If holder of<span style='mso-spacerun:yes;'>&nbsp; </span>dual citizenship,&nbsp;</td>
 <td colspan='2' class='x46' style='mso-ignore:colspan;'></td>
 <td colspan='3' class='x520' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>Pls. indicate country:</td>
@@ -14916,18 +14916,18 @@ td
 <td height='32' class='x47' style='height:24pt;'><div style='float:right'>5.</div></td>
 <td class='x45'>SEX</td>
 <td class='x48'></td>
-<td colspan='3' height='31' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:10;margin-left:89px;margin-top:29px;width:88px;height:36px'><img width='88' height='36' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAkCAYAAAANdf2OAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAdRJREFUaIHt102ITWEYAODnIjMloywof4ONn1lJ+Unkp0hkRSlrO1LK+NmOlIWyktLUNMnK2pStYSFJ+QkrQmRjISwsjsV3Tg51M/fcc+6I96nb/XrP/d7znfd831uXEEIIIYQQQgghhPDPaLWJZzXkCJjV7kKW/bnGrdZfX9sF+ITv07WAGQ3mXotJ7C7FluexQxVz7sF4B7+/haGK96pF2x1cgwGsxFnczmPHpCIvrpjzPl53vbIeanIHw0vpeK7HHOyQdhWsxgupYM+wN49vw1VcwKvSeByrcLyU/wwe5POL+Aje4ilW1P9InWlyBxcu4yTuYszPI/se2/PvTfm1CWnnH8RpXMFwPr6ORRjM5x/AOmxEn1To2diJNdKLfdjcY01NLwo8gYtSYbfgUh7/isPYhaVYWJoziVHsL41JBS7sw9xSvpk4hXP4XLrHtOpFgTOpCEvwpRQfxlacwAed99Z+3JFeIOkEnMe3LtZau6Z7cGFMeviyIdyU+vDg7xOm4B424DEe4Q2eS30e5mF+hby16sUObmcUN3AUHyvO3yy9oHdSmzmCa3gi9eC+WlbagKyDTzcG/NpXq+iX2k/xr6eFZVJPDiGEEEIIIYQQQviv/ADOnVndIhlwRgAAAABJRU5ErkJggg==" name='Check Box 7' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:89px;margin-top:0px;width:88px;height:44px'><img width='88' height='44' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAsCAYAAADhJn/jAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAapJREFUaIHt18+rTGEYB/DPuMpNXMVCREop+bGTLLBhIz/KQtnYK8lONpZ2/AcUu6vsqGthI1JCkXB1S6TEAikbhbF4z+I0zXBnzLkzi++n3ua875z3eec8c87zdoiIiIiIiIiIiIiIiP/W6jHeHkKMwOJeX7Tb/85xqzUWuV2CZfg86h/SzaIGY2/B/Y52rIF19uBaA3GHoucdPARTWIWjtbFPDa43lpq8g+EHZmvtK87hMV7idHXeXlzHbXzAKVzEF0wrdX4zXuNdNfdAl/W6xR5L7fnw981wl5LQ6Vo7ryRyAkuVRGzEIcxhE7bhFw5jEq+wAyuwphZ7tjrej1s40iP2SDVZIigbz+Va/6Ry8Zeq/gS2Kwl9oSQZfuJmdTyH1XiG49iH9dVY3UEs7xL7zXAuZTBNJ/g77tT6J/AEM1X/Kt5id8e8+pPxWykRZ5UN7Qw+KqWibhL3usQeqaZrcKcH2InneIr35v8nb8UNpQ5vGHLsxix0gq/gm5Kku3iElX3MvYCH1ecwYy+4dh9tEJNYp/+3wCmsbSh2RERERERERERERMTA/gBJIYcmAX9WjwAAAABJRU5ErkJggg==" name='Check Box 5' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:103px;height:46px'><img width='103' height='46' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAAuCAYAAAA1FgddAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAYFJREFUeJzt2EGLTWEYB/DfRZnCbCwUoyYrmShZIClSGik75QvYkbIQH4FSvoAaGytb5gMwVrNWYyEW02hiyUY6Fu8pp2muobnvdWb6/+p263nO+97nnn/3vHWJiIiIiIiIiIiIiIiIiNhuBkPqzQj2iE3aNazRNBvnMxhUyWU39uJrjc23kh0V9z6GN7jcqU23tet/WHcez+qNtXXUDGcSR/CgU7ulBHSo4uduGzXDgff4gVPYg4t41faOYgmf8A5X1ll/H4tt/3blWXtn6JkzQk9wFwuYw0xbX8GF9v1M25vvrLuGkzitnEOLeIkP9Ufuh3GEM4+HSijn8Litf8cNXMJhHFiz7ir2da7fieMSzkg1yg2ewrdO/Z5y+N/BZ+Xx1jWB137/mubwseKcvTOOcCg3dq0ZvFDOnRPr9N9iFo/wE/uNb95e+J9f9ime4yZWh/TPKuEtK4++WXwZ14B91fzDazMmcXCDayaUR2L+iYiIiIiIiIiIiIiIiIiIv/MLVxpA8JF/6iUAAAAASUVORK5CYII=" name='Check Box 4' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:103px;height:38px'><img width='103' height='38' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAAmCAYAAADZRYUwAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAd9JREFUaIHt2M2LjVEcB/DPIK53WVBSaiwkJOVtgY3FLEgppezspFBW/gFKsrYaIQs7IiW7oWhyabwMsTDEbrKY0mSBa3Ge8nRzZy5zz33G9PvUs7j3Ob/znKfT95xzLyGEEEIIIYQQQgghhBBCt/S0+L7RgT7CFM1pdaPRmHx+enq6Oi/zsAhfuvnQKs3K3P9JPMc73MRG9OHaP/S1G1c7N7Tpr2VyOuAgjmI/RnEIqzGIjxmfO2PkTM5mvMQnfMN13MM6nMAe3JASNYpLpdqzRd0LPC5qys6gjtdFXzNSzuTcwgNpCbuD+xiT9o01WIKtUsJGMIwNWI9d0oT8xDPML/V7AFuwQ9qH6riL9xnfpRI5kzMkpWcYx/ABO5vavJLS9RVvpGWvD5cxLiVuvKlmHxbjIs5hNjbleIGq5T4QjOA89qIfxydo+106ls/Fjwna1fAQV4rrMAamPtTpJ+fkHEFv6fNC7R0EBovapdiGVU33H2G7lLghaW/KuTxXJufk1KTNvI63WIsLbdT14zOe4rTfy1v5/ljR5wCeYHnHRv0faPzFNZkVUgraVf5lW5OSseAP7WrSHhX/UHRRr3Tyui2l41S1wwnNVkonsGVVDySEEEIIIYQQQgghhBZ+AfalXdmS1YoNAAAAAElFTkSuQmCC" name='Check Box 6' shapeType='checkbox'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='31' class='x760' width='190' style='height:23.25pt;width:142.5pt;'></td></tr></table></span></td>
+<td colspan='3' height='31' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;width:142.5pt;vertical-align:top;' align='left'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='31' class='x760' width='190' style='height:23.25pt;width:142.5pt;'></td></tr></table></span></td>
 <td colspan='3' class='x492' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>please indicate the details.</td>
 <td colspan='5' class='x522' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
-<td rowspan='2' height='32' class='x494' style='height:24pt;'>6</td>
+<td rowspan='2' height='32' class='x494' style='height:24pt;'>6. </td>
 <td colspan='2' rowspan='2' height='32' class='x496' style='border-right:1px solid windowtext;height:24pt;'>CIVIL STATUS</td>
-<td colspan='3' rowspan='2' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:13;margin-left:89px;margin-top:15px;width:88px;height:23px'><img width='88' height='23' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAXCAYAAACPm4iNAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAoxJREFUWIXt10toVVcUxvFfGqXBV6jYWKE14ESxVTMSS9VSnCiKVPAWdaRUQQrqQFBnSRAKgnYsilA6kOr1OdGBk4T6mIhYjKJOVHxQpLWoWFGxcbDOwTSck5vEcyvK+cOd7Hx7rb2+u9beN5SUlJSUlJSUDIeGrMVKpdI1mM3VarULHcUd5/0j02D0tre319zc2dk5UIx3lRb8jRf1TNI7GNBbI85G/I7rOIov6nnofkzG6mHsO4+2og7xQVGBMliGNViCmTiMT+uYrz/DNfh/oYgO7sAvOX/bJjrlCjZgPg7iBO5jHxoxDddwK9EuSvbPx278mOTI0p3DE/Rgc07elO24g8v4S4EdnEcRBrfhkTCgguZkfSkOCANHiWLX4qowarQwYXmyZ1Kyb06iIabiT3yP6Tm6uejqc56svFPEpJ3BWDQl64UZPKKoQBlcxCx8h/XYIzprsShmV6JrRKswJTXwCGbjOFZgAT7DxD7xT4tOh5ED6FKy8s7AwiTO42T9n2HUmks9DYYb2JF8duIH0fW/4WSi+RlTRbEp/+I5tmAeNuEPcQVkMRhdU0bem2K6ng6trMFTz0dulRjBlNGi8LOiOy+JLr8tuik9y0gxzt34HIfE/do6QK4s3ROvryU5eUeIO/qbRNOM8UOqsgb17OAm8dDcFqN5C1vFCH4pzLgrRnoHvsIFfIRjOCU6eT/Wiccvj30Zuh7xW/YCfsVPGXkXYq/4MlP9h29Y93/I/UejUql019pcrVa/HiBGSgue4WG/9SZMEMUuFg/dyiRe33twHMbgXo08ebqP8QAvM/Kmj3SDMPxuH10h5JnTMYQYQ9HmsUQY/G0BsUoyGIVP3vYhSkpKSkreL14BaakHEapV+qgAAAAASUVORK5CYII=" name='Check Box 10' shapeType='checkbox'></span><span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:14px;width:103px;height:24px'><img width='103' height='24' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAAYCAYAAADnNePtAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAjhJREFUaIHt2EuIzVEcwPHPeI28aSLlkaJIEmqGRMZCszRKTSlloyg2FHtZyYYsvAolSqLksfLMa0xS472hvFJj5ZVHXYvfUddwB2P+unS+dbrn9zvn/H7//r/HufeSyWQymUwmk8lkukFNBX2pB2xk/pBelRZKpdJPR8GMRN//wEe3qRicHmAH6svknWgpkzdgOw5UOH8KU4t5tL/qo9v0KdD2GzShFbVYgmE4nNaXYTU6CnyGf5oiK+cc5qd5PY5gZpKHi5byGWvKzmzCU9zBhKSrwWbcT/rlSb8Hs9N8PdameSO2YCPacPcXfFQlRVbOJRwSPX0+zmISJmJKWh+E8Wl/MxamtU+4mfQtIrjTMBQ30nguAnEtne2DbViAGXiFBlG1bTiJ6RV8VCVFBuetyNpZmCcyfXKaT8H5TvubsBevk/wufS7CQfEyO8Q90SiCvU5k/yOMEoFuwAB8xNZko7cIbiUfVUmRwSFaWyPq8BIXsEIEZz9Gl+0diPc/sNFPvOivfEy6q6JCFuO4aJPNIljXcQ+n05l9eIylFXxUJUXeOUR2r8KtJLdiLsaKqirntggk0b5GlJ1pSvO+oi214gMeYiXO4Ji4d9pxWbTC9uT7iUjESj6qkqIr54rI6ItJ/iDuig7f/9DdLSrrtmhhtUm/C0dFNQzBiWSXqMwG8c3wDV6IdrkXc/AAz0QyNHXh45+i9BujJ6nBOHFHdKYOg3/TXn+M8e2/GF35yGQymUwmk8lkfpEvW1ua+dQhbTkAAAAASUVORK5CYII=" name='Check Box 8' shapeType='checkbox'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x760' width='190' style='height:24pt;width:142.5pt;'></td></tr></table></span></td>
+<td colspan='3' rowspan='2' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x760' width='190' style='height:24pt;width:142.5pt;'></td></tr></table></span></td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;overflow:hidden;'>17. RESIDENTIAL ADD<span style='display:none'>RESS</span></td>
-<td colspan='3' class='x506' style='border-bottom:1px solid #A6A6A6;'></td>
-<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'></td>
+<td colspan='3' class='x506' style='border-bottom:1px solid #A6A6A6;'>{{$residentialhouse}}</td>
+<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$residentialst}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
@@ -14940,10 +14940,10 @@ td
 <td height='7' class='x51' style='height:5.25pt;'><div style='display:block;overflow:hidden'></div></td>
 <td class='x55'><div style='display:block;overflow:hidden'></div></td>
 <td class='x52'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' rowspan='3' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:12;margin-left:7px;margin-top:1px;width:103px;height:19px'><img width='103' height='19' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAATCAYAAACN8hMuAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmJJREFUWIXt10uIjXEYx/EPIwYh9xQ2ktwWptw22Cg1U5NyEiI2Q8mKMtmMscBGsaImhWahjsJCFpRxyaUkhZEyodOUcd2QEWMs/u/kbebMnBlzjjkn77dOnfc5/+f3/t//8z6XQ0JCQkJCwr9hWDZjKpVq6o9zOp1uwsH8bSchTtbgoLOuri6nc319fV8aA6EcY/FxEBplmIT3edhPUdPZH9CZQ2cmLiCDp9gd2Wdje2xdFS4Ncs9VaBikRlExvIDao3EHNzAP1diMWj2Dkw+qDT7AJUE+MqcGV7vZFuAT7uOrkE17hbf+Li4KZelkzKcWD9GMPZFtFU7hMM4JpfWlUB5n4Bpa8BhLI5+GmH9JMKKA2otwr5utWcjW49iFNZG9CtOwE6/wDAsxB0uwHKOEIF3BeGzAfjRihRCIduwTMnYtZmFMdI+MEutHhQxOOb5nsbf7c2BxnuJJ9P250K8qMQ7HInsZFqNDCMDpyH7En5KWEYLchut4EdkP/eVzDBmF7DktwtsfZ4owUb3O4ftTKFXluI0z0WcjbmZZXylkFJzAAVTggdCLSpJCBqdRKFfLYvc6irP4jAn90Lgb+T8RylZGz2yfi3eRJswXeleN0LsqIvsWrP6L5xgyClnWWrEJaXzAZOGQt+ELfuARzgu9KBunsVIoTa1CD1nXbU01LseuNwn96A2mY31k3yEMItkyryjp9U9oKpXK+RDpdHp1HxpdlAmH2oZv3X6bKkxvHTk0yoWS2KrnhHgLW4VgdDEaE/EWv3JoFy29HezBAWgMZG2+GSkMCyU1IickJCT8p/wGc7vEbSdm48wAAAAASUVORK5CYII=" name='Check Box 9' shapeType='checkbox'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='3' height='32' class='x760' width='190' style='height:24pt;width:142.5pt;'><div style='display:block;overflow:hidden'></div></td></tr></table></span></td>
+<td colspan='3' rowspan='3' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:12;margin-left:7px;margin-top:1px;width:103px;height:19px'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='3' height='32' class='x760' width='190' style='height:24pt;width:142.5pt;'><div style='display:block;overflow:hidden'></div></td></tr></table></span></td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' rowspan='2' height='19' class='x544' style='border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' rowspan='2' height='19' class='x545' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'></div></td>
+<td colspan='3' rowspan='2' height='19' class='x544' style='border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$residentialsudv}}</div></td>
+<td colspan='3' rowspan='2' height='19' class='x545' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$residentialbrgy}}</div></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
@@ -14964,10 +14964,10 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='31' class='x524' style='border-bottom:1px solid windowtext;height:23.25pt;'><div style='float:right'>7.</div></td>
 <td colspan='2' rowspan='2' height='31' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>HEIGHT (m)</td>
-<td colspan='3' rowspan='2' height='31' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
+<td colspan='3' rowspan='2' height='31' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$height}}</td>
 <td colspan='2' class='x41' style='mso-ignore:colspan;'></td>
-<td colspan='3' class='x535' style='border-bottom:1px solid #A6A6A6;'></td>
-<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'></td>
+<td colspan='3' class='x535' style='border-bottom:1px solid #A6A6A6;'>{{$residentialcity}}</td>
+<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$residentialprv}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='11' style='mso-height-source:userset;height:8.25pt'>
@@ -14979,18 +14979,18 @@ td
  <tr height='30' style='mso-height-source:userset;height:22.5pt'>
 <td height='30' class='x32' style='height:22.5pt;'><div style='float:right'>8.</div></td>
 <td colspan='2' class='x558' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>WEIGHT (kg)</td>
-<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp;&emsp;{{$weight}}</td>
 <td colspan='2' class='x563' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>ZIP CODE<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$residentialzip}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='32' class='x553' style='border-bottom:1px solid windowtext;height:24pt;'>9.</td>
 <td colspan='2' rowspan='2' height='32' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>BLOOD TYPE</td>
-<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'></td>
+<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$bloodType}}</td>
 <td colspan='2' class='x63' style='mso-ignore:colspan;overflow:hidden;'>18. PERMANENT ADDR<span style='display:none'>ESS</span></td>
-<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'></td>
-<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'></td>
+<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$permanenthouse}}</td>
+<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$permanentst}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
@@ -15002,10 +15002,10 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='32' class='x553' style='border-bottom:1px solid windowtext;height:24pt;'>10.</td>
 <td colspan='2' rowspan='2' height='32' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>GSIS ID NO.</td>
-<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'></td>
+<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$gsisno}}</td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;'></td>
-<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'></td>
-<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'></td>
+<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$permanentsubdv}}</td>
+<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$permanentbrgy}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
@@ -15017,9 +15017,9 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='33' class='x553' style='border-bottom:1px solid windowtext;height:24.75pt;'>11.</td>
 <td colspan='2' rowspan='2' height='33' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>PAG-IBIG ID NO.</td>
-<td colspan='3' rowspan='2' height='33' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td colspan='2' class='x53' style='mso-ignore:colspan;border-right:1px solid windowtext;'></td>
-<td colspan='6' class='x65' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='3' rowspan='2' height='33' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$pagibigno}}</td>
+<td colspan='2' class='x53' style='mso-ignore:colspan;border-right:1px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp;{{$permanentcity}}</td>
+<td colspan='6' class='x65' style='mso-ignore:colspan;border-right:2px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp;{{$permanentprv}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
@@ -15031,9 +15031,9 @@ td
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td height='31' class='x44' style='height:23.25pt;'><div style='float:right'>12.</div></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;border-right:1px solid windowtext;'>PHILHEALTH NO.</td>
-<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$philhealthno}}</td>
 <td colspan='2' class='x563' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>ZIP CODE<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='3' class='x579' style='border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x579' style='border-bottom:1px solid windowtext;'>{{$permanentzip}}</td>
 <td colspan='3' class='x581' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
@@ -15041,23 +15041,23 @@ td
 <td height='33' class='x32' style='height:24.75pt;'><div style='float:right'>13.</div></td>
 <td class='x45'>SSS NO.</td>
 <td class='x48'></td>
-<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$sssno}}</td>
 <td colspan='2' class='x68' style='mso-ignore:colspan;'>19. TELEPHONE NO.</td>
-<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$telno}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td colspan='3' height='31' class='x568' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>14. TIN NO.</td>
-<td colspan='3' class='x569' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x569' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$tinno}}</td>
 <td colspan='2' class='x601' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>20. MOBILE NO.</td>
-<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$mobno}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td colspan='3' height='33' class='x69' style='mso-ignore:colspan;border-right:1px solid windowtext;height:24.75pt;'>15. AGENCY EMPLOYEE NO.</td>
-<td colspan='3' class='x572' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='3' class='x572' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$agencyemp}}</td>
 <td colspan='2' class='x63' style='mso-ignore:colspan;overflow:hidden;'>21. E-MAIL ADDRESS (if<span style='display:none'>&nbsp;any)</span></td>
-<td colspan='6' class='x575' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='6' class='x575' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$email}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='22' style='mso-height-source:userset;height:16.5pt'>
@@ -15068,7 +15068,7 @@ td
  <tr height='40' style='mso-height-source:userset;height:30pt'>
 <td height='38' class='x37' style='height:28.5pt;'>22.</td>
 <td colspan='2' class='x73' style='mso-ignore:colspan;border-right:1px solid windowtext;'>SPOUSE'S SURNAME</td>
-<td colspan='5' class='x583' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x583' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousesn}}</td>
 <td colspan='4' class='x586' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>23. NAME of CHILDREN<span style='mso-spacerun:yes;'>&nbsp; </span>(Write full name and list all)</td>
 <td colspan='2' class='x589' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>DATE OF BIRTH (mm/dd/yyyy)&nbsp;</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
@@ -15077,113 +15077,113 @@ td
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x54'><span style='mso-spacerun:yes;'>&nbsp; </span>FIRST NAME</td>
 <td class='x64'></td>
-<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousefn}}</td>
+<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{$spousenmext}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child0}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild0}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x75' style='height:20.25pt;'></td>
 <td class='x76'><span style='mso-spacerun:yes;'>&nbsp; </span>MIDDLE NAME</td>
 <td class='x77'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousemn}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child1}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild1}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x78' style='height:19.5pt;'></td>
 <td class='x45'>OCCUPATION</td>
 <td class='x48'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spouseocc}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child2}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild2}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x78' style='height:19.5pt;'></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;border-right:1px solid windowtext;'>EMPLOYER/BUSINESS NAME</td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spouseemp}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child3}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild3}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x78' style='height:19.5pt;'></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;border-right:1px solid windowtext;'>BUSINESS ADDRESS</td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spouseempadd}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child4}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild4}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x49' style='height:20.25pt;'></td>
 <td colspan='2' class='x50' style='mso-ignore:colspan;border-right:1px solid windowtext;'>TELEPHONE NO.</td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousetel}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child5}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild5}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x80' style='height:20.25pt;'>24.</td>
 <td class='x81' style='overflow:hidden;'>FATHER'S SUR<span style='display:none'>NAME</span></td>
 <td class='x50'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$fathersn}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child6}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild6}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x33'>FIRST NAME</td>
 <td class='x33'></td>
-<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$fatherfn}}</td>
+<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{$fatherext}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child7}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild7}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x75' style='height:20.25pt;'></td>
 <td class='x61'>MIDDLE NAME</td>
 <td class='x61'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$fathermn}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child8}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild8}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'>25.</td>
 <td colspan='2' class='x33' style='mso-ignore:colspan;'>MOTHER'S MAIDEN NAME</td>
-<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$mothernm}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child9}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild9}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x33'>SURNAME</td>
 <td class='x33'></td>
-<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$mothersn}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child10}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild10}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x33'>FIRST NAME</td>
 <td class='x33'></td>
-<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$motherfn}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child11}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild11}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x82' style='height:19.5pt;'></td>
 <td class='x35'>MIDDLE NAME</td>
 <td class='x35'></td>
-<td colspan='5' class='x606' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='5' class='x606' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$mothermn}}</td>
 <td colspan='6' class='x609' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>(Continue on separate sheet if necessary)</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
@@ -15217,62 +15217,62 @@ td
  <tr height='39' style='mso-height-source:userset;height:29.25pt'>
 <td height='37' class='x86' style='height:27.75pt;'></td>
 <td colspan='2' class='x650' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>ELEMENTARY</td>
-<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x87'></td>
-<td class='x88'></td>
-<td class='x89'></td>
-<td class='x90'></td>
-<td class='x91'></td>
+<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$elemname}}</td>
+<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$elemdeg}}</td>
+<td class='x87'>{{$attendancefrom}}</td>
+<td class='x88'>{{$attendanceto}}</td>
+<td class='x89'>{{$elemunitLevel}}</td>
+<td class='x90'>{{$yeargradelem}}</td>
+<td class='x91'>{{$scholarshipelem}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='38' style='mso-height-source:userset;height:28.5pt'>
 <td height='37' class='x216' style='height:27.75pt;'></td>
 <td class='x217'>SECONDARY</td>
 <td class='x217'></td>
-<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x87'></td>
-<td class='x92'></td>
-<td class='x93'></td>
-<td class='x94'></td>
-<td class='x91'></td>
+<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$hsname}}</td>
+<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$hsdeg}}</td>
+<td class='x87'>{{$attendancefromhs}}</td>
+<td class='x92'>{{$attendancetohs}}</td>
+<td class='x93'>{{$hsunitLevel}}</td>
+<td class='x94'>{{$yeargradhs}}</td>
+<td class='x91'>{{$scholarshiphs}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='37' style='mso-height-source:userset;height:27.75pt'>
 <td colspan='3' height='33' class='x656' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;height:24.75pt;'><span style='mso-spacerun:yes;'>&nbsp;&nbsp; </span>VOCATIONAL / TRADE COURSE<span style='mso-spacerun:yes;'>&nbsp;&nbsp;</span></td>
-<td colspan='3' class='x621' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x87'></td>
-<td class='x92'></td>
-<td class='x89'></td>
-<td class='x90'></td>
-<td class='x91'></td>
+<td colspan='3' class='x621' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$vocname}}</td>
+<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$vocdeg}}</td>
+<td class='x87'>{{$attendancefromvoc}}</td>
+<td class='x92'>{{$attendancetovoc}}</td>
+<td class='x89'>{{$vocunitLevel}}</td>
+<td class='x90'>{{$yeargradvoc}}</td>
+<td class='x91'>{{$scholarshipvoc}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='38' style='mso-height-source:userset;height:28.5pt'>
 <td height='37' class='x218' style='height:27.75pt;'></td>
 <td class='x219'>COLLEGE</td>
 <td class='x219'></td>
-<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x87'></td>
-<td class='x92'></td>
-<td class='x89'></td>
-<td class='x94'></td>
-<td class='x91'></td>
+<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$colname}}</td>
+<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$coldeg}}</td>
+<td class='x87'>{{$attendancefromcol}}</td>
+<td class='x92'>{{$attendancetocol}}</td>
+<td class='x89'>{{$colunitLevel}}</td>
+<td class='x94'>{{$yeargradcol}}</td>
+<td class='x91'>{{$scholarshipcol}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='38' style='mso-height-source:userset;height:28.5pt'>
 <td height='35' class='x95' style='height:26.25pt;'></td>
 <td colspan='2' class='x96' style='mso-ignore:colspan;'>GRADUATE STUDIES&nbsp;</td>
-<td colspan='3' class='x673' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
-<td colspan='3' class='x676' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'></td>
-<td class='x97'></td>
-<td class='x98'></td>
-<td class='x99'></td>
-<td class='x100'></td>
-<td class='x91'></td>
+<td colspan='3' class='x673' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$gradname}}</td>
+<td colspan='3' class='x676' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$graddeg}}</td>
+<td class='x97'>{{$attendancefromgrad}}</td>
+<td class='x98'>{{$attendancetograd}}</td>
+<td class='x99'>{{$gradunitLevel}}</td>
+<td class='x100'>{{$yeargrad}}</td>
+<td class='x91'>{{$scholarshipgrad}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='16' style='mso-height-source:userset;height:12pt'>
@@ -15344,57 +15344,57 @@ td
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td class='x106'></td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x105'></td>
-<td class='x107'></td>
+<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$eligibility}}</td>
+<td class='x106'>{{$rating}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam}}</td>
+<td class='x105'>{{$licenseno}}</td>
+<td class='x107'>{{$validity}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td class='x106'></td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x105'></td>
-<td class='x107'></td>
+<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$eligibility2}}</td>
+<td class='x106'>{{$rating2}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam2}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam2}}</td>
+<td class='x105'>{{$licenseno2}}</td>
+<td class='x107'>{{$validity2}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td class='x106'></td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x105'></td>
-<td class='x107'></td>
+<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$eligibility3}}</td>
+<td class='x106'>{{$rating3}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam3}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam3}}</td>
+<td class='x105'>{{$licenseno3}}</td>
+<td class='x107'>{{$validity3}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'></td>
-<td class='x106'></td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x105'></td>
-<td class='x107'></td>
+<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$eligibility4}}</td>
+<td class='x106'>{{$rating4}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam4}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam4}}</td>
+<td class='x105'>{{$licenseno4}}</td>
+<td class='x107'>{{$validity4}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'></td>
-<td class='x106'></td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x105'></td>
-<td class='x107'></td>
+<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$eligibility5}}</td>
+<td class='x106'>{{$rating5}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam5}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam5}}</td>
+<td class='x105'>{{$licenseno5}}</td>
+<td class='x107'>{{$validity6}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'></td>
-<td class='x106'></td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x105'></td>
-<td class='x107'></td>
+<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$eligibility7}}</td>
+<td class='x106'>{{$rating7}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam7}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam7}}</td>
+<td class='x105'>{{$licenseno7}}</td>
+<td class='x107'>{{$validity7}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
@@ -15442,7 +15442,7 @@ td
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='37' style='mso-height-source:userset;height:27.75pt'>
-<td colspan='2' height='35' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:26.25pt;'></td>
+<td colspan='2' height='35' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:26.25pt;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$datefrom}}</td>
 <td class='x114'></td>
 <td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
 <td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
