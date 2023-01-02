@@ -104,6 +104,10 @@
         .references {
             padding-bottom: 20px;
         }
+
+        #pdf_button {
+            margin-left: 1%;
+        }
     </style>
 
 
