@@ -3491,7 +3491,7 @@ $group = [
                     var refCount = 5;
                     var counter = 0
 
-                    $('#add-refC3').on('click', function(e) {
+                    $('#add-refc3').on('click', function(e) {
                         e.preventDefault();
 
                         if (refCount <= 5 && counter == 0) {
@@ -3521,7 +3521,7 @@ $group = [
                         }
                     });
 
-                    $('#minus-refC3').on('click', function(e) {
+                    $('#minus-refc3').on('click', function(e) {
                         e.preventDefault();
 
                         if (refCount <= 5 && counter == 5) {
