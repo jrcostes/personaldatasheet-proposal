@@ -755,7 +755,7 @@ td
  {
  mso-number-format:'\@';
  text-align:general;
- vertical-align:middle;
+ vertical-align:left;
  white-space:nowrap;
  background:#C0C0C0;
  mso-pattern:auto none;
@@ -14885,47 +14885,47 @@ td
 <td colspan='3' class='x510' style='border-right:2px solid windowtext;'>{{$birthdate}}</td>
 <td colspan='2' class='x189' style='mso-ignore:colspan;'>16. CITIZENSHIP</td>
 <td class='x190'></td>
-<td colspan='5' height='30' class='x81' width='317' style='text-align: left;border-right:2px solid windowtext;height:22.5pt;width:237.75pt;background-color:white;' align='left' valign='top'>
+<td colspan='5' height='30' class='x760' width='317' style='text-align: left;border-right:2px solid windowtext;height:22.5pt;width:237.75pt;' align='left' valign='top'>
         <php>
             @if ($citizens == 'Filipino')
-            <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px;background-color:white;'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px;'>
                 <input type="radio" id="Filipino"> <label class="radio">By Naturalization</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:14;background-color:white;margin-left:115px;margin-top:26px;width:69px;height:34px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:14;margin-left:115px;margin-top:26px;width:69px;height:34px'>
                 <input type="radio" id="Dual Citizenship"> <label class="radio">By Birth</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:93px;background-color:white;margin-top:4px;width:143px;height:44px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:93px;margin-top:4px;width:143px;height:44px'>
                 <input type="radio" id="By Birth"> <label class="radio">Dual Citizenship</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;background-color:white;width:112px;height:42px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;width:112px;height:42px'>
                 <input type="radio" id="By Naturalization" checked> <label class="radio">Filipino</label>
             </span>
             <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x323' width='317' style='height:22.5pt;background-color:white;width:237.75pt;'></td></tr></table></span></td>
             @elseif ($citizens == 'Dual Citizenship' && $dualcitizenType == 'by birth')
-            <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;background-color:white;width:132px;height:36px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px'>
                 <input type="radio" id="Filipino" class="radio2"> <label class="radio">By Naturalization</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:14;margin-left:115px;margin-top:26px;background-color:white;width:69px;height:34px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:14;margin-left:115px;margin-top:26px;width:69px;height:34px'>
                 <input type="radio" id="Dual Citizenship" class="radio2" checked> <label class="radio">By Birth</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:93px;margin-top:4px;width:143px;background-color:white;height:44px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:93px;margin-top:4px;width:143px;height:44px'>
                 <input type="radio" id="By Birth" class="radio1" checked> <label class="radio">Dual Citizenship</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;width:112px;background-color:white;height:42px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;width:112px;height:42px'>
                 <input type="radio" id="By Naturalization" class="radio1"> <label class="radio">Filipino</label>
             </span>
             <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x323' width='317' style='height:22.5pt;width:237.75pt;background-color:white;'></td></tr></table></span></td>
             @elseif ($citizens == 'Dual Citizenship' && $dualcitizenType == 'by naturalization')
-            <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;background-color:white;width:132px;height:36px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px'>
                 <input type="radio" class="radio2" id="Filipino" checked> <label class="radio">By Naturalization</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:14;margin-left:115px;margin-top:26px;background-color:white;width:69px;height:34px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:14;margin-left:115px;margin-top:26px;width:69px;height:34px'>
                 <input type="radio" class="radio2 "id="Dual Citizenship"> <label class="radio">By Birth</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:93px;margin-top:4px;background-color:white;width:143px;height:44px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:6;margin-left:93px;margin-top:4px;width:143px;height:44px'>
                 <input type="radio" id="By Birth" class="radio1" checked> <label class="radio">Dual Citizenship</label>
             </span>
-            <span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;background-color:white;width:112px;height:42px'>
+            <span style='mso-ignore:vglayout;position:absolute;z-index:5;margin-left:11px;margin-top:6px;width:112px;height:42px'>
                 <input type="radio" id="By Naturalization" class="radio1 "> <label class="radio">Filipino</label>
             </span>
             <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x323' width='317' style='height:22.5pt;width:237.75pt;background-color:white;'></td></tr></table></span></td>
@@ -14964,7 +14964,7 @@ td
 
 <php>
 @if ($sex == 'male' )
-    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;background-color:white;margin-top:5px;width:81px;height:44px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
         <input type="radio" id="Female"> <label class="radio">Female</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
@@ -14989,105 +14989,93 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='32' class='x494' style='height:24pt;'>6. </td>
 <td colspan='2' rowspan='2' height='32' class='x496' style='border-right:1px solid windowtext;height:24pt;'>CIVIL STATUS</td>
-<td colspan='3' rowspan='2' height='32' class='x108' width='214' style='text-align: left;height:24pt;width:160.5pt;' align='left' valign='top'>
-
-<php>
-@if ($civilStatus == 'separated')
-    <span style='mso-ignore:vglayout;position:absolute;z-index:10;margin-left:110px;margin-top:26px;width:81px;height:36px'>
+<td colspan='3' rowspan='2' height='32' class='x760'  width='190' style='text-align: left;height:24pt;width:160.5pt;' align='left' valign='top'>
+    <php>
+@if ($civilStatus == 'separated' )
+<span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated" checked> <label class="radio">Separated</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:13;margin-left:110px;margin-top:3px;width:81px;height:24px'>
-        <input type="radio" id="Married"> <label class="radio">Married</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:3px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
+        <input type="radio" id="Married" > <label class="radio">Married</label></span></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Single"> <label class="radio">Single</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:26px;background-color:white;width:89px;height:25px'>
-        <input type="radio" id="Widowed"> <label class="radio">Widowed</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;background-color:white;width:89px;height:25px'>
-        <input type="radio" id="Other/s"> <label class="radio">Other/s</label></span>
-    </span>
-    <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-@elseif($civilStatus == 'married')
-    <span style='mso-ignore:vglayout;position:absolute;z-index:10;margin-left:110px;margin-top:26px;width:81px;height:36px'>
-        <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:13;margin-left:110px;margin-top:3px;width:81px;height:24px'>
-        <input type="radio" id="Married" checked> <label class="radio">Married</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:3px;width:89px;height:25px'>
-        <input type="radio" id="Single"> <label class="radio">Single</label></span>
-    </span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:26px;width:89px;height:25px'>
         <input type="radio" id="Widowed"> <label class="radio">Widowed</label></span>
     </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;background-color:white;margin-top:45px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;width:89px;height:25px'>
         <input type="radio" id="Other/s"> <label class="radio">Other/s</label></span>
     </span>
-    <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-@elseif($civilStatus == 'single' )
-    <span style='mso-ignore:vglayout;position:absolute;z-index:10;margin-left:110px;margin-top:26px;width:81px;height:36px'>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+@elseif ($civilStatus == 'married')
+<span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
+        <input type="radio" id="Married" checked> <label class="radio">Married</label></span></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+        <input type="radio" id="Single"> <label class="radio">Single</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:26px;width:89px;height:25px'>
+        <input type="radio" id="Widowed"> <label class="radio">Widowed</label></span>
     </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:13;margin-left:110px;margin-top:3px;width:81px;height:24px'>
-        <input type="radio" id="Married"> <label class="radio">Married</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;width:89px;height:25px'>
+        <input type="radio" id="Other/s"> <label class="radio">Other/s</label></span>
     </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:3px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+
+@elseif ($civilStatus === 'single')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
+        <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
+        <input type="radio" id="Married"> <label class="radio">Married</label></span></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Single" checked> <label class="radio">Single</label></span>
-    </span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:26px;width:89px;height:25px'>
         <input type="radio" id="Widowed"> <label class="radio">Widowed</label></span>
     </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;background-color:white;margin-top:45px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;width:89px;height:25px'>
         <input type="radio" id="Other/s"> <label class="radio">Other/s</label></span>
     </span>
-    <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-@elseif($civilStatus == 'widowed')
-    <span style='mso-ignore:vglayout;position:absolute;z-index:10;margin-left:110px;margin-top:26px;width:81px;height:36px'>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+
+@elseif($civilStatus === 'widowed')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:13;margin-left:110px;margin-top:3px;width:81px;height:24px'>
-        <input type="radio" id="Married"> <label class="radio">Married</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:3px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
+        <input type="radio" id="Married"> <label class="radio">Married</label></span></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Single"> <label class="radio">Single</label></span>
-    </span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:26px;width:89px;height:25px'>
         <input type="radio" id="Widowed" checked> <label class="radio">Widowed</label></span>
     </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;background-color:white;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;width:89px;height:25px'>
         <input type="radio" id="Other/s"> <label class="radio">Other/s</label></span>
     </span>
-    <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
 
-@elseif($civilStatus == 'other')
-    <span style='mso-ignore:vglayout;position:absolute;z-index:10;margin-left:110px;margin-top:26px;width:81px;height:36px'>
+@elseif($civilStatus === 'other')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:13;margin-left:110px;margin-top:3px;width:81px;height:24px'>
-        <input type="radio" id="Married"> <label class="radio">Married</label></span>
-    </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:3px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
+        <input type="radio" id="Married"> <label class="radio">Married</label></span></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Single"> <label class="radio">Single</label></span>
-    </span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:26px;width:89px;height:25px'>
         <input type="radio" id="Widowed"> <label class="radio">Widowed</label></span>
     </span>
-    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;background-color:white;margin-top:45px;width:89px;height:25px'>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:11;margin-left:7px;margin-top:45px;width:89px;height:25px'>
         <input type="radio" id="Other/s" checked> <label class="radio">Other/s</label></span>
     </span>
-    <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='2' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;'></td></tr></table></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+
 @endif
-<?php>
+</php>
+
 </td>
-<td colspan='2' class='x53' style='mso-ignore:colspan;overflow:hidden;'>17. RESIDENTIAL ADD<span style='display:none'>RESS</span></td>
+<td colspan='2' class='x53' style='mso-ignore:colspan;overflow:hidden;'>17. RESIDENTIAL<span style='display:none'></span></td>
 <td colspan='3' class='x506' style='border-bottom:1px solid #A6A6A6;'>{{$residentialhouse}}</td>
 <td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$residentialst}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
-<td colspan='2' class='x53' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
+<td colspan='2' class='x53' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'>ADDRESS</div></td>
 <td colspan='3' class='x541' style='border-bottom:1px solid windowtext;'><div style='display:block;overflow:hidden'>House/Block/Lot No.</div></td>
 <td colspan='3' class='x542' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'><div style='display:block;overflow:hidden'>Street</div></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
@@ -15096,7 +15084,7 @@ td
 <td height='7' class='x51' style='height:5.25pt;'><div style='display:block;overflow:hidden'></div></td>
 <td class='x55'><div style='display:block;overflow:hidden'></div></td>
 <td class='x52'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' rowspan='3' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:12;margin-left:7px;margin-top:1px;width:103px;height:19px'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='3' height='32' class='x760' width='190' style='height:24pt;width:142.5pt;'><div style='display:block;overflow:hidden'></div></td></tr></table></span></td>
+<td colspan='3' rowspan='3' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:12;margin-left:7px;margin-top:1px;width:103px;height:19px'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='3' height='32' class='x760' background-color='white' width='190' style='height:24pt;width:142.5pt;'><div style='display:block;overflow:hidden'></div></td></tr></table></span></td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
 <td colspan='3' rowspan='2' height='19' class='x544' style='border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$residentialsudv}}</div></td>
 <td colspan='3' rowspan='2' height='19' class='x545' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$residentialbrgy}}</div></td>
@@ -15144,13 +15132,13 @@ td
 <td rowspan='2' height='32' class='x553' style='border-bottom:1px solid windowtext;height:24pt;'>9.</td>
 <td colspan='2' rowspan='2' height='32' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>BLOOD TYPE</td>
 <td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$bloodType}}</td>
-<td colspan='2' class='x63' style='mso-ignore:colspan;overflow:hidden;'>18. PERMANENT ADDR<span style='display:none'>ESS</span></td>
+<td colspan='2' class='x63' style='mso-ignore:colspan;overflow:hidden;'>18. PERMANENT<span style='display:none'></span></td>
 <td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$permanenthouse}}</td>
 <td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$permanentst}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
-<td colspan='2' class='x41' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
+<td colspan='2' class='x41' style='mso-ignore:colspan;'>ADDRESS<div style='display:block;overflow:hidden'></div></td>
 <td colspan='3' class='x541' style='border-bottom:1px solid windowtext;'><div style='display:block;overflow:hidden'>House/Block/Lot No.</div></td>
 <td colspan='3' class='x542' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'><div style='display:block;overflow:hidden'>Street</div></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
@@ -16906,14 +16894,15 @@ td
  text-align:center;
  vertical-align:middle;
  white-space:nowrap;
- background:auto;
+ background:white;
  mso-pattern:auto;
  color:#000000;
  font-size:8pt;
  font-weight:700;
  font-style:normal;
  font-family:'Arial Narrow',sans-serif;
- border-top:none;
+ border-style: solid;
+ border-color: black;
  border-right:none;
  border-bottom:none;
  border-left:none;
