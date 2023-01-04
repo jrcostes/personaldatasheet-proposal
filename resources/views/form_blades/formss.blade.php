@@ -533,7 +533,7 @@ $group = [
                 }
             </script>
 
-            {{-- @if ($errors->any())
+            @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -541,7 +541,7 @@ $group = [
                         @endforeach
                     </ul>
                 </div>
-            @endif --}}
+            @endif
 
             <form method="get" action="/c1formsubmit" autocomplete="off" class="form-horizontal">
 
@@ -655,11 +655,11 @@ $group = [
                                 </div>
                                 <div class="col-sm">
                                     {{ Form::label('height', 'Height') }}<br>
-                                    {{ Form::number('height', null, ['class' => 'form-control', 'id' => 'height', 'placeholder' => 'in cm.', 'reqiured' => 'required']) }}
+                                    {{ Form::number('height', null, ['class' => 'form-control', 'id' => 'height', 'placeholder' => 'in cm.']) }}
                                 </div>
                                 <div class="col-sm">
                                     {{ Form::label('weight', 'Weight') }}<br>
-                                    {{ Form::number('weight', null, ['class' => 'form-control', 'id' => 'weight', 'placeholder' => 'in kg.', 'reqiured' => 'required']) }}
+                                    {{ Form::number('weight', null, ['class' => 'form-control', 'id' => 'weight', 'placeholder' => 'in kg.']) }}
                                 </div>
                             </div>
                         </div>
@@ -757,14 +757,14 @@ $group = [
                                 <b>{{ Form::label('residential-address', 'Residential Address') }}<br></b>
                                 <div class="row">
                                     <div class="col">
-                                        {{ Form::text('residentialhouse', null, ['class' => 'form-control', 'id' => 'houseno-R', 'placeholder' => 'House/Block/Lot No.', 'reqiured' => 'required']) }}
-                                        {{ Form::text('residentialst', null, ['class' => 'form-control', 'id' => 'street-R', 'placeholder' => 'Street', 'reqiured' => 'required']) }}
-                                        {{ Form::text('residentialsudv', null, ['class' => 'form-control', 'id' => 'subdivillage-R', 'placeholder' => 'Subdivision/Village', 'reqiured' => 'required']) }}
+                                        {{ Form::text('residentialhouse', null, ['class' => 'form-control', 'id' => 'houseno-R', 'placeholder' => 'House/Block/Lot No.']) }}
+                                        {{ Form::text('residentialst', null, ['class' => 'form-control', 'id' => 'street-R', 'placeholder' => 'Street']) }}
+                                        {{ Form::text('residentialsudv', null, ['class' => 'form-control', 'id' => 'subdivillage-R', 'placeholder' => 'Subdivision/Village']) }}
                                     </div><br>
                                     <div class="col">
-                                        {{ Form::text('residentialbrgy', null, ['class' => 'form-control', 'id' => 'barangay-R', 'placeholder' => 'Barangay', 'reqiured' => 'required']) }}
-                                        {{ Form::text('residentialcity', null, ['class' => 'form-control', 'id' => 'City/Municipality-R', 'placeholder' => 'City/Municipality', 'reqiured' => 'required']) }}
-                                        {{ Form::text('residentialprv', null, ['class' => 'form-control', 'id' => 'province-R', 'placeholder' => 'Province', 'reqiured' => 'required']) }}
+                                        {{ Form::text('residentialbrgy', null, ['class' => 'form-control', 'id' => 'barangay-R', 'placeholder' => 'Barangay']) }}
+                                        {{ Form::text('residentialcity', null, ['class' => 'form-control', 'id' => 'City/Municipality-R', 'placeholder' => 'City/Municipality']) }}
+                                        {{ Form::text('residentialprv', null, ['class' => 'form-control', 'id' => 'province-R', 'placeholder' => 'Province', ]) }}
                                         {{-- {{ Form::number('residentialzip', null, ['class' => 'form-control', 'id' => 'zipcode-R', 'placeholder' => 'Zip Code', 'reqiured' => 'required']) }} --}}
                                     </div>
                                 </div>
@@ -774,7 +774,7 @@ $group = [
                                         <span class="input-group-text" id="zipcode-R">Zip Code</span>
                                     </div>
                                     <input type="text" name="residentialzip" id="residentialzip" class="form-control"
-                                        aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                        aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                 </div>
                             </div>
 
@@ -798,7 +798,7 @@ $group = [
                                         <span class="input-group-text" id="zipcode-R">Zip Code</span>
                                     </div>
                                     <input name="permanentzip" id="permanentzip" type="text" class="form-control"
-                                        aria-label="Small" aria-describedby="inputGroup-sizing-sm" required>
+                                        aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                                 </div>
                             </div>
                         </div>
