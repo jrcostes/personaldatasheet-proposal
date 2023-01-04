@@ -27,12 +27,19 @@ class HomeController extends Controller
         // return view('home');
         // $genderCount_form1 = DB::select("SELECT * FROM sheets WHERE sex = 'male'")->count();
 
-        $genderCount = DB::table('sheets')
+        $maleCount = DB::table('sheets')
                 ->where('sex', 'male')
                 ->count();
 
 
-        return view('home', compact('genderCount'));
+        return view('home', compact('maleCount'));
+
+        $femaleCount = DB::table('sheets')
+                ->where('sex', 'female')
+                ->count();
+
+
+        return view('home', compact('femaleCount'));
     }
 
     public function pdf()
