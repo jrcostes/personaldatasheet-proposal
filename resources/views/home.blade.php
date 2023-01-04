@@ -716,6 +716,26 @@
                 opacity: 0;
             }
         }
+
+        #col-card {
+
+        }
+
+        #attribute {
+            font-size: 30px;
+        }
+
+        #attribute_count {
+            font-size: 50px;
+        }
+
+        #title {
+            font-size: 35px;
+        }
+
+        #iconn {
+            float: right;
+        }
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -725,55 +745,55 @@
         <div class="main-content">
             <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
                 <div class="container-fluid">
-                    <h2 class="mb-5 text-white">Stats Card</h2>
+                    <h2 class="mb-5 text-white" id="title">Statistics Card</h2>
                     <div class="header-body">
                         <div class="row">
-                            <div class="col-xl-3 col-lg-6">
+                            <div class="col" id="col-card">
                                 <div class="card card-stats mb-4 mb-xl-0">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col">
-                                                <h5 class="card-title text-uppercase text-muted mb-0">Male</h5>
-                                                <span class="h2 font-weight-bold mb-0">{{ $maleCount }}</span>
+                                                <h5 class="card-title text-uppercase text-muted mb-0" id="attribute">Male</h5>
+                                                <span class="h2 font-weight-bold mb-0" id="attribute_count">{{ $maleCount }}</span>
 
                                             </div>
-                                            <div class="col-auto">
+                                            {{-- <div class="col-auto">
                                                 <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                                                    <i class="fas fa-chart-bar"></i>
+                                                    <i class="fas fa-chart-bar" id="iconn"></i>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
-                                        <p class="mt-3 mb-0 text-muted text-sm">
+                                        {{-- <p class="mt-3 mb-0 text-muted text-sm">
                                             <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
                                             <span class="text-nowrap">Since last month</span>
-                                        </p>
+                                        </p> --}}
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-6">
+                            <div class="col" id="col-card">
                                 <div class="card card-stats mb-4 mb-xl-0">
                                     <div class="card-body">
                                         <div class="row">
 
                                             <div class="col">
-                                                <h5 class="card-title text-uppercase text-muted mb-0">Females</h5>
-                                                <span class="h2 font-weight-bold mb-0">{{$femaleCount}}</span>
+                                                <h5 class="card-title text-uppercase text-muted mb-0" id="attribute">Females</h5>
+                                                <span class="h2 font-weight-bold mb-0" id="attribute_count">{{$femaleCount}}</span>
                                             </div>
-                                            <div class="col-auto">
+                                            {{-- <div class="col-auto">
                                                 <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                                                    <i class="fas fa-chart-pie"></i>
+                                                    <i class="fas fa-chart-pie" id="iconn"></i>
                                                 </div>
-                                            </div>
+                                            </div> --}}
 
                                         </div>
-                                        <p class="mt-3 mb-0 text-muted text-sm">
+                                        {{-- <p class="mt-3 mb-0 text-muted text-sm">
                                             <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
                                             <span class="text-nowrap">Since last week</span>
-                                        </p>
+                                        </p> --}}
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-6">
+                            {{-- <div class="col-xl-3 col-lg-6">
                                 <div class="card card-stats mb-4 mb-xl-0">
                                     <div class="card-body">
                                         <div class="row">
@@ -814,7 +834,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
