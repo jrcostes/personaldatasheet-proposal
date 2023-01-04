@@ -734,7 +734,7 @@
                                         <div class="row">
                                             <div class="col">
                                                 <h5 class="card-title text-uppercase text-muted mb-0">Male</h5>
-                                                <span class="h2 font-weight-bold mb-0">{{ $genderCount }}</span>
+                                                <span class="h2 font-weight-bold mb-0">{{ $maleCount }}</span>
 
                                             </div>
                                             <div class="col-auto">
@@ -756,7 +756,7 @@
                                         <div class="row">
                                             <div class="col">
                                                 <h5 class="card-title text-uppercase text-muted mb-0">Females</h5>
-                                                <span class="h2 font-weight-bold mb-0">88</span>
+                                                <span class="h2 font-weight-bold mb-0">{{ $femaleCount }}</span>
                                             </div>
                                             <div class="col-auto">
                                                 <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
