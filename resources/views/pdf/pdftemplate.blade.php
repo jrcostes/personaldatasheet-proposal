@@ -15813,11 +15813,11 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='7' height='32' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'></td>
-<td class='x199'></td>
-<td class='x199'></td>
-<td class='x200'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='32' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$orgnameAddress1}}</td>
+<td class='x199'>{{$orgdateFrom1}}</td>
+<td class='x199'>{{$orgdateTo1}}</td>
+<td class='x200'>{{$orgnumHours1}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$orgPosition1}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
