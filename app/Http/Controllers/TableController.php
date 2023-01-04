@@ -55,9 +55,11 @@ class TableController extends Controller
         $id = $_GET['formid'];
         $data1 = Sheets::find($id);
         $data2 = Sheets2::find($id);
+        $data3 = Sheets3::find($id);
+        $data4 = Sheets4::find($id);
 
         $compact = array_merge(
-            $data1->toArray(), $data2->toArray()
+            $data1->toArray(), $data2->toArray(), $data3->toArray(), $data4->toArray()
         );
         $pdf = App::make('snappy.pdf.wrapper');
         $pdf = PDF::loadvIEW('pdf.pdftemplate', $compact);

@@ -533,7 +533,7 @@ $group = [
                 }
             </script>
 
-            @if ($errors->any())
+            {{-- @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -541,7 +541,7 @@ $group = [
                         @endforeach
                     </ul>
                 </div>
-            @endif
+            @endif --}}
 
             <form method="get" action="/c1formsubmit" autocomplete="off" class="form-horizontal">
 
@@ -597,9 +597,8 @@ $group = [
 
                                     <input type="date" class="date-picker" name="birthdate" id="birthdate"
                                         data-coreui-toggle="date-picker" required>
-
-
                                 </div>
+
                             </div>
 
                             <br>
@@ -3491,7 +3490,7 @@ $group = [
                     var refCount = 5;
                     var counter = 0
 
-                    $('#add-refC3').on('click', function(e) {
+                    $('#add-refc3').on('click', function(e) {
                         e.preventDefault();
 
                         if (refCount <= 5 && counter == 0) {
@@ -3521,7 +3520,7 @@ $group = [
                         }
                     });
 
-                    $('#minus-refC3').on('click', function(e) {
+                    $('#minus-refc3').on('click', function(e) {
                         e.preventDefault();
 
                         if (refCount <= 5 && counter == 5) {
