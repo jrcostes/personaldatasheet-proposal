@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Sheets;
+use App\Sheets3;
 
 class HomeController extends Controller
 {
