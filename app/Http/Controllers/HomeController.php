@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Sheets;
 
 class HomeController extends Controller
 {
@@ -24,22 +25,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // return view('home');
-        // $genderCount_form1 = DB::select("SELECT * FROM sheets WHERE sex = 'male'")->count();
+        $maleCount = Sheets::where('sex', 'male')->count();
 
-        $maleCount = DB::table('sheets')
-                ->where('sex', 'male')
-                ->count();
+        $femaleCount = Sheets::where('sex', 'female')->count();
 
 
-        return view('home', compact('maleCount'));
 
-        $femaleCount = DB::table('sheets')
-                ->where('sex', 'female')
-                ->count();
-
-
-        return view('home', compact('femaleCount'));
+        return view('home', compact('femaleCount', 'maleCount'));
     }
 
     public function pdf()
