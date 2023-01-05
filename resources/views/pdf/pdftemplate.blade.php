@@ -15965,51 +15965,51 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td class='x124'></td>
-<td class='x124'></td>
-<td class='x125'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$orgnameAddress2}}</td>
+<td class='x124'>{{ $orgdateFrom2 }}</td>
+<td class='x124'>{{ $orgdateTo2 }}</td>
+<td class='x125'>{{ $orgnumHours2 }}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition2 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td class='x124'></td>
-<td class='x125'></td>
-<td class='x178'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{ $orgnameAddress3 }}</td>
+<td class='x124'>{{ $orgdateFrom3 }}</td>
+<td class='x125'>{{ $orgdateTo3 }}</td>
+<td class='x178'>{{ $orgnumHours3 }}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition3 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'></td>
-<td class='x124'></td>
-<td class='x125'></td>
-<td class='x178'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $orgnameAddress4 }}</td>
+<td class='x124'>{{ $orgdateFrom4 }}</td>
+<td class='x125'>{{ $orgdateTo4 }}</td>
+<td class='x178'>{{ $orgnumHours4 }}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition4 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'></td>
-<td class='x124'></td>
-<td class='x125'></td>
-<td class='x178'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{ $orgnameAddress5 }}</td>
+<td class='x124'>{{ $orgdateFrom5 }}</td>
+<td class='x125'>{{ $orgdateTo5 }}</td>
+<td class='x178'>{{ $orgnumHours5 }}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition5 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'></td>
-<td class='x124'></td>
-<td class='x125'></td>
-<td class='x178'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $orgnameAddress6 }}</td>
+<td class='x124'>{{ $orgdateFrom6 }}</td>
+<td class='x125'>{{ $orgdateTo6 }}</td>
+<td class='x178'>{{ $orgnumHours6 }}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition6 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='34' style='mso-height-source:userset;height:25.5pt'>
-<td colspan='7' height='31' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x124'></td>
-<td class='x126'></td>
-<td class='x179'></td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='31' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress7 }}</td>
+<td class='x124'>{{ $orgdateFrom7 }}</td>
+<td class='x126'>{{ $orgdateTo7 }}</td>
+<td class='x179'><{{ $orgnumHours6 }}/td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition7 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='14' style='mso-height-source:userset;height:10.5pt'>
@@ -16047,192 +16047,192 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress8 }}</td>
+<td class='x127'>{{ $orgdateFrom8 }}</td>
+<td class='x127'>{{ $orgdateTo8 }}</td>
+<td class='x128'>{{ $orgnumHours8 }}</td>
+<td class='x129'>{{ $orgType8 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor8 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress9 }}</td>
+<td class='x127'>{{ $orgdateFrom9 }}</td>
+<td class='x127'>{{ $orgdateTo9 }}</td>
+<td class='x128'>{{ $orgnumHours9 }}</td>
+<td class='x129'>{{ $orgType9 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor9 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress10 }}</td>
+<td class='x127'>{{ $orgdateFrom10 }}</td>
+<td class='x127'>{{ $orgdateTo10 }}</td>
+<td class='x128'>{{ $orgnumHours10 }}</td>
+<td class='x129'>{{ $orgType10 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor10 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress11 }}</td>
+<td class='x127'>{{ $orgdateFrom11 }}</td>
+<td class='x127'>{{ $orgdateTo11 }}</td>
+<td class='x128'>{{ $orgnumHours11 }}</td>
+<td class='x129'>{{ $orgType11 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor11 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress12 }}</td>
+<td class='x127'>{{ $orgdateFrom12 }}</td>
+<td class='x127'>{{ $orgdateTo12 }}</td>
+<td class='x128'>{{ $orgnumHours12 }}</td>
+<td class='x129'>{{ $orgType12 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor12 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress13 }}</td>
+<td class='x127'>{{ $orgdateFrom13 }}</td>
+<td class='x127'>{{ $orgdateTo13 }}</td>
+<td class='x128'>{{ $orgnumHours13 }}</td>
+<td class='x129'>{{ $orgType13 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor13 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress14 }}</td>
+<td class='x127'>{{ $orgdateFrom14 }}</td>
+<td class='x127'>{{ $orgdateTo14 }}</td>
+<td class='x128'>{{ $orgnumHours14 }}</td>
+<td class='x129'>{{ $orgType14 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor14 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress15 }}</td>
+<td class='x127'>{{ $orgdateFrom15 }}</td>
+<td class='x127'>{{ $orgdateTo15 }}</td>
+<td class='x128'>{{ $orgnumHours15 }}</td>
+<td class='x129'>{{ $orgType15 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor15 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress16 }}</td>
+<td class='x127'>{{ $orgdateFrom16 }}</td>
+<td class='x127'>{{ $orgdateTo16 }}</td>
+<td class='x128'>{{ $orgnumHours16 }}</td>
+<td class='x129'>{{ $orgType16 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor16 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress17 }}</td>
+<td class='x127'>{{ $orgdateFrom17 }}</td>
+<td class='x127'>{{ $orgdateTo17 }}</td>
+<td class='x128'>{{ $orgnumHours17 }}</td>
+<td class='x129'>{{ $orgType16 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor17 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress18 }}</td>
+<td class='x127'>{{ $orgdateFrom18 }}</td>
+<td class='x127'>{{ $orgdateTo18 }}</td>
+<td class='x128'>{{ $orgnumHours18 }}</td>
+<td class='x129'>{{ $orgType18 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameAddress18 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress19 }}</td>
+<td class='x127'>{{ $orgdateFrom19 }}</td>
+<td class='x127'>{{ $orgdateTo19 }}</td>
+<td class='x128'>{{ $orgnumHours19 }}</td>
+<td class='x129'>{{ $orgType19 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor19 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress20 }}</td>
+<td class='x127'>{{ $orgdateFrom20 }}</td>
+<td class='x127'>{{ $orgdateTo20 }}</td>
+<td class='x128'>{{ $orgnumHours20 }}</td>
+<td class='x129'>{{ $orgType20 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor20 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress21 }}</td>
+<td class='x127'>{{ $orgdateFrom21 }}</td>
+<td class='x127'>{{ $orgdateTo21 }}</td>
+<td class='x128'>{{ $orgnumHours21 }}</td>
+<td class='x129'>{{ $orgType21 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor21 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress22 }}</td>
+<td class='x127'>{{ $orgdateFrom22 }}</td>
+<td class='x127'>{{ $orgdateTo22 }}</td>
+<td class='x128'>{{ $orgnumHours22 }}</td>
+<td class='x129'>{{ $orgType22 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor22 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress23 }}</td>
+<td class='x127'>{{ $orgdateFrom23 }}</td>
+<td class='x127'>{{ $orgdateTo23 }}</td>
+<td class='x128'>{{ $orgnumHours23 }}</td>
+<td class='x129'>{{ $orgType23 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor23 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress24 }}</td>
+<td class='x127'>{{ $orgdateFrom24 }}</td>
+<td class='x127'>{{ $orgdateTo24 }}</td>
+<td class='x128'>{{ $orgnumHours24 }}</td>
+<td class='x129'>{{ $orgType24 }}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor24 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress25 }}</td>
+<td class='x127'>{{ $orgdateFrom25 }}</td>
+<td class='x127'>{{ $orgdateTo25 }}</td>
+<td class='x128'>{{ $orgnumHours25 }}</td>
+<td class='x129'>{{ $orgType25 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor25 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress26 }}</td>
+<td class='x127'>{{ $orgdateFrom26 }}</td>
+<td class='x127'>{{ $orgdateTo26 }}</td>
+<td class='x128'>{{ $orgnumHours26 }}</td>
+<td class='x129'>{{ $orgType26 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor26 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x128'></td>
-<td class='x129'></td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress27 }}</td>
+<td class='x127'>{{ $orgdateFrom27 }}</td>
+<td class='x127'>{{ $orgdateTo27 }}</td>
+<td class='x128'>{{ $orgnumHours27 }}</td>
+<td class='x129'>{{ $orgType27 }}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor27 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td class='x127'></td>
-<td class='x127'></td>
-<td class='x130'></td>
-<td class='x131'></td>
-<td colspan='3' class='x406' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'></td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress28 }}</td>
+<td class='x127'>{{ $orgdateFrom28 }}</td>
+<td class='x127'>{{ $orgdateTo28 }}</td>
+<td class='x130'>{{ $orgnumHours28 }}</td>
+<td class='x131'>{{ $orgType28 }}</td>
+<td colspan='3' class='x406' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgnameSponsor28 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
@@ -16251,39 +16251,39 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill1 }}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct1 }}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership1 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td colspan='7' class='x410' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill2 }}</td>
+<td colspan='7' class='x410' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct2 }}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership2 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill3 }}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct3 }}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership3 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='30' style='mso-height-source:userset;height:22.5pt'>
-<td colspan='3' height='28' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:21pt;'></td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' height='28' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:21pt;'>{{ $orgnameSkill4 }}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct4 }}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership4 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='34' style='mso-height-source:userset;height:25.5pt'>
-<td colspan='3' height='32' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'></td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' height='32' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{ $orgnameSkill5 }}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct5 }}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership5 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'></td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill6 }}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct6 }}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership6 }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
@@ -16355,13 +16355,48 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x135' style='height:15pt;'></td>
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>a. within the third degree?</td>
-<td colspan='5' class='x201' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x201' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+@if ($sex == 'male' )
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+        <input type="radio" id="Yes"> <label class="radio">No</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+        <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+@elseif ($sex == 'female')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+        <input type="radio" id="No" checked> <label class="radio">No</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+        <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+@endif
+</php></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='18' style='mso-height-source:userset;height:13.5pt'>
 <td height='18' class='x135' style='height:13.5pt;'></td>
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>b. within the fourth degree (for Local Government Unit - Career Employees)?</td>
-<td colspan='5' class='x202' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x202' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='0' style='display:none'>
@@ -16375,13 +16410,14 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
-<td colspan='9' rowspan='5' height='54' class='x309' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:40.5pt;'></td>
+<td colspan='9' rowspan='5' height='54' class='x309' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:40.5pt;'>
+</td>
 <td colspan='5' class='x383' style='border-right:2px solid windowtext;'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp; </span>If YES, give details:&nbsp;</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='23' style='mso-height-source:userset;height:17.25pt'>
 <td></td>
-<td colspan='3' style='mso-ignore:colspan;'>_______________________________</td>
+<td colspan='3' style='mso-ignore:colspan;'>{{ $detailsb34 }}</td>
 <td class='x137'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16400,7 +16436,25 @@ td
  <tr height='24' style='mso-height-source:userset;height:18.6pt'>
 <td height='24' class='x166' style='height:18.6pt;'>35.</td>
 <td colspan='8' class='x295' style='border-right:1px solid windowtext;'>a. Have you ever been found guilty of any administrative offense?</td>
-<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
@@ -16414,7 +16468,7 @@ td
 <td height='20' class='x142' style='height:15pt;'></td>
 <td colspan='8' class='x420' style='border-right:1px solid windowtext;'></td>
 <td class='x206'></td>
-<td colspan='3' class='x445' style='border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x445' style='border-bottom:1px solid windowtext;'>{{ $details35a }}</td>
 <td class='x143'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16428,7 +16482,25 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x146' style='height:15pt;'></td>
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>b. Have you been criminally charged before any court?<br><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='5' class='x147' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x147' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='5' style='mso-height-source:userset;height:3.75pt'>
@@ -16444,13 +16516,13 @@ td
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='2' class='x443'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Date Filed:&nbsp;</td>
-<td colspan='2' class='x150' style='mso-ignore:colspan;'></td>
+<td colspan='2' class='x150' style='mso-ignore:colspan;'>{{ $b35case }}</td>
 <td class='x149'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='2' class='x444'>Status of Case/s:</td>
-<td class='x152'></td>
+<td class='x152'>{{ $b35date }}</td>
 <td class='x151'></td>
 <td class='x149'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
@@ -16464,7 +16536,25 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='19' class='x169' style='height:14.25pt;'>36.</td>
 <td colspan='8' rowspan='4' height='67' class='x321' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:50.25pt;'>Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by<span style='mso-spacerun:yes;'>&nbsp; </span>any court or tribunal?</td>
-<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
@@ -16476,7 +16566,7 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td class='x171'></td>
-<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'>{{ $a36details  }}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16489,7 +16579,25 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='19' class='x169' style='height:14.25pt;'>37.</td>
 <td colspan='8' rowspan='4' height='64' class='x321' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:48pt;'>Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector?</td>
-<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
@@ -16502,7 +16610,7 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td class='x171'></td>
-<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'></td>
+<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'>{{ $a37details }}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16514,13 +16622,31 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='19' class='x169' style='height:14.25pt;'>38.</td>
 <td colspan='8' rowspan='2' height='39' class='x295' style='border-right:1px solid windowtext;height:29.25pt;'>a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?</td>
-<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td colspan='2' class='x423'>If YES, give details:</td>
-<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'></td>
+<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'>{{ $a38details }}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16533,14 +16659,32 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td colspan='8' rowspan='3' height='46' class='x297' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:34.5pt;'>b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?</td>
-<td colspan='4' class='x723'></td>
+<td colspan='4' class='x723'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td colspan='2' class='x423'>If YES, give details:</td>
-<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'></td>
+<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'>{{ $b38details }}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16553,7 +16697,25 @@ td
  <tr height='31' style='mso-height-source:userset;height:23.25pt'>
 <td height='30' class='x169' style='height:22.5pt;'>39.</td>
 <td colspan='8' rowspan='4' height='84' class='x295' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:63pt;'>Have you acquired the status of an immigrant or permanent resident of another country?</td>
-<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
@@ -16565,7 +16727,7 @@ td
  <tr height='26' style='mso-height-source:userset;height:19.5pt'>
 <td height='26' class='x144' style='height:19.5pt;'></td>
 <td class='x208'></td>
-<td colspan='3' class='x170' style='mso-ignore:colspan;'></td>
+<td colspan='3' class='x170' style='mso-ignore:colspan;'>{{ $a39details }}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16578,9 +16740,27 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='19' class='x172' style='height:14.25pt;'>40.</td>
 <td colspan='8' rowspan='2' height='39' class='x295' style='border-right:1px solid windowtext;height:29.25pt;'><font class="font17" style="text-decoration: none;">Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972)</font><font class="font17" style="text-decoration: none;">, please answer the following items:</font></td>
-<td colspan='5' class='x157' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
-<td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
+<td colspan='5' class='x157' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php></td>
+
  </tr>
+
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x160' style='height:15pt;'></td>
 <td colspan='5' class='x210' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
@@ -16597,29 +16777,65 @@ td
 <td height='20' class='x160' style='height:15pt;'></td>
 <td colspan='8' class='x257' style='mso-ignore:colspan;border-right:1px solid windowtext;'></td>
 <td colspan='2' class='x724'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If YES, please specify:<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='19' style='mso-ignore:colspan;'></td>
+<td colspan='19' style='mso-ignore:colspan;'>{{ $a40details }}</td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x160' style='height:15pt;'><div style='float:right'>b.&nbsp;</div></td>
 <td colspan='8' rowspan='2' height='40' class='x297' style='border-right:1px solid windowtext;height:30pt;'>Are you a person with disability?</td>
-<td></td>
+<td>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='4' height='20' width='302' style='text-align: left;border-right:2px solid windowtext;height:15pt;width:226.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:43;margin-left:72px;margin-top:0px;width:189px;height:1px'><img width='189' height='1' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAABCAYAAACL368+AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABNJREFUKJFjZGBgWM0wCkbBCAIA/PQArdiH89QAAAAASUVORK5CYII=" name='Straight Connector 48'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='4' height='20' class='x384' width='302' style='height:15pt;width:226.5pt;'></td></tr></table></span></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x160' style='height:15pt;'></td>
-<td colspan='5' class='x253' style='mso-ignore:colspan;border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp; </span>_______________________________</td>
+<td colspan='5' class='x253' style='mso-ignore:colspan;border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp; </span>{{ $b40details }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x160' style='height:15pt;'><div style='float:right'>c.&nbsp;</div></td>
 <td colspan='8' rowspan='3' height='50' class='x297' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:37.5pt;'>Are you a solo parent?</td>
-<td colspan='5' class='x384' style='border-right:2px solid windowtext;'></td>
+<td colspan='5' class='x384' style='border-right:2px solid windowtext;'>
+    <php>
+    @if ($sex == 'male' )
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
+            <input type="radio" id="Yes"> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
+            <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
+    @elseif ($sex == 'female')
+        <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+            <input type="radio" id="No" checked> <label class="radio">No</label></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+        <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+            <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+        <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+    @endif
+    </php>
+</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x173' style='height:15pt;'></td>
-<td colspan='5' class='x438' style='border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp; </span>______________________________</td>
+<td colspan='5' class='x438' style='border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp; </span>{{ $c40details }}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='10' style='mso-height-source:userset;height:7.5pt'>
@@ -16644,23 +16860,23 @@ td
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
-<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'></td>
-<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $name41 }}</td>
+<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $address41 }}</td>
+<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $contactno41 }}</td>
 <td colspan='4' class='x266' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
-<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'></td>
-<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $name42 }}</td>
+<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $address42 }}</td>
+<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $contactno42}}</td>
 <td colspan='4' class='x266' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
-<td colspan='5' height='29' class='x730' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:21.75pt;'></td>
-<td colspan='2' class='x284' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
-<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
+<td colspan='5' height='29' class='x730' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:21.75pt;'>{{ $name43 }}</td>
+<td colspan='2' class='x284' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $address43 }}</td>
+<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $contactno43 }}</td>
 <td colspan='4' class='x266' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16715,7 +16931,7 @@ td
  <tr height='27' style='mso-height-source:userset;height:20.25pt'>
 <td height='27' class='x222' style='height:20.25pt;'></td>
 <td colspan='2' class='x446' style='border-bottom:1px solid windowtext;'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Government Issued ID</td>
-<td class='x269'></td>
+<td class='x269'>{{ $govid44 }}</td>
 <td colspan='2' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td class='x249'></td>
 <td colspan='2' class='x229' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
@@ -16734,7 +16950,7 @@ td
  </tr>
  <tr height='15' style='mso-height-source:userset;height:11.25pt'>
 <td height='15' class='x222' style='height:11.25pt;'></td>
-<td colspan='3' class='x246' style='mso-ignore:colspan;'></td>
+<td colspan='3' class='x246' style='mso-ignore:colspan;'>{{ $valid44 }}</td>
 <td colspan='2' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='4' class='x432' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>Signature (Sign inside the box)</td>
 <td class='x249'></td>
@@ -16745,7 +16961,7 @@ td
  <tr height='15' style='mso-height-source:userset;height:11.25pt'>
 <td height='15' class='x222' style='height:11.25pt;'></td>
 <td height='14' width='70' style='text-align: left;height:10.5pt;width:52.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:41;margin-left:8px;margin-top:2px;width:127px;height:22px'><img width='127' height='22' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAXCAYAAAAiGpAkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAw9JREFUaIHt10uo1VUUx/GP95o9rNSLkWUgkWjp5SohFgYqaRYI5aBBYYmhE7NBXayJF4NGDXooag+cFKVWCEWDiOhBPihEeyBJEYHm7YFUEISppafB2hf/97DP1b90QHR/R////q+z9m+vvdba+1AoFAqFQqFQKBTOT4bVsJ2OvvR8HJ9hE45mbEegB3uG8HcD5uCLit8T+BbPYSY68X4NjXUYjvW4HA/iKjyCJ9s03zlHRw3bcWLTH8UaXI1XW9jOxNLT+FsoNrrq9/H07RmRHBNr6KvLJFyLJel9pEjGC4bhNe2PoD8992G/COIaXIIurMQyzMLt2IWNGIt/0vfDIkE24o4mv2/gJexN72NEhVb9HxRdp0skzhLRgXLzSL/dhFH4N31bjW4sxuuVNXbjadEVv8ETmbG9InabMRfTsK6F1qmYJxJtDB7CLzX1t4XOGrYTMQXvVsbuwjF8KoJzQgRjGy4Ti1mJ30Rl/44V+EhU/tvJ7wO4BguwCi+Io6MDJ0XAq/678Wvy3RCte2FmnveSzlU4gMfwB3rxrNiQp5LNaCzCFWJzezEB+9I81bErcSl2Jy2T8TFmZLQew/W4P61nzlnobwt12n6OcfhKLGybqPgRTTbTRVDfEQu7GLOxo2JzGJ/jA9xjcCX+kPE/NdnDmyL5cvMM0IPt6XlHem/Fy7gT34mjp9FiLEdOK5FA8JNImrr620Ldtl/ltvT7pfgQW/CwqIyGU5fJQyLwr6Rvt4pAPl/x1a/1xa4v4/+A2IRdmC/aZ26eAX7EjfgaN+HnIdZ1i+gU/WITZ2B809hJ/JXsJ5xGK4OTZdhZ6G8LdTf/bpGxDfyN+3CzyNS5IqsbItgLcC824C3R7qaIIF4nquBM2Jnx3yvuBrPFsbEYn2TmGWAttiZNk7A8+crxp6jGL8WxuE+05erYayIJekSF7h9C6/eZOV6sqf+cZqS45FTpNPhYGe3UHaPrf/BPXKCa/65W52mmy5kddRclP0ONdYikaKaV1hx19RcKhUKhUCgUCoVCoVAoFAqD+Q/S68rpCFWn6wAAAABJRU5ErkJggg==" name='TextBox 20'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='14' class='x765' width='70' style='height:10.5pt;width:52.5pt;'></td></tr></table></span></td>
-<td colspan='2' class='x245' style='mso-ignore:colspan;'></td>
+<td colspan='2' class='x245' style='mso-ignore:colspan;'>{{ $issuancedate44 }}</td>
 <td colspan='2' class='x273' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='4' class='x241' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td class='x238'></td>
@@ -16755,7 +16971,7 @@ td
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
 <td height='13' class='x222' style='height:9.75pt;'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' class='x247' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
+<td colspan='3' class='x247' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'>{{ $issuanceplace44 }}</div></td>
 <td colspan='2' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'><div style='display:block;overflow:hidden'></div></td>
 <td colspan='4' class='x435' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'><div style='display:block;overflow:hidden'>Date Accomplished</div></td>
 <td class='x238'><div style='display:block;overflow:hidden'></div></td>

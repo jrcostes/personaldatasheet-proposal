@@ -722,7 +722,7 @@
         }
 
         #attribute {
-            font-size: 30px;
+            font-size: 25px;
         }
 
         #attribute_count {
@@ -776,7 +776,7 @@
                                         <div class="row">
 
                                             <div class="col">
-                                                <h5 class="card-title text-uppercase text-muted mb-0" id="attribute">Females</h5>
+                                                <h5 class="card-title text-uppercase text-muted mb-0" id="attribute">Female</h5>
                                                 <span class="h2 font-weight-bold mb-0" id="attribute_count">{{$femaleCount}}</span>
                                             </div>
                                             {{-- <div class="col-auto">

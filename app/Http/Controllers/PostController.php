@@ -140,7 +140,7 @@ class PostController extends Controller
             'elemdeg' => 'max:64',
             //elemunitlevel
             'attendancefrom' => 'before:attendanceto|nullable',
-            'attendanceto' => 'required_with:attendancefrom|after:attendanceto|nullable',
+            'attendanceto' => 'required_with:attendancefrom|after:attendancefrom|nullable',
             //yeargradelem
             'scholarshipelem' => 'max:64',
             'hsname' => 'max:64',
@@ -545,6 +545,118 @@ class PostController extends Controller
             'orgPosition14' => 'max:64',
             'orgType14' => 'max:64',
             'orgnameSponsor14' => 'max:64',
+
+            'orgnameAddress15' => 'max:128',
+            'orgdateFrom15' => 'before:orgdateTo14|nullable',
+            'orgdateTo15' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours15
+            'orgPosition15' => 'max:64',
+            'orgType15' => 'max:64',
+            'orgnameSponsor15' => 'max:64',
+
+            'orgnameAddress16' => 'max:128',
+            'orgdateFrom16' => 'before:orgdateTo14|nullable',
+            'orgdateTo16' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours16
+            'orgPosition16' => 'max:64',
+            'orgType16' => 'max:64',
+            'orgnameSponsor16' => 'max:64',
+
+            'orgnameAddress17' => 'max:128',
+            'orgdateFrom17' => 'before:orgdateTo14|nullable',
+            'orgdateTo17' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours17
+            'orgPosition17' => 'max:64',
+            'orgType17' => 'max:64',
+            'orgnameSponsor17' => 'max:64',
+
+            'orgnameAddress18' => 'max:128',
+            'orgdateFrom18' => 'before:orgdateTo14|nullable',
+            'orgdateTo18' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours18
+            'orgPosition18' => 'max:64',
+            'orgType18' => 'max:64',
+            'orgnameSponsor18' => 'max:64',
+
+            'orgnameAddress19' => 'max:128',
+            'orgdateFrom19' => 'before:orgdateTo14|nullable',
+            'orgdateTo19' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours19
+            'orgPosition19' => 'max:64',
+            'orgType19' => 'max:64',
+            'orgnameSponsor19' => 'max:64',
+
+            'orgnameAddress20' => 'max:128',
+            'orgdateFrom20' => 'before:orgdateTo14|nullable',
+            'orgdateTo20' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours20
+            'orgPosition20' => 'max:64',
+            'orgType20' => 'max:64',
+            'orgnameSponsor20' => 'max:64',
+
+            'orgnameAddress21' => 'max:128',
+            'orgdateFrom21' => 'before:orgdateTo14|nullable',
+            'orgdateTo21' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours21
+            'orgPosition21' => 'max:64',
+            'orgType21' => 'max:64',
+            'orgnameSponsor21' => 'max:64',
+
+            'orgnameAddress22' => 'max:128',
+            'orgdateFrom22' => 'before:orgdateTo14|nullable',
+            'orgdateTo22' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours22
+            'orgPosition22' => 'max:64',
+            'orgType22' => 'max:64',
+            'orgnameSponsor22' => 'max:64',
+
+            'orgnameAddress23' => 'max:128',
+            'orgdateFrom23' => 'before:orgdateTo14|nullable',
+            'orgdateTo23' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours23
+            'orgPosition23' => 'max:64',
+            'orgType23' => 'max:64',
+            'orgnameSponsor23' => 'max:64',
+
+            'orgnameAddress24' => 'max:128',
+            'orgdateFrom24' => 'before:orgdateTo14|nullable',
+            'orgdateTo24' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours24
+            'orgPosition24' => 'max:64',
+            'orgType24' => 'max:64',
+            'orgnameSponsor24' => 'max:64',
+
+            'orgnameAddress25' => 'max:128',
+            'orgdateFrom25' => 'before:orgdateTo14|nullable',
+            'orgdateTo25' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours25
+            'orgPosition25' => 'max:64',
+            'orgType25' => 'max:64',
+            'orgnameSponsor25' => 'max:64',
+
+            'orgnameAddress26' => 'max:128',
+            'orgdateFrom26' => 'before:orgdateTo14|nullable',
+            'orgdateTo26' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours26
+            'orgPosition26' => 'max:64',
+            'orgType26' => 'max:64',
+            'orgnameSponsor26' => 'max:64',
+
+            'orgnameAddress27' => 'max:128',
+            'orgdateFrom27' => 'before:orgdateTo14|nullable',
+            'orgdateTo27' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours27
+            'orgPosition27' => 'max:64',
+            'orgType27' => 'max:64',
+            'orgnameSponsor27' => 'max:64',
+
+            'orgnameAddress28' => 'max:128',
+            'orgdateFrom28' => 'before:orgdateTo14|nullable',
+            'orgdateTo28' => 'required_with:orgdateFrom14|after:orgdateFrom14|nullable',
+            //orgnumHours28
+            'orgPosition28' => 'max:64',
+            'orgType28' => 'max:64',
+            'orgnameSponsor28' => 'max:64',
 
             'orgnameSkill1' => 'max:64',
             'orgnameDistinct1' => 'max:64',

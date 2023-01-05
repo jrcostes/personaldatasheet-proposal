@@ -2677,212 +2677,687 @@ $group = [
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-
-                            <div class="orgLD1-container d-none">
-                                <div class="row">
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameAddress9', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
-                                        {{ Form::text('orgnameAddress9', null, ['class' => 'form-control', 'id' => 'orgnameAddress9', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateFrom9', 'From: ') }}</b><br>
-                                            {{ Form::date('orgdateFrom9', '') }}
-                                        </div>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateTo9', 'To: ') }}</b><br>
-                                            {{ Form::date('orgdateTo9', '') }}
-                                        </div>
-                                    </div>
+                        <div class="orgLD1-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress9', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress9', null, ['class' => 'form-control', 'id' => 'orgnameAddress9', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
                                 </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <b>{{ Form::label('orgnumHours9', 'Number of Hours: ') }}</b><br>
-                                        {{ Form::text('orgnumHours9', null, ['class' => 'form-control', 'id' => 'orgnumHours9', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom9', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom9', '') }}
                                     </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgType9', 'Type of LD: ') }}</b>
-                                        {{ Form::text('orgType9', null, ['class' => 'form-control', 'id' => 'orgType9', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameSponsor9', 'Conducted/Sponsored by: ') }}</b>
-                                        {{ Form::text('orgnameSponsor9', null, ['class' => 'form-control', 'id' => 'orgnameSponsor9', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo9', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo9', '') }}
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="orgLD2-container d-none">
-                                <div class="row">
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameAddress10', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
-                                        {{ Form::text('orgnameAddress10', null, ['class' => 'form-control', 'id' => 'orgnameAddress10', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateFrom10', 'From: ') }}</b><br>
-                                            {{ Form::date('orgdateFrom10', '') }}
-                                        </div>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateTo10', 'To: ') }}</b><br>
-                                            {{ Form::date('orgdateTo10', '') }}
-                                        </div>
-                                    </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours9', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours9', null, ['class' => 'form-control', 'id' => 'orgnumHours9', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
                                 </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <b>{{ Form::label('orgnumHours10', 'Number of Hours: ') }}</b><br>
-                                        {{ Form::text('orgnumHours10', null, ['class' => 'form-control', 'id' => 'orgnumHours10', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgType10', 'Type of LD: ') }}</b>
-                                        {{ Form::text('orgType10', null, ['class' => 'form-control', 'id' => 'orgType10', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameSponsor10', 'Conducted/Sponsored by: ') }}</b>
-                                        {{ Form::text('orgnameSponsor10', null, ['class' => 'form-control', 'id' => 'orgnameSponsor10', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
-                                    </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType9', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType9', null, ['class' => 'form-control', 'id' => 'orgType9', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
                                 </div>
-                            </div>
-
-                            <div class="orgLD3-container d-none">
-                                <div class="row">
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameAddress11', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
-                                        {{ Form::text('orgnameAddress11', null, ['class' => 'form-control', 'id' => 'orgnameAddress11', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateFrom11', 'From: ') }}</b><br>
-                                            {{ Form::date('orgdateFrom11', '') }}
-                                        </div>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateTo11', 'To: ') }}</b><br>
-                                            {{ Form::date('orgdateTo11', '') }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <b>{{ Form::label('orgnumHours11', 'Number of Hours: ') }}</b><br>
-                                        {{ Form::text('orgnumHours11', null, ['class' => 'form-control', 'id' => 'orgnumHours11', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgType11', 'Type of LD: ') }}</b>
-                                        {{ Form::text('orgType11', null, ['class' => 'form-control', 'id' => 'orgType11', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameSponsor11', 'Conducted/Sponsored by: ') }}</b>
-                                        {{ Form::text('orgnameSponsor11', null, ['class' => 'form-control', 'id' => 'orgnameSponsor11', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="orgLD4-container d-none">
-                                <div class="row">
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameAddress12', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
-                                        {{ Form::text('orgnameAddress12', null, ['class' => 'form-control', 'id' => 'orgnameAddress12', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateFrom12', 'From: ') }}</b><br>
-                                            {{ Form::date('orgdateFrom12', '') }}
-                                        </div>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateTo12', 'To: ') }}</b><br>
-                                            {{ Form::date('orgdateTo12', '') }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <b>{{ Form::label('orgnumHours12', 'Number of Hours: ') }}</b><br>
-                                        {{ Form::text('orgnumHours12', null, ['class' => 'form-control', 'id' => 'orgnumHours12', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgType12', 'Type of LD: ') }}</b>
-                                        {{ Form::text('orgType12', null, ['class' => 'form-control', 'id' => 'orgType11', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameSponsor12', 'Conducted/Sponsored by: ') }}</b>
-                                        {{ Form::text('orgnameSponsor12', null, ['class' => 'form-control', 'id' => 'orgnameSponsor12', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="orgLD5-container d-none">
-                                <div class="row">
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameAddress13', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
-                                        {{ Form::text('orgnameAddress13', null, ['class' => 'form-control', 'id' => 'orgnameAddress13', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateFrom13', 'From: ') }}</b><br>
-                                            {{ Form::date('orgdateFrom13', '') }}
-                                        </div>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateTo13', 'To: ') }}</b><br>
-                                            {{ Form::date('orgdateTo13', '') }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <b>{{ Form::label('orgnumHours13', 'Number of Hours: ') }}</b><br>
-                                        {{ Form::text('orgnumHours13', null, ['class' => 'form-control', 'id' => 'orgnumHours13', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgType13', 'Type of LD: ') }}</b>
-                                        {{ Form::text('orgType13', null, ['class' => 'form-control', 'id' => 'orgType13', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameSponsor13', 'Conducted/Sponsored by: ') }}</b>
-                                        {{ Form::text('orgnameSponsor13', null, ['class' => 'form-control', 'id' => 'orgnameSponsor13', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="orgLD6-container d-none">
-                                <div class="row">
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameAddress14', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
-                                        {{ Form::text('orgnameAddress14', null, ['class' => 'form-control', 'id' => 'orgnameAddress14', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateFrom14', 'From: ') }}</b><br>
-                                            {{ Form::date('orgdateFrom14', '') }}
-                                        </div>
-                                        <div class="form-inline">
-                                            <b>{{ Form::label('orgdateTo14', 'To: ') }}</b><br>
-                                            {{ Form::date('orgdateTo14', '') }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <b>{{ Form::label('orgnumHours14', 'Number of Hours: ') }}</b><br>
-                                        {{ Form::text('orgnumHours14', null, ['class' => 'form-control', 'id' => 'orgnumHours14', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgType14', 'Type of LD: ') }}</b>
-                                        {{ Form::text('orgType14', null, ['class' => 'form-control', 'id' => 'orgType14', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
-                                    </div>
-                                    <div class="col">
-                                        <b>{{ Form::label('orgnameSponsor14', 'Conducted/Sponsored by: ') }}</b>
-                                        {{ Form::text('orgnameSponsor14', null, ['class' => 'form-control', 'id' => 'orgnameSponsor14', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
-                                    </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor9', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor9', null, ['class' => 'form-control', 'id' => 'orgnameSponsor9', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
                                 </div>
                             </div>
                         </div>
+
+                        <div class="orgLD2-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress10', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress10', null, ['class' => 'form-control', 'id' => 'orgnameAddress10', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom10', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom10', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo10', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo10', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours10', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours10', null, ['class' => 'form-control', 'id' => 'orgnumHours10', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType10', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType10', null, ['class' => 'form-control', 'id' => 'orgType10', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor10', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor10', null, ['class' => 'form-control', 'id' => 'orgnameSponsor10', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD3-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress11', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress11', null, ['class' => 'form-control', 'id' => 'orgnameAddress11', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom11', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom11', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo11', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo11', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours11', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours11', null, ['class' => 'form-control', 'id' => 'orgnumHours11', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType11', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType11', null, ['class' => 'form-control', 'id' => 'orgType11', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor11', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor11', null, ['class' => 'form-control', 'id' => 'orgnameSponsor11', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD4-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress12', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress12', null, ['class' => 'form-control', 'id' => 'orgnameAddress12', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom12', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom12', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo12', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo12', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours12', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours12', null, ['class' => 'form-control', 'id' => 'orgnumHours12', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType12', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType12', null, ['class' => 'form-control', 'id' => 'orgType11', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor12', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor12', null, ['class' => 'form-control', 'id' => 'orgnameSponsor12', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD5-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress13', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress13', null, ['class' => 'form-control', 'id' => 'orgnameAddress13', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom13', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom13', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo13', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo13', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours13', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours13', null, ['class' => 'form-control', 'id' => 'orgnumHours13', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType13', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType13', null, ['class' => 'form-control', 'id' => 'orgType13', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor13', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor13', null, ['class' => 'form-control', 'id' => 'orgnameSponsor13', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD6-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress14', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress14', null, ['class' => 'form-control', 'id' => 'orgnameAddress14', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom14', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom14', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo14', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo14', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours14', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours14', null, ['class' => 'form-control', 'id' => 'orgnumHours14', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType14', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType14', null, ['class' => 'form-control', 'id' => 'orgType14', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor14', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor14', null, ['class' => 'form-control', 'id' => 'orgnameSponsor14', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD7-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress15', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress15', null, ['class' => 'form-control', 'id' => 'orgnameAddress15', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom15', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom15', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo15', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo15', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours15', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours15', null, ['class' => 'form-control', 'id' => 'orgnumHours15', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType15', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType15', null, ['class' => 'form-control', 'id' => 'orgType14', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor15', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor15', null, ['class' => 'form-control', 'id' => 'orgnameSponsor15', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD8-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress16', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress16', null, ['class' => 'form-control', 'id' => 'orgnameAddress16', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom16', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom16', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo16', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo16', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours16', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours16', null, ['class' => 'form-control', 'id' => 'orgnumHours16', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType16', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType16', null, ['class' => 'form-control', 'id' => 'orgType16', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor16', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor16', null, ['class' => 'form-control', 'id' => 'orgnameSponsor16', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orgLD9-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress17', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress17', null, ['class' => 'form-control', 'id' => 'orgnameAddress17', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom17', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom17', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo17', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo17', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours17', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours17', null, ['class' => 'form-control', 'id' => 'orgnumHours17', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType17', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType17', null, ['class' => 'form-control', 'id' => 'orgType17', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor17', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor17', null, ['class' => 'form-control', 'id' => 'orgnameSponsor17', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD10-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress18', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress18', null, ['class' => 'form-control', 'id' => 'orgnameAddress18', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom18', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom18', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo18', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo18', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours18', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours18', null, ['class' => 'form-control', 'id' => 'orgnumHours18', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType18', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType18', null, ['class' => 'form-control', 'id' => 'orgType18', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor18', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor18', null, ['class' => 'form-control', 'id' => 'orgnameSponsor18', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD11-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress19', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress19', null, ['class' => 'form-control', 'id' => 'orgnameAddress19', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom19', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom19', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo19', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo19', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours19', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours19', null, ['class' => 'form-control', 'id' => 'orgnumHours19', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType19', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType19', null, ['class' => 'form-control', 'id' => 'orgType19', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor18', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor18', null, ['class' => 'form-control', 'id' => 'orgnameSponsor18', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD12-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress20', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress20', null, ['class' => 'form-control', 'id' => 'orgnameAddress20', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom20', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom20', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo20', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo20', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours20', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours20', null, ['class' => 'form-control', 'id' => 'orgnumHours20', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType20', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType20', null, ['class' => 'form-control', 'id' => 'orgType20', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor20', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor20', null, ['class' => 'form-control', 'id' => 'orgnameSponsor20', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD13-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress21', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress21', null, ['class' => 'form-control', 'id' => 'orgnameAddress21', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom21', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom21', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo21', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo21', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours21', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours21', null, ['class' => 'form-control', 'id' => 'orgnumHours21', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType21', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType21', null, ['class' => 'form-control', 'id' => 'orgType21', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor20', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor21', null, ['class' => 'form-control', 'id' => 'orgnameSponsor21', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD14-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress22', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress22', null, ['class' => 'form-control', 'id' => 'orgnameAddress22', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom22', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom22', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo22', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo22', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours22', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours22', null, ['class' => 'form-control', 'id' => 'orgnumHours22', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType22', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType22', null, ['class' => 'form-control', 'id' => 'orgType22', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor22', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor22', null, ['class' => 'form-control', 'id' => 'orgnameSponsor22', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD15-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress23', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress23', null, ['class' => 'form-control', 'id' => 'orgnameAddress23', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom23', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom23', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo23', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo23', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours23', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours23', null, ['class' => 'form-control', 'id' => 'orgnumHours23', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType23', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType23', null, ['class' => 'form-control', 'id' => 'orgType23', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor23', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor23', null, ['class' => 'form-control', 'id' => 'orgnameSponsor23', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD16-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress24', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress24', null, ['class' => 'form-control', 'id' => 'orgnameAddress24', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom24', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom24', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo24', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo24', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours24', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours24', null, ['class' => 'form-control', 'id' => 'orgnumHours24', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType24', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType24', null, ['class' => 'form-control', 'id' => 'orgType24', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor24', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor24', null, ['class' => 'form-control', 'id' => 'orgnameSponsor24', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD17-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress25', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress25', null, ['class' => 'form-control', 'id' => 'orgnameAddress25', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom25', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom25', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo25', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo25', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours25', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours25', null, ['class' => 'form-control', 'id' => 'orgnumHours25', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType25', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType25', null, ['class' => 'form-control', 'id' => 'orgType25', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor25', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor25', null, ['class' => 'form-control', 'id' => 'orgnameSponsor25', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD18-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress26', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress26', null, ['class' => 'form-control', 'id' => 'orgnameAddress26', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom26', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom26', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo26', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo26', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours26', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours26', null, ['class' => 'form-control', 'id' => 'orgnumHours26', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType26', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType26', null, ['class' => 'form-control', 'id' => 'orgType26', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor26', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor26', null, ['class' => 'form-control', 'id' => 'orgnameSponsor26', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD19-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress27', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress27', null, ['class' => 'form-control', 'id' => 'orgnameAddress27', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom27', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom27', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo27', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo27', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours27', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours27', null, ['class' => 'form-control', 'id' => 'orgnumHours27', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType27', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType27', null, ['class' => 'form-control', 'id' => 'orgType27', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor27', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor27', null, ['class' => 'form-control', 'id' => 'orgnameSponsor27', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orgLD20-container d-none">
+                            <div class="row">
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameAddress28', 'Title of Learning and Development Interventions/Training Programs: ') }}</b>
+                                    {{ Form::text('orgnameAddress28', null, ['class' => 'form-control', 'id' => 'orgnameAddress27', 'placeholder' => 'Title of Learning and Development Interventions/Training Programs...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('Inclusive Dates of Attendance: ') }}</b><br>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateFrom28', 'From: ') }}</b><br>
+                                        {{ Form::date('orgdateFrom28', '') }}
+                                    </div>
+                                    <div class="form-inline">
+                                        <b>{{ Form::label('orgdateTo28', 'To: ') }}</b><br>
+                                        {{ Form::date('orgdateTo28', '') }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <b>{{ Form::label('orgnumHours28', 'Number of Hours: ') }}</b><br>
+                                    {{ Form::text('orgnumHours28', null, ['class' => 'form-control', 'id' => 'orgnumHours28', 'placeholder' => 'No. of Hours...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgType28', 'Type of LD: ') }}</b>
+                                    {{ Form::text('orgType28', null, ['class' => 'form-control', 'id' => 'orgType28', 'placeholder' => 'Type of LD...', 'autocomplete' => 'off']) }}
+                                </div>
+                                <div class="col">
+                                    <b>{{ Form::label('orgnameSponsor28', 'Conducted/Sponsored by: ') }}</b>
+                                    {{ Form::text('orgnameSponsor28', null, ['class' => 'form-control', 'id' => 'orgnameSponsor28', 'placeholder' => 'Conducted/Sponsored by...', 'autocomplete' => 'off']) }}
+                                </div>
+                            </div>
+                        </div>
+
                         <br>
                         <div class="col-1 row px-0">
                             <div class="col-5 offset-1 px-0">
@@ -3191,7 +3666,7 @@ $group = [
                         <b>{{ Form::label('address41', 'Address: ') }}</b>
                         {{ Form::text('address41', null, ['class' => 'form-control', 'id' => '41-a-answer-address', 'placeholder' => 'Address', 'autocomplete' => 'off']) }}
                         <b>{{ Form::label('contactno', 'Telephone Number: ') }}</b>
-                        {{ Form::number('contactno41', null, ['class' => 'form-control', 'id' => '41-a-answer-contact-no', 'placeholder' => 'Tel No']) }}<br>
+                        {{ Form::number('contactno41', null, ['class' => 'form-control', 'id' => 'contactno41', 'placeholder' => 'Tel No']) }}<br>
 
                         {{-- enabled/disabled reference forms --}}
                         <div class="41-b-container d-none">
@@ -3555,63 +4030,174 @@ $group = [
             {{-- c3 second incrementing button --}}
             <script>
                 $(function() {
-                    var refCount = 5;
-                    var counter = 0
+                    var refCount = 19;
+                    var counter = 0;
 
                     $('#add-refc31').on('click', function(e) {
                         e.preventDefault();
 
-                        if (refCount <= 5 && counter == 0) {
+                        if (refCount <= 19 && counter == 0) {
                             $('.orgLD1-container').removeClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter++;
-                        } else if (refCount <= 5 && counter == 1) {
+                        } else if (refCount <= 19 && counter == 1) {
                             $('.orgLD2-container').removeClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter++;
-                        } else if (refCount <= 5 && counter == 2) {
+                        } else if (refCount <= 19 && counter == 2) {
                             $('.orgLD3-container').removeClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter++;
-                        } else if (refCount <= 5 && counter == 3) {
+                        } else if (refCount <= 19 && counter == 3) {
                             $('.orgLD4-container').removeClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter++;
-                        } else if (refCount <= 5 && counter == 4) {
+                        } else if (refCount <= 19 && counter == 4) {
                             $('.orgLD5-container').removeClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter++;
-                        } else if (refCount <= 5 && counter == 5) {
+                        } else if (refCount <= 19 && counter == 5) {
                             $('.orgLD6-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 6) {
+                            $('.orgLD7-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 7) {
+                            $('.orgLD8-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 8) {
+                            $('.orgLD9-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 9) {
+                            $('.orgLD10-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 10) {
+                            $('.orgLD11-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 11) {
+                            $('.orgLD12-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 12) {
+                            $('.orgLD13-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 13) {
+                            $('.orgLD14-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 14) {
+                            $('.orgLD15-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 15) {
+                            $('.orgLD16-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 16) {
+                            $('.orgLD17-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 17) {
+                            $('.orgLD18-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 18) {
+                            $('.orgLD19-container').removeClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter++;
+                        } else if (refCount <= 19 && counter == 19) {
+                            $('.orgLD20-container').removeClass('d-none');
                             $('#add-refc31').attr('disabled', true);
-
                         }
                     });
 
                     $('#minus-refc31').on('click', function(e) {
                         e.preventDefault();
 
-                        if (refCount <= 5 && counter == 5) {
-                            $('.orgLD6-container').addClass('d-none');
+                        if (refCount <= 19 && counter == 19) {
+                            $('.orgLD20-container').addClass('d-none');
                             $('#add-refc31').attr('disabled', false);
                             counter--;
-                        } else if (refCount <= 5 && counter == 4) {
+                        } else if (refCount <= 19 && counter == 18) {
+                            $('.orgLD19-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 17) {
+                            $('.orgLD18-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 16) {
+                            $('.orgLD17-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 15) {
+                            $('.orgLD16-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 14) {
+                            $('.orgLD15-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 13) {
+                            $('.orgLD14-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 12) {
+                            $('.orgLD13-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 11) {
+                            $('.orgLD12-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 10) {
+                            $('.orgLD11-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 9) {
+                            $('.orgLD10-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 8) {
+                            $('.orgLD9-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 7) {
+                            $('.orgLD8-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 6) {
+                            $('.orgLD7-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 5) {
+                            $('.orgLD6-container').addClass('d-none');
+                            $('#minus-refc31').attr('disabled', false);
+                            counter--;
+                        } else if (refCount <= 19 && counter == 4) {
                             $('.orgLD5-container').addClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter--;
-                        } else if (refCount <= 5 && counter == 3) {
+                        } else if (refCount <= 19 && counter == 3) {
                             $('.orgLD4-container').addClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter--;
-                        } else if (refCount <= 5 && counter == 2) {
+                        } else if (refCount <= 19 && counter == 2) {
                             $('.orgLD3-container').addClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter--;
-                        } else if (refCount <= 5 && counter == 1) {
+                        } else if (refCount <= 19 && counter == 1 ) {
                             $('.orgLD2-container').addClass('d-none');
                             $('#minus-refc31').attr('disabled', false);
                             counter--;
-                        } else if (refCount <= 5 && counter == 0) {
+                        } else if (refCount <= 19 && counter == 0) {
                             $('.orgLD1-container').addClass('d-none');
                             $('#minus-refc31').attr('disabled', true);
                         }

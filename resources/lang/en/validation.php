@@ -578,6 +578,118 @@ return [
         'orgType14' => ['max' => 'Maximum amount of characters reached'],
         'orgnameSponsor14' => ['max' => 'Maximum amount of characters reached'],
 
+        'orgnameAddress15' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom15' => ['before' => 'Enter a valid date',],
+        'orgdateTo15' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours14
+        'orgPosition15' => ['max' => 'Maximum amount of characters reached'],
+        'orgType15' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor15' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress16' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom16' => ['before' => 'Enter a valid date',],
+        'orgdateTo16' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours16
+        'orgPosition16' => ['max' => 'Maximum amount of characters reached'],
+        'orgType16' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor16' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress17' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom17' => ['before' => 'Enter a valid date',],
+        'orgdateTo17' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours17
+        'orgPosition17' => ['max' => 'Maximum amount of characters reached'],
+        'orgType17' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor17' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress18' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom18' => ['before' => 'Enter a valid date',],
+        'orgdateTo18' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours18
+        'orgPosition18' => ['max' => 'Maximum amount of characters reached'],
+        'orgType18' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor18' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress19' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom19' => ['before' => 'Enter a valid date',],
+        'orgdateTo19' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours19
+        'orgPosition19' => ['max' => 'Maximum amount of characters reached'],
+        'orgType19' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor19' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress20' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom120' => ['before' => 'Enter a valid date',],
+        'orgdateTo20' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours20
+        'orgPosition20' => ['max' => 'Maximum amount of characters reached'],
+        'orgType20' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor20' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress21' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom121' => ['before' => 'Enter a valid date',],
+        'orgdateTo21' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours21
+        'orgPosition21' => ['max' => 'Maximum amount of characters reached'],
+        'orgType21' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor21' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress22' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom122' => ['before' => 'Enter a valid date',],
+        'orgdateTo22' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours22
+        'orgPosition22' => ['max' => 'Maximum amount of characters reached'],
+        'orgType22' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor22' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress23' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom123' => ['before' => 'Enter a valid date',],
+        'orgdateTo23' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours23
+        'orgPosition23' => ['max' => 'Maximum amount of characters reached'],
+        'orgType23' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor23' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress24' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom124' => ['before' => 'Enter a valid date',],
+        'orgdateTo24' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours24
+        'orgPosition24' => ['max' => 'Maximum amount of characters reached'],
+        'orgType24' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor24' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress25' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom125' => ['before' => 'Enter a valid date',],
+        'orgdateTo25' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours25
+        'orgPosition25' => ['max' => 'Maximum amount of characters reached'],
+        'orgType25' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor25' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress26' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom126' => ['before' => 'Enter a valid date',],
+        'orgdateTo26' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours26
+        'orgPosition26' => ['max' => 'Maximum amount of characters reached'],
+        'orgType26' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor26' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress27' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom127' => ['before' => 'Enter a valid date',],
+        'orgdateTo27' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours27
+        'orgPosition27' => ['max' => 'Maximum amount of characters reached'],
+        'orgType27' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor27' => ['max' => 'Maximum amount of characters reached'],
+
+        'orgnameAddress28' => ['max' => 'Maximum amount of characters reached'],
+        'orgdateFrom128' => ['before' => 'Enter a valid date',],
+        'orgdateTo28' => ['required_with' => 'Input a date'], ['after' => 'Dates should not overlap'],
+        //orgnumHours28
+        'orgPosition28' => ['max' => 'Maximum amount of characters reached'],
+        'orgType28' => ['max' => 'Maximum amount of characters reached'],
+        'orgnameSponsor28' => ['max' => 'Maximum amount of characters reached'],
+
         'orgnameSkill1' => ['max' => 'Maximum amount of characters reached'],
         'orgnameDistinct1' => ['max' => 'Maximum amount of characters reached'],
         'orgnameMembership1' => ['max' => 'Maximum amount of characters reached'],
