@@ -38,10 +38,10 @@ return [
         'binary' => '"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf"',
         'timeout' => false,
         'options' => [
-                        'page-height' => '230mm',
+                        'page-height' => '234mm',
                         'page-width'  => '150.9mm',
                         'orientation'=>'portrait',
-                        'margin-top'=>'4.9mm',
+                        'margin-top'=>'9mm',
                         'margin-bottom'=>'5mm',
                         'margin-right'=>'7mm',
                         'margin-left'=>'18mm',

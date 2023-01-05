@@ -73,11 +73,11 @@ class PostController extends Controller
             'sex' => 'required',
             'placeofBirth' => 'required|max:64',
             'civilStatus' => 'required',
-            'gsisno' => 'max:11|nullable',
-            'pagibigno' => 'max:12|nullable',
-            'philhealth' => 'max:12|nullable',
-            'sssno' => 'max:9|nullable',
-            'tinno' => 'max:12|nullable',
+            'gsisno' => 'max:14|nullable',
+            'pagibigno' => 'max:14|nullable',
+            'philhealth' => 'max:14|nullable',
+            'sssno' => 'max:14|nullable',
+            'tinno' => 'max:14|nullable',
             'citizens' => 'required',
             'citizens2' => 'required',
             'country' => 'required_if:citizens2,by naturalization',
@@ -1130,7 +1130,7 @@ class PostController extends Controller
         'datefrom28', 'dateto28', 'position28', 'department28', 'salary28','paygrade28', 'appointment28', 'governmentserv28');
 
         // c3 form data
-        $orgnameAddress1 = $request->orgnameAddess1;
+        $orgnameAddress1 = $request->orgnameAddress1;
         $orgdateFrom1 = $request->orgdateFrom1;
         $orgdateTo1 = $request->orgdateTo1;
         $orgnumHours1 = $request->input('orgnumHours1');

@@ -4509,7 +4509,7 @@ td
  {
  mso-number-format:'\@';
  text-align:general;
- vertical-align:middle;
+ vertical-align:right;
  white-space:nowrap;
  background:auto;
  mso-pattern:auto;
@@ -15434,10 +15434,8 @@ td
 <td colspan='14' height='14' class='x669' style='height:10.5pt;'><div style='float:right'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CS FORM 212 (Revised 2017), Page 1 of 4</div></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
- <tr height='20' style='mso-height-source:userset;height:15pt'>
-<td colspan='30' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
- </tr>
- <tr height='20' style='mso-height-source:userset;height:15pt'>
+
+ <tr height='10' style='mso-height-source:userset;height:15pt'>
 <td colspan='30' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
@@ -15456,11 +15454,11 @@ td
 <td colspan='30' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
  </tr>
 
- <tr height='20' style='mso-height-source:userset;height:15pt'>
+ <tr height='20' style='mso-height-source:userset;height:5pt'>
 <td colspan='13' height='20' class='x756' style='height:15pt;'></td>
 <td colspan='17' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
- <tr height='20' style='mso-height-source:userset;height:15pt'>
+ <tr height='20' style='mso-height-source:userset;height:11pt'>
 <td colspan='13' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
 <td height='20' width='59' style='text-align: left;height:15pt;width:44.25pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:50;margin-left:59px;margin-top:19px;width:145px;height:27px'><img width='145' height='27' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAAAcCAYAAACKweYmAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAHJJREFUaIHt0sENwgAAxDCKmK5PBmel6xBEqkD2BHnk2LYHfGHb+bw7gv9gJBJGImEkEkYiYSQSRiJhJBJGImEkEkYiYSQSRiJhJBJGImEkEkYiYSQSRiJhJBJGImEkEkYiYSQSRiJhJBKvbe+7I/h5nwsN2Qua9QIp8AAAAABJRU5ErkJggg==" name='TextBox 28'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='20' class='x101' width='59' style='height:15pt;width:44.25pt;'></td></tr></table></span></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
@@ -15911,6 +15909,7 @@ td
  <tr height='37' style='mso-height-source:userset;height:27.75pt'>
 <td colspan='30' height='37' style='mso-ignore:colspan;height:27.75pt;'></td>
  </tr>
+
  <tr height='23' style='mso-height-source:userset;height:17.25pt'>
 <td colspan='30' height='23' style='mso-ignore:colspan;height:17.25pt;'></td>
  </tr>
@@ -15926,6 +15925,10 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='30' height='20' style='mso-ignore:colspan;height:15pt;'></td>
  </tr>
+ <tr height='10' style='mso-height-source:userset;height:5pt'>
+<td colspan='30' height='20' style='mso-ignore:colspan;height:15pt;'></td>
+ </tr>
+
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='14' height='20' style='mso-ignore:colspan;height:15pt;'></td>
 <td height='20' width='64' style='text-align: left;height:15pt;width:48pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:54;margin-left:1px;margin-top:1px;width:130px;height:119px'><img width='130' height='119' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAAB4CAYAAADRyEG8AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAARxJREFUeJzt0sENgwAAxLC26pbMy1zHLyuAhD1BHvlu24fX23b87o7gOcxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQMxAzEDMQP7bjrsjeITzAiaNDGONgmERAAAAAElFTkSuQmCC" name='TextBox 44'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='20' width='64' style='height:15pt;width:48pt;'></td></tr></table></span></td>
@@ -16320,11 +16323,11 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='30' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
  </tr>
- <tr height='20' style='mso-height-source:userset;height:15pt'>
+ <tr height='25' style='mso-height-source:userset;height:20pt'>
 <td colspan='30' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
  </tr>
- <tr height='20' style='mso-height-source:userset;height:15pt'>
-<td colspan='30' height='20' class='x101' style='mso-ignore:colspan;height:15pt;'></td>
+ <tr height='5' style='mso-height-source:userset;height:5pt'>
+<td colspan='30' height='5' class='x101' style='mso-ignore:colspan;height:5pt;'></td>
  </tr>
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td colspan='13' height='19' class='x192' style='mso-ignore:colspan;height:14.25pt;'></td>
@@ -16950,18 +16953,20 @@ td
  </tr>
  <tr height='15' style='mso-height-source:userset;height:11.25pt'>
 <td height='15' class='x222' style='height:11.25pt;'></td>
-<td colspan='3' class='x246' style='mso-ignore:colspan;'>{{ $valid44 }}</td>
-<td colspan='2' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='2' class='x246' style='mso-ignore:colspan;'></td>
+<td class='x249'>{{$valid44}}</td>
+<td colspan='1' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
+<td colspan='1' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='4' class='x432' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>Signature (Sign inside the box)</td>
 <td class='x249'></td>
 <td colspan='2' class='x229' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
-<td class='x249'></td>
+
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='15' style='mso-height-source:userset;height:11.25pt'>
 <td height='15' class='x222' style='height:11.25pt;'></td>
-<td height='14' width='70' style='text-align: left;height:10.5pt;width:52.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:41;margin-left:8px;margin-top:2px;width:127px;height:22px'><img width='127' height='22' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAXCAYAAAAiGpAkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAw9JREFUaIHt10uo1VUUx/GP95o9rNSLkWUgkWjp5SohFgYqaRYI5aBBYYmhE7NBXayJF4NGDXooag+cFKVWCEWDiOhBPihEeyBJEYHm7YFUEISppafB2hf/97DP1b90QHR/R////q+z9m+vvdba+1AoFAqFQqFQKBTOT4bVsJ2OvvR8HJ9hE45mbEegB3uG8HcD5uCLit8T+BbPYSY68X4NjXUYjvW4HA/iKjyCJ9s03zlHRw3bcWLTH8UaXI1XW9jOxNLT+FsoNrrq9/H07RmRHBNr6KvLJFyLJel9pEjGC4bhNe2PoD8992G/COIaXIIurMQyzMLt2IWNGIt/0vfDIkE24o4mv2/gJexN72NEhVb9HxRdp0skzhLRgXLzSL/dhFH4N31bjW4sxuuVNXbjadEVv8ETmbG9InabMRfTsK6F1qmYJxJtDB7CLzX1t4XOGrYTMQXvVsbuwjF8KoJzQgRjGy4Ti1mJ30Rl/44V+EhU/tvJ7wO4BguwCi+Io6MDJ0XAq/678Wvy3RCte2FmnveSzlU4gMfwB3rxrNiQp5LNaCzCFWJzezEB+9I81bErcSl2Jy2T8TFmZLQew/W4P61nzlnobwt12n6OcfhKLGybqPgRTTbTRVDfEQu7GLOxo2JzGJ/jA9xjcCX+kPE/NdnDmyL5cvMM0IPt6XlHem/Fy7gT34mjp9FiLEdOK5FA8JNImrr620Ldtl/ltvT7pfgQW/CwqIyGU5fJQyLwr6Rvt4pAPl/x1a/1xa4v4/+A2IRdmC/aZ26eAX7EjfgaN+HnIdZ1i+gU/WITZ2B809hJ/JXsJ5xGK4OTZdhZ6G8LdTf/bpGxDfyN+3CzyNS5IqsbItgLcC824C3R7qaIIF4nquBM2Jnx3yvuBrPFsbEYn2TmGWAttiZNk7A8+crxp6jGL8WxuE+05erYayIJekSF7h9C6/eZOV6sqf+cZqS45FTpNPhYGe3UHaPrf/BPXKCa/65W52mmy5kddRclP0ONdYikaKaV1hx19RcKhUKhUCgUCoVCoVAoFAqD+Q/S68rpCFWn6wAAAABJRU5ErkJggg==" name='TextBox 20'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='14' class='x765' width='70' style='height:10.5pt;width:52.5pt;'></td></tr></table></span></td>
-<td colspan='2' class='x245' style='mso-ignore:colspan;'>{{ $issuancedate44 }}</td>
+<td height='14' width='70' style='text-align: left;height:10.5pt;width:52.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:41;margin-left:8px;margin-top:2px;width:127px;height:22px'><img width='127' height='22' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAXCAYAAAAiGpAkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAw9JREFUaIHt10uo1VUUx/GP95o9rNSLkWUgkWjp5SohFgYqaRYI5aBBYYmhE7NBXayJF4NGDXooag+cFKVWCEWDiOhBPihEeyBJEYHm7YFUEISppafB2hf/97DP1b90QHR/R////q+z9m+vvdba+1AoFAqFQqFQKBTOT4bVsJ2OvvR8HJ9hE45mbEegB3uG8HcD5uCLit8T+BbPYSY68X4NjXUYjvW4HA/iKjyCJ9s03zlHRw3bcWLTH8UaXI1XW9jOxNLT+FsoNrrq9/H07RmRHBNr6KvLJFyLJel9pEjGC4bhNe2PoD8992G/COIaXIIurMQyzMLt2IWNGIt/0vfDIkE24o4mv2/gJexN72NEhVb9HxRdp0skzhLRgXLzSL/dhFH4N31bjW4sxuuVNXbjadEVv8ETmbG9InabMRfTsK6F1qmYJxJtDB7CLzX1t4XOGrYTMQXvVsbuwjF8KoJzQgRjGy4Ti1mJ30Rl/44V+EhU/tvJ7wO4BguwCi+Io6MDJ0XAq/678Wvy3RCte2FmnveSzlU4gMfwB3rxrNiQp5LNaCzCFWJzezEB+9I81bErcSl2Jy2T8TFmZLQew/W4P61nzlnobwt12n6OcfhKLGybqPgRTTbTRVDfEQu7GLOxo2JzGJ/jA9xjcCX+kPE/NdnDmyL5cvMM0IPt6XlHem/Fy7gT34mjp9FiLEdOK5FA8JNImrr620Ldtl/ltvT7pfgQW/CwqIyGU5fJQyLwr6Rvt4pAPl/x1a/1xa4v4/+A2IRdmC/aZ26eAX7EjfgaN+HnIdZ1i+gU/WITZ2B809hJ/JXsJ5xGK4OTZdhZ6G8LdTf/bpGxDfyN+3CzyNS5IqsbItgLcC824C3R7qaIIF4nquBM2Jnx3yvuBrPFsbEYn2TmGWAttiZNk7A8+crxp6jGL8WxuE+05erYayIJekSF7h9C6/eZOV6sqf+cZqS45FTpNPhYGe3UHaPrf/BPXKCa/65W52mmy5kddRclP0ONdYikaKaV1hx19RcKhUKhUCgUCoVCoVAoFAqD+Q/S68rpCFWn6wAAAABJRU5ErkJggg==" name='TextBox 20'>{{ $issuancedate44 }}</span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='14' class='x765' width='70' style='height:10.5pt;width:52.5pt;'></td></tr></table></span></td>
+<td colspan='2' class='x245' style='mso-ignore:colspan;'></td>
 <td colspan='2' class='x273' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='4' class='x241' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td class='x238'></td>
@@ -17007,35 +17012,11 @@ td
 <td colspan='14' height='13' class='x231' style='mso-ignore:colspan;border-right:2px solid windowtext;height:9.75pt;'></td>
 <td colspan='16' class='x234' style='mso-ignore:colspan;'></td>
  </tr>
- <tr height='14' style='mso-height-source:userset;height:10.5pt'>
+ <tr height='12' style='mso-height-source:userset;height:10.5pt'>
 <td colspan='14' height='12' class='x721' style='height:9pt;'><div style='float:right'>CS FORM 212 (Revised 2017),<span style='mso-spacerun:yes;'>&nbsp; </span>Page 4 of 4</div></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
- <tr height='20' style='mso-height-source:userset;height:15pt'>
-<td colspan='13' height='20' class='x221' style='mso-ignore:colspan;height:15pt;'></td>
-<td colspan='17' class='x30' style='mso-ignore:colspan;'></td>
- </tr>
 
-<![if supportMisalignedColumns]>
- <tr height='0' style='display:none'>
-  <td width='17' style='width:12.75pt;'></td>
-  <td width='70' style='width:52.5pt;'></td>
-  <td width='80' style='width:60pt;'></td>
-  <td width='87' style='width:65.25pt;'></td>
-  <td width='49' style='width:36.75pt;'></td>
-  <td width='54' style='width:40.5pt;'></td>
-  <td width='52' style='width:39pt;'></td>
-  <td width='48' style='width:36pt;'></td>
-  <td width='44' style='width:33pt;'></td>
-  <td width='74' style='width:55.5pt;'></td>
-  <td width='101' style='width:75.75pt;'></td>
-  <td width='80' style='width:60pt;'></td>
-  <td width='62' style='width:46.5pt;'></td>
-  <td width='59' style='width:44.25pt;'></td>
-  <td width='1024' colspan='16' style='width:768pt;mso-ignore:colspan;'></td>
- </tr>
- <![endif]>
-</table>
 
 </body>
 
