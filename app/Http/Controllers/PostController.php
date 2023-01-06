@@ -14,7 +14,7 @@ use Maatwebsite\Excel\Facades\Excel;
 
 use function PHPSTORM_META\map;
 
-class PostController extends Controller
+class PostController 
 {
     //storing functions
     public function c1form(Request $request){
@@ -177,49 +177,49 @@ class PostController extends Controller
             'rating' => 'numeric|min:0|max:100|nullable',
             'placeofexam' => 'max:64|nullable',
             'dateofexam' => 'before:today|nullable',
-            'licenseno' => 'max:12|nullable',
+            'licenseno' => 'max:15|nullable',
             'validity' => 'required_with:licenseno|nullable',
 
             'eligibility2' => 'max:64|nullable',
             'rating2' => 'numeric|min:0|max:100|nullable',
             'placeofexam2' => 'max:64|nullable',
             'dateofexam2' => 'before:today|nullable',
-            'licenseno2' => 'max:12|nullable',
+            'licenseno2' => 'max:15|nullable',
             'validity2' => 'required_with:licenseno2|nullable',
 
             'eligibility3' => 'max:64|nullable',
             'rating3' => 'numeric|min:0|max:100|nullable',
             'placeofexam3' => 'max:64|nullable',
             'dateofexam3' => 'before:today|nullable',
-            'licenseno3' => 'max:12|nullable',
+            'licenseno3' => 'max:15|nullable',
             'validity3' => 'required_with:licenseno3|nullable',
 
             'eligibility4' => 'max:64|nullable',
             'rating4' => 'numeric|min:0|max:100|nullable',
             'placeofexam4' => 'max:64|nullable',
             'dateofexam4' => 'before:today|nullable',
-            'licenseno4' => 'max:12|nullable',
+            'licenseno4' => 'max:15|nullable',
             'validity4' => 'required_with:licenseno4|nullable',
 
             'eligibility5' => 'max:64|nullable',
             'rating5' => 'numeric|min:0|max:100|nullable',
             'placeofexam5' => 'max:64|nullable',
             'dateofexam5' => 'before:today|nullable',
-            'licenseno5' => 'max:12|nullable',
+            'licenseno5' => 'max:15|nullable',
             'validity5' => 'required_with:licenseno5|nullable',
 
             'eligibility6' => 'max:64|nullable',
             'rating6' => 'numeric|min:0|max:100|nullable',
             'placeofexam6' => 'max:64|nullable',
             'dateofexam6' => 'before:today|nullable',
-            'licenseno6' => 'max:12|nullable',
+            'licenseno6' => 'max:15|nullable',
             'validity6' => 'required_with:licenseno6|nullable',
 
             'eligibility7' => 'max:64|nullable',
             'rating7' => 'numeric|min:0|max:100|nullable',
             'placeofexam7' => 'max:64|nullable',
             'dateofexam7' => 'before:today|nullable',
-            'licenseno7' => 'max:12|nullable',
+            'licenseno7' => 'max:15|nullable',
             'validity7' => 'required_with:licenseno7|nullable',
 
             'datefrom' => 'before:dateto|nullable',

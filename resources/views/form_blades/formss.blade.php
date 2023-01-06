@@ -1238,7 +1238,7 @@ $group = [
                                         {{ Form::text('placeofexam', '', ['class' => 'form-control']) }}
 
                                         {{ Form::label('licenseno', 'Licsense number (if applicable)') }}
-                                        {{ Form::number('licenseno', '', ['class' => 'form-control']) }}
+                                        {{ Form::text('licenseno', '', ['class' => 'form-control']) }}
 
                                         {{ Form::label('validity', 'Date of Validity') }}<br>
                                         {{ Form::date('validity', '', ['class' => '']) }}
@@ -1265,7 +1265,7 @@ $group = [
                                             {{ Form::label('placeofexam2', 'Place of Examination/Conferment') }}
                                             {{ Form::text('placeofexam2', '', ['class' => 'form-control']) }}
                                             {{ Form::label('licenseno2', 'License number (if applicable)') }}
-                                            {{ Form::number('licenseno2', '', ['class' => 'form-control']) }}
+                                            {{ Form::text('licenseno2', '', ['class' => 'form-control']) }}
                                             {{ Form::label('validity2', 'Date of Validity') }}<br>
                                             {{ Form::date('validity2', '', ['class' => '']) }}<br>
                                         </div>
@@ -1291,7 +1291,7 @@ $group = [
                                             {{ Form::label('placeofexam3', 'Place of Examination/Conferment') }}
                                             {{ Form::text('placeofexam3', '', ['class' => 'form-control']) }}
                                             {{ Form::label('licenseno3', 'License number (if applicable)') }}
-                                            {{ Form::number('licenseno3', '', ['class' => 'form-control']) }}
+                                            {{ Form::text('licenseno3', '', ['class' => 'form-control']) }}
                                             {{ Form::label('validity3', 'Date of Validity') }}<br>
                                             {{ Form::date('validity3', '', ['class' => '']) }}<br>
                                         </div>
@@ -1317,7 +1317,7 @@ $group = [
                                             {{ Form::label('placeofexam4', 'Place of Examination/Conferment') }}
                                             {{ Form::text('placeofexam4', '', ['class' => 'form-control']) }}
                                             {{ Form::label('licenseno4', 'License number (if applicable)') }}
-                                            {{ Form::number('licenseno4', '', ['class' => 'form-control']) }}
+                                            {{ Form::text('licenseno4', '', ['class' => 'form-control']) }}
                                             {{ Form::label('validity4', 'Date of Validity') }}<br>
                                             {{ Form::date('validity4', '', ['class' => '']) }}<br>
                                         </div>
@@ -1343,7 +1343,7 @@ $group = [
                                             {{ Form::label('placeofexam5', 'Place of Examination/Conferment') }}
                                             {{ Form::text('placeofexam5', '', ['class' => 'form-control']) }}
                                             {{ Form::label('licenseno5', 'License number (if applicable)') }}
-                                            {{ Form::number('licenseno5', '', ['class' => 'form-control']) }}
+                                            {{ Form::text('licenseno5', '', ['class' => 'form-control']) }}
                                             {{ Form::label('validity5', 'Date of Validity') }}<br>
                                             {{ Form::date('validity5', '', ['class' => '']) }}<br>
                                         </div>
@@ -1369,7 +1369,7 @@ $group = [
                                             {{ Form::label('placeofexam6', 'Place of Examination/Conferment') }}
                                             {{ Form::text('placeofexam6', '', ['class' => 'form-control']) }}
                                             {{ Form::label('licenseno6', 'License number (if applicable)') }}
-                                            {{ Form::number('licenseno6', '', ['class' => 'form-control']) }}
+                                            {{ Form::text('licenseno6', '', ['class' => 'form-control']) }}
                                             {{ Form::label('validity6', 'Date of Validity') }}<br>
                                             {{ Form::date('validity6', '', ['class' => '']) }}<br>
                                         </div>
@@ -1395,7 +1395,7 @@ $group = [
                                             {{ Form::label('placeofexam7', 'Place of Examination/Conferment') }}
                                             {{ Form::text('placeofexam7', '', ['class' => 'form-control']) }}
                                             {{ Form::label('licenseno7', 'License number (if applicable)') }}
-                                            {{ Form::number('licenseno7', '', ['class' => 'form-control']) }}
+                                            {{ Form::text('licenseno7', '', ['class' => 'form-control']) }}
                                             {{ Form::label('validity7', 'Date of Validity') }}<br>
                                             {{ Form::date('validity7', '', ['class' => '']) }}<br>
                                         </div>
@@ -3627,7 +3627,7 @@ $group = [
                             {{ Form::label('40b', 'NO') }}<br>
 
                             {{ Form::label('b40details', 'If YES, please specify ID No: ') }}
-                            {{ Form::number('b40details', null, ['class' => 'form-control', 'id' => '40-b-answer-details', 'disabled']) }}
+                            {{ Form::text('b40details', null, ['class' => 'form-control', 'id' => '40-b-answer-details', 'disabled']) }}
 
                             <b>{{ Form::label('40c', 'c.   Are you a solo parent?') }}<br></b>
                             {{ Form::radio('40c', '1') }}
@@ -3715,7 +3715,7 @@ $group = [
                             <b>{{ Form::label('govid44', 'Government Issued ID: ') }}</b>
                             {{ Form::select('govid44', $validID, null, ['class' => 'form-control', 'placeholder' => 'Select ID...']) }}
                             <b>{{ Form::label('valid44', 'ID/License/Passport No.: ') }}</b>
-                            {{ Form::number('valid44', null, ['class' => 'form-control', 'id' => '42-answer-valid-id-no', 'placeholder' => 'ID No.', 'autocomplete' => 'off', 'maxlength' => 12]) }}
+                            {{ Form::text('valid44', null, ['class' => 'form-control', 'id' => '42-answer-valid-id-no', 'placeholder' => 'ID No.', 'autocomplete' => 'off', 'maxlength' => 12]) }}
                             {{ Form::label('issuanceplace44', 'Place of Issuance: ') }}
                             {{ Form::text('issuanceplace44', null, ['class' => 'form-control', 'id' => '42-answer-issuance-details', 'placeholder' => 'Place of Issuance', 'autocomplete' => 'off']) }}<br>
                             {{ Form::label('issuancedate44', 'Date of Issuance: ') }}
