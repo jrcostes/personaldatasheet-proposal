@@ -738,8 +738,8 @@ $group = [
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" for="inputGroupSelect01">Select</label>
                                 </div>
-                                <select class="form-select" aria-label="Default select example" id="citizens2"
-                                    name="citizens2" aria-placeholder="Select one...">
+                                <select class="form-select" aria-label="Default select example" id="dualcitizenType"
+                                    name="dualcitizenType" aria-placeholder="Select one...">
                                     <option value="by birth">By Birth</option>
                                     <option value="by naturalization">By Naturalization</option>
                                 </select>
