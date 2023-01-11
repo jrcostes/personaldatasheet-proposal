@@ -155,7 +155,7 @@
                     <img src="https://p.kindpng.com/picc/s/352-3521516_transparent-megaphone-png-someone-speaking-out-animated-png.png" style="width:250px; height:250px;  display: block; margin-left: auto; margin-right: auto;">
 
                         <p>
-                           <br> By continuing to browse this website, you agree to DOST Region XI’ Data Privacy Statement. The full text of the statement can be accessed through this
+                           <br> By continuing to browse this website, you agree to DOST Region XI’ Data Privacy Policy. The full text of the Policy can be accessed through this
                          <i> <a href="https://www.sei.dost.gov.ph/index.php/about-dost-sei/data-privacy-notice#:~:text=The%20DOST-SEI%2C%20in%20compliance,access%20to%20the%20collected%20information" target="_blank" style="text-decoration: none; color: blue; text-align: center;">link</a></i>
                         <br>
                         </p>
