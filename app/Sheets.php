@@ -9,7 +9,7 @@ class Sheets extends Model
 {
     use LogsActivity;
     protected $fillable = [
-         'surname', 'firstname', 'firstnameext', 'midname', 'birthdate', 'sex','civilStatus','civilOthers',
+         'id','surname', 'firstname', 'firstnameext', 'midname', 'birthdate', 'sex','civilStatus','civilOthers',
          'placeofBirth', 'height', 'weight', 'bloodType','gsisno', 'pagibigno', 'philhealthno',
          'sssno', 'tinno', 'agencyemp', 'citizens','dualcitizenType', 'country', 'residentialhouse', 'residentialst',
          'residentialsudv', 'residentialcity', 'residentialbrgy', 'residentialprv', 'residentialzip',
@@ -24,7 +24,9 @@ class Sheets extends Model
         'scholarhiphs', 'vocname', 'vocdeg', 'attendancefromvoc', 'attendancetovoc','vocunitLevel', 'yeargradvoc',
         'scholarshipvoc', 'colname', 'coldeg', 'attendancefromcol', 'attendancetocol', 'colunitLevel', 'yeargradcol',
         'scholarshipcol', 'gradname', 'graddeg', 'attendancefromgrad', 'attendancetograd', 'gradunitLevel', 'yeargraddeg',
-        'scholarshipgrad','yeargrad','yeargrad'
+        'scholarshipgrad','yeargrad','yeargrad',
+
+        'c1answers'
 
     ];
     protected static $logName = 'system';
