@@ -16360,14 +16360,14 @@ td
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>a. within the third degree?</td>
 <td colspan='5' class='x201' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-@if ($sex == 'male' )
+@if ($a34 == '1' )
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
         <input type="radio" id="Yes"> <label class="radio">No</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-@elseif ($sex == 'female')
+@elseif ($a34 == '0')
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
         <input type="radio" id="No" checked> <label class="radio">No</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16383,14 +16383,14 @@ td
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>b. within the fourth degree (for Local Government Unit - Career Employees)?</td>
 <td colspan='5' class='x202' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($b34 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($b34 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16441,14 +16441,14 @@ td
 <td colspan='8' class='x295' style='border-right:1px solid windowtext;'>a. Have you ever been found guilty of any administrative offense?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($a35 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($a35 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16487,14 +16487,14 @@ td
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>b. Have you been criminally charged before any court?<br><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 <td colspan='5' class='x147' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($b35 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($b35 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16541,14 +16541,14 @@ td
 <td colspan='8' rowspan='4' height='67' class='x321' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:50.25pt;'>Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by<span style='mso-spacerun:yes;'>&nbsp; </span>any court or tribunal?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($a36 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($a36 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16584,14 +16584,14 @@ td
 <td colspan='8' rowspan='4' height='64' class='x321' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:48pt;'>Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($a37 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($a37 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16627,14 +16627,14 @@ td
 <td colspan='8' rowspan='2' height='39' class='x295' style='border-right:1px solid windowtext;height:29.25pt;'>a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($a38 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($a38 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16664,14 +16664,14 @@ td
 <td colspan='8' rowspan='3' height='46' class='x297' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:34.5pt;'>b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?</td>
 <td colspan='4' class='x723'>
     <php>
-    @if ($sex == 'male' )
+    @if ($b38 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($b38 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16702,14 +16702,14 @@ td
 <td colspan='8' rowspan='4' height='84' class='x295' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:63pt;'>Have you acquired the status of an immigrant or permanent resident of another country?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($a39 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($a39 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16745,14 +16745,14 @@ td
 <td colspan='8' rowspan='2' height='39' class='x295' style='border-right:1px solid windowtext;height:29.25pt;'><font class="font17" style="text-decoration: none;">Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972)</font><font class="font17" style="text-decoration: none;">, please answer the following items:</font></td>
 <td colspan='5' class='x157' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($a40 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($a40 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16787,14 +16787,14 @@ td
 <td colspan='8' rowspan='2' height='40' class='x297' style='border-right:1px solid windowtext;height:30pt;'>Are you a person with disability?</td>
 <td>
     <php>
-    @if ($sex == 'male' )
+    @if ($b40 == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($b40 == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16817,14 +16817,14 @@ td
 <td colspan='8' rowspan='3' height='50' class='x297' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:37.5pt;'>Are you a solo parent?</td>
 <td colspan='5' class='x384' style='border-right:2px solid windowtext;'>
     <php>
-    @if ($sex == 'male' )
+    @if ($c40 == 'male' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($sex == 'female')
+    @elseif ($c40 == 'female')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
