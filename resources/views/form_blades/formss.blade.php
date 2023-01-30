@@ -842,7 +842,7 @@ $group = [
                                     {{ Form::text('spouseocc', null, ['class' => 'form-control', 'id' => 'occupation-S', 'placeholder' => 'Occupation']) }}
                                 </div>
                                 <div class="col">
-                                    {{ Form::text('spouseemp2', null, ['class' => 'form-control', 'id' => 'spouseemp', 'placeholder' => 'Employer/Business Name']) }}
+                                    {{ Form::text('spouseemp', null, ['class' => 'form-control', 'id' => 'spouseemp', 'placeholder' => 'Employer/Business Name']) }}
                                 </div>
                                 <div class="w-100"></div>
                                 <div class="col">
@@ -872,7 +872,7 @@ $group = [
                             <b>{{ Form::label('mother', "Mother's Maiden Name") }}</b><br>
                             <div class="row">
                                 <div class="col">
-                                    {{ Form::text('mothersn', null, ['class' => 'form-control', 'id' => 'firstname-M', 'placeholder' => 'Last Name']) }}
+                                    {{ Form::text('mothernm', null, ['class' => 'form-control', 'id' => 'firstname-M', 'placeholder' => 'Last Name']) }}
                                 </div>
                                 <div class="col">
                                     {{ Form::text('motherfn', null, ['class' => 'form-control', 'id' => 'midname-M', 'placeholder' => 'First Name']) }}

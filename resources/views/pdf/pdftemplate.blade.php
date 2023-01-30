@@ -14870,24 +14870,24 @@ td
 <td height='30' class='x32' style='height:22.5pt;'></td>
 <td colspan='2' class='x454' style='border-right:1px solid windowtext;'>FIRST NAME</td>
 <td colspan='8' class='x456' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$firstname}}</td>
-<td colspan='3' class='x459' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'> <br> <b></b> </span>{{$firstnameext}}</span></td>
+<td colspan='3' class='x459' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'> <br> <b></b> </span>{{$answersc1['firstnameext'] ?? ' '}}</span></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='29' style='mso-height-source:userset;height:21.75pt'>
 <td height='27' class='x34' style='height:20.25pt;'></td>
 <td colspan='2' class='x462' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>MIDDLE NAME</td>
-<td colspan='11' class='x464' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$midname}}</td>
+<td colspan='11' class='x464' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc1['midname'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
 <td height='30' class='x36' style='height:22.5pt;'><div style='float:right'>3.</div></td>
 <td colspan='2' class='x508' style='border-right:1px solid windowtext;'>DATE OF BIRTH <br>(mm/dd/yyyy)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;</span></td>
-<td colspan='3' class='x510' style='border-right:2px solid windowtext;'>{{$birthdate}}</td>
+<td colspan='3' class='x510' style='border-right:2px solid windowtext;'>{{$answersc1['birthdate'] ?? ' '}}</td>
 <td colspan='2' class='x189' style='mso-ignore:colspan;'>16. CITIZENSHIP</td>
 <td class='x190'></td>
 <td colspan='5' height='30' class='x760' width='317' style='text-align: left;border-right:2px solid windowtext;height:22.5pt;width:237.75pt;' align='left' valign='top'>
         <php>
-            @if ($citizens == 'Filipino')
+            @if ($answersc1['citizens'] == 'Filipino')
             <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px;'>
                 <input type="radio" id="Filipino"> <label class="radio">By Naturalization</label>
             </span>
@@ -14901,7 +14901,7 @@ td
                 <input type="radio" id="By Naturalization" checked> <label class="radio">Filipino</label>
             </span>
             <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x323' width='317' style='height:22.5pt;background-color:white;width:237.75pt;'></td></tr></table></span></td>
-            @elseif ($citizens == 'Dual Citizenship' && $dualcitizenType == 'by birth')
+            @elseif ($answersc1['citizens'] == 'Dual Citizenship' && $answersc1['dualcitizenType'] == 'by birth')
             <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px'>
                 <input type="radio" id="Filipino" class="radio2"> <label class="radio">By Naturalization</label>
             </span>
@@ -14915,7 +14915,7 @@ td
                 <input type="radio" id="By Naturalization" class="radio1"> <label class="radio">Filipino</label>
             </span>
             <span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='5' height='30' class='x323' width='317' style='height:22.5pt;width:237.75pt;background-color:white;'></td></tr></table></span></td>
-            @elseif ($citizens == 'Dual Citizenship' && $dualcitizenType == 'by naturalization')
+            @elseif ($answersc1['citizens'] == 'Dual Citizenship' && $answersc1['dualcitizenType'] == 'by naturalization')
             <span style='mso-ignore:vglayout;position:absolute;z-index:15;margin-left:184px;margin-top:26px;width:132px;height:36px'>
                 <input type="radio" class="radio2" id="Filipino" checked> <label class="radio">By Naturalization</label>
             </span>
@@ -14950,7 +14950,7 @@ td
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td height='31' class='x44' style='height:23.25pt;'><div style='float:right'>4.</div></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;'>PLACE OF BIRTH</td>
-<td colspan='3' class='x515' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofBirth}}</td>
+<td colspan='3' class='x515' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['placeofBirth'] ?? ' '}}</td>
 <td colspan='3' class='x518' style='border-right:1px solid windowtext;'>If holder of<span style='mso-spacerun:yes;'>&nbsp; </span>dual citizenship,&nbsp;</td>
 <td colspan='2' class='x46' style='mso-ignore:colspan;'></td>
 <td colspan='3' class='x520' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>Pls. indicate country:</td>
@@ -14963,14 +14963,14 @@ td
 <td colspan='3' height='32' class='x100' width='200' style='text-align: left;height:24pt;width:140.5pt;background-color:white;' align='left' valign='top'>
 
 <php>
-@if ($sex == 'male' )
+@if ($sex == '0' )
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
         <input type="radio" id="Female"> <label class="radio">Female</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Male" checked> <label class="radio">Male</label></span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-@elseif ($sex == 'female')
+@elseif ($sex == '1')
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
         <input type="radio" id="Female" checked> <label class="radio">Female</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -14983,7 +14983,7 @@ td
 </td>
 
 <td colspan='3' class='x492' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>please indicate the details.</td>
-<td colspan='5' class='x522' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$country}}</td>
+<td colspan='5' class='x522' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['country'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
@@ -14991,7 +14991,7 @@ td
 <td colspan='2' rowspan='2' height='32' class='x496' style='border-right:1px solid windowtext;height:24pt;'>CIVIL STATUS</td>
 <td colspan='3' rowspan='2' height='32' class='x760'  width='190' style='text-align: left;height:24pt;width:160.5pt;' align='left' valign='top'>
     <php>
-@if ($civilStatus == 'separated' )
+@if ($answersc1['civilStataus'] == 'separated' )
 <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated" checked> <label class="radio">Separated</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
@@ -15005,7 +15005,7 @@ td
         <input type="radio" id="Other/s"> <label class="radio">Other/s</label></span>
     </span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-@elseif ($civilStatus == 'married')
+@elseif ($answersc1['civilStataus']  == 'married')
 <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
@@ -15020,7 +15020,7 @@ td
     </span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
 
-@elseif ($civilStatus === 'single')
+@elseif ($answersc1['civilStataus']  === 'single')
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
@@ -15035,7 +15035,7 @@ td
     </span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
 
-@elseif($civilStatus === 'widowed')
+@elseif($answersc1['civilStataus']  === 'widowed')
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
@@ -15050,7 +15050,7 @@ td
     </span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
 
-@elseif($civilStatus === 'other')
+@elseif($answersc1['civilStataus']  === 'other')
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:26px;width:81px;height:44px'>
         <input type="radio" id="Separated"> <label class="radio">Separated</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:120px;margin-top:5px;width:81px;height:38px'>
@@ -15070,8 +15070,8 @@ td
 
 </td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;overflow:hidden;'>17. RESIDENTIAL<span style='display:none'></span></td>
-<td colspan='3' class='x506' style='border-bottom:1px solid #A6A6A6;'>{{$residentialhouse}}</td>
-<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$residentialst}}</td>
+<td colspan='3' class='x506' style='border-bottom:1px solid #A6A6A6;'>{{$answersc1['residentialhouse'] ?? ' '}}</td>
+<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$answersc1['residentialst'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
@@ -15086,8 +15086,8 @@ td
 <td class='x52'><div style='display:block;overflow:hidden'></div></td>
 <td colspan='3' rowspan='3' height='32' width='190' style='text-align: left;border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;width:142.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:12;margin-left:7px;margin-top:1px;width:103px;height:19px'></span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' rowspan='3' height='32' class='x760' background-color='white' width='190' style='height:24pt;width:142.5pt;'><div style='display:block;overflow:hidden'></div></td></tr></table></span></td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' rowspan='2' height='19' class='x544' style='border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$residentialsudv}}</div></td>
-<td colspan='3' rowspan='2' height='19' class='x545' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$residentialbrgy}}</div></td>
+<td colspan='3' rowspan='2' height='19' class='x544' style='border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$answersc1['residentialsudv'] ?? ' '}}</div></td>
+<td colspan='3' rowspan='2' height='19' class='x545' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;height:14.25pt;'><div style='display:block;overflow:hidden'>{{$answersc1['residentialbrgy'] ?? ' '}}</div></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
@@ -15108,10 +15108,10 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='31' class='x524' style='border-bottom:1px solid windowtext;height:23.25pt;'><div style='float:right'>7.</div></td>
 <td colspan='2' rowspan='2' height='31' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>HEIGHT (m)</td>
-<td colspan='3' rowspan='2' height='31' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$height}}</td>
+<td colspan='3' rowspan='2' height='31' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc1['height'] ?? ' '}}</td>
 <td colspan='2' class='x41' style='mso-ignore:colspan;'></td>
-<td colspan='3' class='x535' style='border-bottom:1px solid #A6A6A6;'>{{$residentialcity}}</td>
-<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$residentialprv}}</td>
+<td colspan='3' class='x535' style='border-bottom:1px solid #A6A6A6;'>{{$answersc1['residentialcity'] ?? ' '}}</td>
+<td colspan='3' class='x507' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$answersc1['residentialprv'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='11' style='mso-height-source:userset;height:8.25pt'>
@@ -15123,18 +15123,18 @@ td
  <tr height='30' style='mso-height-source:userset;height:22.5pt'>
 <td height='30' class='x32' style='height:22.5pt;'><div style='float:right'>8.</div></td>
 <td colspan='2' class='x558' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>WEIGHT (kg)</td>
-<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp;&emsp;{{$weight}}</td>
+<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp;&emsp;{{$answersc1['weight'] ?? ' '}}</td>
 <td colspan='2' class='x563' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>ZIP CODE<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$residentialzip}}</td>
+<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['residentialzip'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='32' class='x553' style='border-bottom:1px solid windowtext;height:24pt;'>9.</td>
 <td colspan='2' rowspan='2' height='32' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>BLOOD TYPE</td>
-<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$bloodType}}</td>
+<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$answersc1['bloodType'] ?? ' '}}</td>
 <td colspan='2' class='x63' style='mso-ignore:colspan;overflow:hidden;'>18. PERMANENT<span style='display:none'></span></td>
-<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$permanenthouse}}</td>
-<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$permanentst}}</td>
+<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$answersc1['permanenthouse'] ?? ' '}}</td>
+<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$answersc1['permanentst'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
@@ -15146,10 +15146,10 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='32' class='x553' style='border-bottom:1px solid windowtext;height:24pt;'>10.</td>
 <td colspan='2' rowspan='2' height='32' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>GSIS ID NO.</td>
-<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$gsisno}}</td>
+<td colspan='3' rowspan='2' height='32' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$answersc1['gsisno'] ?? ' '}}</td>
 <td colspan='2' class='x53' style='mso-ignore:colspan;'></td>
-<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$permanentsubdv}}</td>
-<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$permanentbrgy}}</td>
+<td colspan='3' class='x555' style='border-bottom:1px solid #A6A6A6;'>{{$answersc1['permanentsubdv'] ?? ' '}}</td>
+<td colspan='3' class='x556' style='border-right:2px solid windowtext;border-bottom:1px solid #A6A6A6;'>{{$answersc1['permanentbrgy'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='12' style='mso-height-source:userset;height:9pt'>
@@ -15161,9 +15161,9 @@ td
  <tr height='21' style='mso-height-source:userset;height:15.75pt'>
 <td rowspan='2' height='33' class='x553' style='border-bottom:1px solid windowtext;height:24.75pt;'>11.</td>
 <td colspan='2' rowspan='2' height='33' class='x526' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>PAG-IBIG ID NO.</td>
-<td colspan='3' rowspan='2' height='33' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$pagibigno}}</td>
-<td colspan='2' class='x53' style='mso-ignore:colspan;border-right:1px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp;{{$permanentcity}}</td>
-<td colspan='6' class='x65' style='mso-ignore:colspan;border-right:2px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp;{{$permanentprv}}</td>
+<td colspan='3' rowspan='2' height='33' class='x530' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc1['pagibigno'] ?? ' '}}</td>
+<td colspan='2' class='x53' style='mso-ignore:colspan;border-right:1px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp;{{$answersc1['permanentcity'] ?? ' '}}</td>
+<td colspan='6' class='x65' style='mso-ignore:colspan;border-right:2px solid windowtext;'>&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp;{{$answersc1['permanentprv'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
@@ -15175,9 +15175,9 @@ td
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td height='31' class='x44' style='height:23.25pt;'><div style='float:right'>12.</div></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;border-right:1px solid windowtext;'>PHILHEALTH NO.</td>
-<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$philhealthno}}</td>
+<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['philhealthno'] ?? ' '}}</td>
 <td colspan='2' class='x563' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>ZIP CODE<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='3' class='x579' style='border-bottom:1px solid windowtext;'>{{$permanentzip}}</td>
+<td colspan='3' class='x579' style='border-bottom:1px solid windowtext;'>{{$answersc1['permanentzip'] ?? ' '}}</td>
 <td colspan='3' class='x581' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
@@ -15185,23 +15185,23 @@ td
 <td height='33' class='x32' style='height:24.75pt;'><div style='float:right'>13.</div></td>
 <td class='x45'>SSS NO.</td>
 <td class='x48'></td>
-<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$sssno}}</td>
+<td colspan='3' class='x560' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['sssno'] ?? ' '}}</td>
 <td colspan='2' class='x68' style='mso-ignore:colspan;'>19. TELEPHONE NO.</td>
-<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$telno}}</td>
+<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['telno'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td colspan='3' height='31' class='x568' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>14. TIN NO.</td>
-<td colspan='3' class='x569' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$tinno}}</td>
+<td colspan='3' class='x569' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['tinno'] ?? ' '}}</td>
 <td colspan='2' class='x601' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>20. MOBILE NO.</td>
-<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$mobno}}</td>
+<td colspan='6' class='x565' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['mobno'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
 <td colspan='3' height='33' class='x69' style='mso-ignore:colspan;border-right:1px solid windowtext;height:24.75pt;'>15. AGENCY EMPLOYEE NO.</td>
-<td colspan='3' class='x572' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$agencyemp}}</td>
+<td colspan='3' class='x572' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc1['agencyemp'] ?? ' '}}</td>
 <td colspan='2' class='x63' style='mso-ignore:colspan;overflow:hidden;'>21. E-MAIL ADDRESS (if<span style='display:none'>&nbsp;any)</span></td>
-<td colspan='6' class='x575' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$email}}</td>
+<td colspan='6' class='x575' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc1['email'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='22' style='mso-height-source:userset;height:16.5pt'>
@@ -15212,7 +15212,7 @@ td
  <tr height='40' style='mso-height-source:userset;height:30pt'>
 <td height='38' class='x37' style='height:28.5pt;'>22.</td>
 <td colspan='2' class='x73' style='mso-ignore:colspan;border-right:1px solid windowtext;'>SPOUSE'S SURNAME</td>
-<td colspan='5' class='x583' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousesn}}</td>
+<td colspan='5' class='x583' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spousesn'] ?? ' '}}</td>
 <td colspan='4' class='x586' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>23. NAME of CHILDREN<span style='mso-spacerun:yes;'>&nbsp; </span>(Write full name and list all)</td>
 <td colspan='2' class='x589' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>DATE OF BIRTH (mm/dd/yyyy)&nbsp;</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
@@ -15221,113 +15221,113 @@ td
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x54'><span style='mso-spacerun:yes;'>&nbsp; </span>FIRST NAME</td>
 <td class='x64'></td>
-<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousefn}}</td>
-<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{$spousenmext}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child0}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild0}}</td>
+<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spousefn'] ?? ' '}}</td>
+<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{$answersc1['spousenmext'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child0'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild0'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x75' style='height:20.25pt;'></td>
 <td class='x76'><span style='mso-spacerun:yes;'>&nbsp; </span>MIDDLE NAME</td>
 <td class='x77'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousemn}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child1}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild1}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spousemn'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child1'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild1'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x78' style='height:19.5pt;'></td>
 <td class='x45'>OCCUPATION</td>
 <td class='x48'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spouseocc}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child2}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild2}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spouseocc'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child2'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild2'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x78' style='height:19.5pt;'></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;border-right:1px solid windowtext;'>EMPLOYER/BUSINESS NAME</td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spouseemp}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child3}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild3}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spouseemp'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child3'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild3'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x78' style='height:19.5pt;'></td>
 <td colspan='2' class='x45' style='mso-ignore:colspan;border-right:1px solid windowtext;'>BUSINESS ADDRESS</td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spouseempadd}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child4}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild4}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spouseempadd'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child4'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild4'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x49' style='height:20.25pt;'></td>
 <td colspan='2' class='x50' style='mso-ignore:colspan;border-right:1px solid windowtext;'>TELEPHONE NO.</td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$spousetel}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child5}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild5}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['spousetel'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child5'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild5'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x80' style='height:20.25pt;'>24.</td>
 <td class='x81' style='overflow:hidden;'>FATHER'S SUR<span style='display:none'>NAME</span></td>
 <td class='x50'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$fathersn}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child6}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild6}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['fathersn'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child6'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild6'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x33'>FIRST NAME</td>
 <td class='x33'></td>
-<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$fatherfn}}</td>
-<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{$fatherext}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child7}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild7}}</td>
+<td colspan='3' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['fatherfn'] ?? ' '}}</td>
+<td colspan='2' class='x594' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>NAME EXTENSION (JR., SR)<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{$answersc1['fatherext'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child7'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild7'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='27' class='x75' style='height:20.25pt;'></td>
 <td class='x61'>MIDDLE NAME</td>
 <td class='x61'></td>
-<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$fathermn}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child8}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild8}}</td>
+<td colspan='5' class='x591' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['fathermn'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child8'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild8'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'>25.</td>
 <td colspan='2' class='x33' style='mso-ignore:colspan;'>MOTHER'S MAIDEN NAME</td>
-<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$mothernm}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child9}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild9}}</td>
+<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['mothernm'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child9'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild9'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x33'>SURNAME</td>
 <td class='x33'></td>
-<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$mothersn}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child10}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild10}}</td>
+<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['mothersn'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child10'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild10'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='28' class='x41' style='height:21pt;'></td>
 <td class='x33'>FIRST NAME</td>
 <td class='x33'></td>
-<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$motherfn}}</td>
-<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$child11}}</td>
-<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$birthchild11}}</td>
+<td colspan='5' class='x603' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['motherfn'] ?? ' '}}</td>
+<td colspan='4' class='x596' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['child11'] ?? ' '}}</td>
+<td colspan='2' class='x599' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['birthchild11'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='28' style='mso-height-source:userset;height:21pt'>
 <td height='26' class='x82' style='height:19.5pt;'></td>
 <td class='x35'>MIDDLE NAME</td>
 <td class='x35'></td>
-<td colspan='5' class='x606' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$mothermn}}</td>
+<td colspan='5' class='x606' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc1['mothermn'] ?? ' '}}</td>
 <td colspan='6' class='x609' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>(Continue on separate sheet if necessary)</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
@@ -15361,62 +15361,62 @@ td
  <tr height='39' style='mso-height-source:userset;height:29.25pt'>
 <td height='37' class='x86' style='height:27.75pt;'></td>
 <td colspan='2' class='x650' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>ELEMENTARY</td>
-<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$elemname}}</td>
-<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$elemdeg}}</td>
-<td class='x87'>{{$attendancefrom}}</td>
-<td class='x88'>{{$attendanceto}}</td>
-<td class='x89'>{{$elemunitLevel}}</td>
-<td class='x90'>{{$yeargradelem}}</td>
-<td class='x91'>{{$scholarshipelem}}</td>
+<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['elemname'] ?? ' '}}</td>
+<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['elemdeg'] ?? ' '}}</td>
+<td class='x87'>{{$answersc1['attendancefrom'] ?? ' '}}</td>
+<td class='x88'>{{$answersc1['attendanceto'] ?? ' '}}</td>
+<td class='x89'>{{$answersc1['elemunitLevel'] ?? ' '}}</td>
+<td class='x90'>{{$answersc1['yeargradelem'] ?? ' '}}</td>
+<td class='x91'>{{$answersc1['scholarshipelem'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='38' style='mso-height-source:userset;height:28.5pt'>
 <td height='37' class='x216' style='height:27.75pt;'></td>
 <td class='x217'>SECONDARY</td>
 <td class='x217'></td>
-<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$hsname}}</td>
-<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$hsdeg}}</td>
-<td class='x87'>{{$attendancefromhs}}</td>
-<td class='x92'>{{$attendancetohs}}</td>
-<td class='x93'>{{$hsunitLevel}}</td>
-<td class='x94'>{{$yeargradhs}}</td>
-<td class='x91'>{{$scholarshiphs}}</td>
+<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['hsname'] ?? ' '}}</td>
+<td colspan='3' class='x623' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['hsdeg'] ?? ' '}}</td>
+<td class='x87'>{{$answersc1['attendancefromhs'] ?? ' '}}</td>
+<td class='x92'>{{$answersc1['attendancetohs'] ?? ' '}}</td>
+<td class='x93'>{{$answersc1['hsunitLevel'] ?? ' '}}</td>
+<td class='x94'>{{$answersc1['yeargradhs'] ?? ' '}}</td>
+<td class='x91'>{{$answersc1['scholarshiphs'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='37' style='mso-height-source:userset;height:27.75pt'>
 <td colspan='3' height='33' class='x656' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;height:24.75pt;'><span style='mso-spacerun:yes;'>&nbsp;&nbsp; </span>VOCATIONAL / TRADE COURSE<span style='mso-spacerun:yes;'>&nbsp;&nbsp;</span></td>
-<td colspan='3' class='x621' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$vocname}}</td>
-<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$vocdeg}}</td>
-<td class='x87'>{{$attendancefromvoc}}</td>
-<td class='x92'>{{$attendancetovoc}}</td>
-<td class='x89'>{{$vocunitLevel}}</td>
-<td class='x90'>{{$yeargradvoc}}</td>
-<td class='x91'>{{$scholarshipvoc}}</td>
+<td colspan='3' class='x621' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['vocname'] ?? ' '}}</td>
+<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['vocdeg'] ?? ' '}}</td>
+<td class='x87'>{{$answersc1['attendancefromvoc'] ?? ' '}}</td>
+<td class='x92'>{{$answersc1['attendancetovoc'] ?? ' '}}</td>
+<td class='x89'>{{$answersc1['vocunitLevel'] ?? ' '}}</td>
+<td class='x90'>{{$answersc1['yeargradvoc'] ?? ' '}}</td>
+<td class='x91'>{{$answersc1['scholarshipvoc'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='38' style='mso-height-source:userset;height:28.5pt'>
 <td height='37' class='x218' style='height:27.75pt;'></td>
 <td class='x219'>COLLEGE</td>
 <td class='x219'></td>
-<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$colname}}</td>
-<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$coldeg}}</td>
-<td class='x87'>{{$attendancefromcol}}</td>
-<td class='x92'>{{$attendancetocol}}</td>
-<td class='x89'>{{$colunitLevel}}</td>
-<td class='x94'>{{$yeargradcol}}</td>
-<td class='x91'>{{$scholarshipcol}}</td>
+<td colspan='3' class='x620' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['colname'] ?? ' '}}</td>
+<td colspan='3' class='x670' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc1['coldeg'] ?? ' '}}</td>
+<td class='x87'>{{$answersc1['attendancefromcol'] ?? ' '}}</td>
+<td class='x92'>{{$answersc1['attendancetocol'] ?? ' '}}</td>
+<td class='x89'>{{$answersc1['colunitLevel'] ?? ' '}}</td>
+<td class='x94'>{{$answersc1['yeargradcol'] ?? ' '}}</td>
+<td class='x91'>{{$answersc1['scholarshipcol'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='38' style='mso-height-source:userset;height:28.5pt'>
 <td height='35' class='x95' style='height:26.25pt;'></td>
 <td colspan='2' class='x96' style='mso-ignore:colspan;'>GRADUATE STUDIES&nbsp;</td>
-<td colspan='3' class='x673' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$gradname}}</td>
-<td colspan='3' class='x676' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$graddeg}}</td>
-<td class='x97'>{{$attendancefromgrad}}</td>
-<td class='x98'>{{$attendancetograd}}</td>
-<td class='x99'>{{$gradunitLevel}}</td>
-<td class='x100'>{{$yeargrad}}</td>
-<td class='x91'>{{$scholarshipgrad}}</td>
+<td colspan='3' class='x673' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc1['gradname'] ?? ' '}}</td>
+<td colspan='3' class='x676' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc1['graddeg'] ?? ' '}}</td>
+<td class='x97'>{{$answersc1['attendancefromgrad'] ?? ' '}}</td>
+<td class='x98'>{{$answersc1['attendancetograd'] ?? ' '}}</td>
+<td class='x99'>{{$answersc1['gradunitLevel'] ?? ' '}}</td>
+<td class='x100'>{{$answersc1['yeargrad'] ?? ' '}}</td>
+<td class='x91'>{{$answersc1['scholarshipgrad'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='16' style='mso-height-source:userset;height:12pt'>
@@ -15486,66 +15486,66 @@ td
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$eligibility}}</td>
-<td class='x106'>{{$rating}}</td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam}}</td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam}}</td>
-<td class='x105'>{{$licenseno}}</td>
-<td class='x107'>{{$validity}}</td>
+<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc2['eligibility'] ?? ' '}}</td>
+<td class='x106'>{{$answersc2['rating'] ?? ' '}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['dateofexam'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['licenseno'] ?? ' '}}</td>
+<td class='x107'>{{$answersc2['validity'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$eligibility2}}</td>
-<td class='x106'>{{$rating2}}</td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam2}}</td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam2}}</td>
-<td class='x105'>{{$licenseno2}}</td>
-<td class='x107'>{{$validity2}}</td>
+<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc2['eligibility2'] ?? ' '}}</td>
+<td class='x106'>{{$answersc2['rating2'] ?? ' '}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['dateofexam2'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam2'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['licenseno2'] ?? ' '}}</td>
+<td class='x107'>{{$answersc2['validity2'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$eligibility3}}</td>
-<td class='x106'>{{$rating3}}</td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam3}}</td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam3}}</td>
-<td class='x105'>{{$licenseno3}}</td>
-<td class='x107'>{{$validity3}}</td>
+<td colspan='5' height='33' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc2['eligibility3'] ?? ' '}}</td>
+<td class='x106'>{{$answersc2['rating3'] ?? ' '}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['dateofexam3'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam3'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['licenseno3'] ?? ' '}}</td>
+<td class='x107'>{{$answersc2['validity3'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$eligibility4}}</td>
-<td class='x106'>{{$rating4}}</td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam4}}</td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam4}}</td>
-<td class='x105'>{{$licenseno4}}</td>
-<td class='x107'>{{$validity4}}</td>
+<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$answersc2['eligibility4'] ?? ' '}}</td>
+<td class='x106'>{{$answersc2['rating4'] ?? ' '}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['dateofexam4'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam4'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['licenseno4'] ?? ' '}}</td>
+<td class='x107'>{{$answersc2['validity4'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$eligibility5}}</td>
-<td class='x106'>{{$rating5}}</td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam5}}</td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam5}}</td>
-<td class='x105'>{{$licenseno5}}</td>
-<td class='x107'>{{$validity6}}</td>
+<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$answersc2['eligibility5'] ?? ' '}}</td>
+<td class='x106'>{{$answersc2['rating5'] ?? ' '}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['dateofexam5'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam5'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['licenseno5'] ?? ' '}}</td>
+<td class='x107'>{{$answersc2['validity5'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$eligibility7}}</td>
-<td class='x106'>{{$rating7}}</td>
-<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$dateofexam7}}</td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$placeofexam7}}</td>
-<td class='x105'>{{$licenseno7}}</td>
-<td class='x107'>{{$validity7}}</td>
+<td colspan='5' height='34' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:25.5pt;'>{{$answersc2['eligibility6'] ?? ' '}}</td>
+<td class='x106'>{{$answersc2['rating6'] ?? ' '}}</td>
+<td colspan='2' class='x370' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['dateofexam6'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam6'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['licenseno6'] ?? ' '}}</td>
+<td class='x107'>{{$answersc2['validity6'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='5' height='33' class='x372' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:24.75pt;'></td>
-<td class='x109'></td>
-<td colspan='2' class='x375' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'></td>
-<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x108'></td>
-<td class='x110'></td>
+<td colspan='5' height='33' class='x372' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:24.75pt;'>{{$answersc2['eligibility7'] ?? ' '}}</td>
+<td class='x109'>{{$answersc2['rating7'] ?? ' '}}</td>
+<td colspan='2' class='x375' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc2['dateofexam7'] ?? ' '}}</td>
+<td colspan='4' class='x352' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['placeofexam7'] ?? ' '}}</td>
+<td class='x108'>{{$answersc2['licenseno7'] ?? ' '}}</td>
+<td class='x110'>{{$answersc2['validity7'] ?? ' '}}</td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='22' style='mso-height-source:userset;height:16.5pt'>
@@ -15584,311 +15584,311 @@ td
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='37' style='mso-height-source:userset;height:27.75pt'>
-<td colspan='2' height='35' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:26.25pt;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$datefrom}}</td>
-<td class='x114'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$dateto}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department}}</td>
-<td class='x115'>{{$salary}}</td>
-<td class='x105'>{{$paygrade}}</td>
-<td class='x105'>{{$appointment}}</td>
-<td class='x116'>{{$governmentserv}}</td>
+<td colspan='2' height='35' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:26.25pt;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$answersc2['datefrom'] ?? ' '}}</td>
+<td class='x114'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$answersc2['dateto'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='34' style='mso-height-source:userset;height:25.5pt'>
-<td colspan='2' height='32' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$datefrom2}}</td>
-<td class='x114'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$dateto2}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position2}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department2}}</td>
-<td class='x115'>{{$salary2}}</td>
-<td class='x105'>{{$paygrade2}}</td>
-<td class='x105'>{{$appointment2}}</td>
-<td class='x116'>{{$governmentserv2}}</td>
+<td colspan='2' height='32' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$answersc2['datefrom2'] ?? ' '}}</td>
+<td class='x114'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$answersc2['dateto2'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position2'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department2'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary2'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade2'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment2'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv2'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom3}}</td>
-<td class='x114'>{{$dateto3}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position3}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department3}}</td>
-<td class='x115'>{{$salary3}}</td>
-<td class='x105'>{{$paygrade3}}</td>
-<td class='x105'>{{$appointment3}}</td>
-<td class='x116'>{{$governmentserv3}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom3'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto3'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position3'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department3'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary3'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade3'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment3'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv3'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom4}}</td>
-<td class='x114'>{{$dateto4}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position4}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department4}}</td>
-<td class='x115'>{{$salary4}}</td>
-<td class='x105'>{{$paygrade4}}</td>
-<td class='x105'>{{$appointment4}}</td>
-<td class='x116'>{{$governmentserv4}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom4'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto4'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position4'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department4'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary4'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade4'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment4'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv4'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom5}}</td>
-<td class='x114'>{{$dateto5}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position5}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department5}}</td>
-<td class='x115'>{{$salary5}}</td>
-<td class='x105'>{{$paygrade5}}</td>
-<td class='x105'>{{$appointment5}}</td>
-<td class='x116'>{{$governmentserv5}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom5'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto5'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position5'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department5'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary5'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade5'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment5'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv5'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom6}}</td>
-<td class='x114'>{{$dateto6}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position6}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department6}}</td>
-<td class='x115'>{{$salary6}}</td>
-<td class='x105'>{{$paygrade6}}</td>
-<td class='x105'>{{$appointment6}}</td>
-<td class='x116'>{{$governmentserv6}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom6'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto6'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position6'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department6'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary6'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade6'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment6'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv6'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom7}}</td>
-<td class='x114'>{{$dateto7}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position7}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department7}}</td>
-<td class='x115'>{{$salary7}}</td>
-<td class='x105'>{{$paygrade7}}</td>
-<td class='x105'>{{$appointment7}}</td>
-<td class='x116'>{{$governmentserv7}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom7'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto7'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position7'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department7'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary7'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade7'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment7'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv7'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom8}}</td>
-<td class='x114'>{{$dateto8}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position8}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department8}}</td>
-<td class='x115'>{{$salary8}}</td>
-<td class='x105'>{{$paygrade8}}</td>
-<td class='x105'>{{$appointment8}}</td>
-<td class='x116'>{{$governmentserv8}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom8'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto8'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position8'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department8'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary8'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade8'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment8'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv8'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom9}}</td>
-<td class='x114'>{{$dateto9}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position9}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department9}}</td>
-<td class='x115'>{{$salary9}}</td>
-<td class='x105'>{{$paygrade9}}</td>
-<td class='x105'>{{$appointment9}}</td>
-<td class='x116'>{{$governmentserv9}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom9'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto9'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position9'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department9'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary9'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade9'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment9'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv9'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom10}}</td>
-<td class='x114'>{{$dateto10}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position10}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department10}}</td>
-<td class='x115'>{{$salary10}}</td>
-<td class='x105'>{{$paygrade10}}</td>
-<td class='x105'>{{$appointment10}}</td>
-<td class='x116'>{{$governmentserv10}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom10'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto10'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position10'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department10'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary10'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade10'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment10'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv10'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom11}}</td>
-<td class='x114'>{{$dateto11}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position11}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department11}}</td>
-<td class='x115'>{{$salary11}}</td>
-<td class='x105'>{{$paygrade11}}</td>
-<td class='x105'>{{$appointment11}}</td>
-<td class='x116'>{{$governmentserv11}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom11'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto11'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position11'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department11'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary11'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade11'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment11'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv11'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom12}}</td>
-<td class='x114'>{{$dateto12}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position12}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department12}}</td>
-<td class='x115'>{{$salary12}}</td>
-<td class='x105'>{{$paygrade12}}</td>
-<td class='x105'>{{$appointment12}}</td>
-<td class='x116'>{{$governmentserv12}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom12'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto12'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position12'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department12'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary12'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade12'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment12'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv12'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom13}}</td>
-<td class='x114'>{{$dateto13}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x115'></td>
-<td class='x105'></td>
-<td class='x105'></td>
-<td class='x116'></td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom13'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto13'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position13'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department13'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary13'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade13'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment13'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv13'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'></td>
-<td class='x114'></td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position13}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department13}}</td>
-<td class='x115'>{{$salary13}}</td>
-<td class='x105'>{{$paygrade13}}</td>
-<td class='x105'>{{$appointment13}}</td>
-<td class='x116'>{{$governmentserv13}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom14'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['datefrom14'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position14'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department14'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary14'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade14'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment14'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv14'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom14}}</td>
-<td class='x114'>{{$dateto14}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position14}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department14}}</td>
-<td class='x115'>{{$salary14}}</td>
-<td class='x105'>{{$paygrade14}}</td>
-<td class='x105'>{{$appointment14}}</td>
-<td class='x116'>{{$governmentserv14}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom15'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto15'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position15'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department15'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary15'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade15'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment15'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv15'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom15}}</td>
-<td class='x114'>{{$dateto15}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position15}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department15}}</td>
-<td class='x115'>{{$salary15}}</td>
-<td class='x105'>{{$paygrade15}}</td>
-<td class='x105'>{{$appointment15}}</td>
-<td class='x116'>{{$governmentserv15}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom16'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto16'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position16'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department16'] ?? ' '}}td>
+<td class='x115'>{{$answersc2['salary16'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade16'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment16'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv16'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom16}}</td>
-<td class='x114'>{{$dateto16}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position16}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department16}}</td>
-<td class='x115'>{{$salary16}}</td>
-<td class='x105'>{{$paygrade16}}</td>
-<td class='x105'>{{$appointment16}}</td>
-<td class='x116'>{{$governmentserv16}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom17'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto17'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position17'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department17'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary17'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade17'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment17'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv17'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom17}}</td>
-<td class='x114'>{{$dateto17}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'></td>
-<td class='x115'></td>
-<td class='x105'></td>
-<td class='x105'></td>
-<td class='x116'></td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom18'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto18'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position18'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department18'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary18'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade18'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment18'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv18'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'></td>
-<td class='x114'></td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position17}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department17}}</td>
-<td class='x115'>{{$salary17}}</td>
-<td class='x105'>{{$paygrade17}}</td>
-<td class='x105'>{{$appointment17}}</td>
-<td class='x116'>{{$governmentserv17}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom19'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto19'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position19'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department19'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary19'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade19'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment19'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv19'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' class='x113' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='2' height='31' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$datefrom18}}</td>
-<td class='x114'>{{$dateto18}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position18}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department18}}</td>
-<td class='x115'>{{$salary18}}</td>
-<td class='x105'>{{$paygrade18}}</td>
-<td class='x105'>{{$appointment18}}</td>
-<td class='x116'>{{$governmentserv18}}</td>
+<td colspan='2' height='31' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc2['datefrom20'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto20'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position20'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department20'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary20'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade20'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment20'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv20'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom19}}</td>
-<td class='x114'>{{$dateto19}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position19}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department19}}</td>
-<td class='x115'>{{$salary19}}</td>
-<td class='x105'>{{$paygrade19}}</td>
-<td class='x105'>{{$appointment19}}</td>
-<td class='x116'>{{$governmentserv19}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom21'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto21'] ?? ' '}}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position21'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department21'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary21'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade21'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment21'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv21'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom20}}</td>
-<td class='x114'>{{$dateto20}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position20}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department20}}</td>
-<td class='x115'>{{$salary20}}</td>
-<td class='x105'>{{$paygrade20}}</td>
-<td class='x105'>{{$appointment20}}</td>
-<td class='x116'>{{$governmentserv20}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom22'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto22'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position22'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department22'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary22'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade22'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment22'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv22'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom21}}</td>
-<td class='x114'>{{$dateto21}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position21}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department21}}</td>
-<td class='x115'>{{$salary21}}</td>
-<td class='x105'>{{$paygrade21}}</td>
-<td class='x105'>{{$appointment21}}</td>
-<td class='x116'>{{$governmentserv21}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom23'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto22'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position23'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department23'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary23'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade23'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment23'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv23'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom22}}</td>
-<td class='x114'>{{$dateto22}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position22}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department22}}</td>
-<td class='x115'>{{$salary22}}</td>
-<td class='x105'>{{$paygrade22}}</td>
-<td class='x105'>{{$appointment22}}</td>
-<td class='x116'>{{$governmentserv22}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom24'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto24'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position24'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department24'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary24'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade24'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment24'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv24'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom23}}</td>
-<td class='x114'>{{$dateto23}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position23}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department23}}</td>
-<td class='x115'>{{$salary23}}</td>
-<td class='x105'>{{$paygrade23}}</td>
-<td class='x105'>{{$appointment23}}</td>
-<td class='x116'>{{$governmentserv23}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom25'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto25'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position25'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department25'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary25'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade25'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment25'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv25'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom24}}</td>
-<td class='x114'>{{$dateto24}}</td>
-<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position24}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department24}}</td>
-<td class='x115'>{{$salary24}}</td>
-<td class='x105'>{{$paygrade24}}</td>
-<td class='x105'>{{$appointment24}}</td>
-<td class='x116'>{{$governmentserv24}}</td>
+<td colspan='2' height='30' class='x682' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom26'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto26'] ?? ' '}}</td>
+<td colspan='3' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position26'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department26'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary26'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade26'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment26'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv26'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='30' class='x689' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$datefrom25}}</td>
-<td class='x114'>{{$dateto25}}</td>
-<td colspan='3' class='x691' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$position25}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department25}}</td>
-<td class='x115'>{{$salary25}}</td>
-<td class='x105'>{{$paygrade25}}</td>
-<td class='x105'>{{$appointment25}}</td>
-<td class='x116'>{{$governmentserv25}}</td>
+<td colspan='2' height='30' class='x689' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc2['datefrom27'] ?? ' '}}</td>
+<td class='x114'>{{$answersc2['dateto27'] ?? ' '}}</td>
+<td colspan='3' class='x691' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['position27'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department27'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary27'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade27'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment27'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv27'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' class='x113' style='mso-height-source:userset;height:24pt'>
-<td colspan='2' height='29' class='x695' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:21.75pt;'>{{$datefrom26}}</td>
-<td class='x117'>{{$dateto26}}</td>
-<td colspan='3' class='x697' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$position26}}</td>
-<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$department26}}</td>
-<td class='x118'>{{$salary26}}</td>
-<td class='x108'>{{$paygrade26}}</td>
-<td class='x108'>{{$appointment26}}</td>
-<td class='x119'>{{$governmentserv26}}</td>
+<td colspan='2' height='29' class='x695' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:21.75pt;'>{{$answersc2['datefrom28'] ?? ' '}}</td>
+<td class='x117'>{{$answersc2['dateto28'] ?? ' '}}</td>
+<td colspan='3' class='x697' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc2['position28'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc2['department28'] ?? ' '}}</td>
+<td class='x115'>{{$answersc2['salary28'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['paygrade28'] ?? ' '}}</td>
+<td class='x105'>{{$answersc2['appointment28'] ?? ' '}}</td>
+<td class='x116'>{{$answersc2['governmentserv28'] ?? ' '}}</td>
 <td colspan='16' class='x113' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='15' class='x113' style='mso-height-source:userset;height:11.25pt'>
@@ -15960,59 +15960,59 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
  </tr>
  <tr height='35' style='mso-height-source:userset;height:26.25pt'>
-<td colspan='7' height='32' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$orgnameAddress1}}</td>
-<td class='x199'>{{$orgdateFrom1}}</td>
-<td class='x199'>{{$orgdateTo1}}</td>
-<td class='x200'>{{$orgnumHours1}}</td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$orgPosition1}}</td>
+<td colspan='7' height='32' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$answersc3['orgnameAddress1'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom1'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo1'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours1'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition1'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$orgnameAddress2}}</td>
-<td class='x124'>{{ $orgdateFrom2 }}</td>
-<td class='x124'>{{ $orgdateTo2 }}</td>
-<td class='x125'>{{ $orgnumHours2 }}</td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition2 }}</td>
+<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc3['orgnameAddress2'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom2'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo2'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours2'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition2'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{ $orgnameAddress3 }}</td>
-<td class='x124'>{{ $orgdateFrom3 }}</td>
-<td class='x125'>{{ $orgdateTo3 }}</td>
-<td class='x178'>{{ $orgnumHours3 }}</td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition3 }}</td>
+<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc3['orgnameAddress3'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom3'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo3'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours3'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition3'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $orgnameAddress4 }}</td>
-<td class='x124'>{{ $orgdateFrom4 }}</td>
-<td class='x125'>{{ $orgdateTo4 }}</td>
-<td class='x178'>{{ $orgnumHours4 }}</td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition4 }}</td>
+<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc3['orgnameAddress4'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom4'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo4'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours4'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition4'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='36' style='mso-height-source:userset;height:27pt'>
-<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{ $orgnameAddress5 }}</td>
-<td class='x124'>{{ $orgdateFrom5 }}</td>
-<td class='x125'>{{ $orgdateTo5 }}</td>
-<td class='x178'>{{ $orgnumHours5 }}</td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition5 }}</td>
+<td colspan='7' height='33' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24.75pt;'>{{$answersc3['orgnameAddress5'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom5'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo5'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours5'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition5'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $orgnameAddress6 }}</td>
-<td class='x124'>{{ $orgdateFrom6 }}</td>
-<td class='x125'>{{ $orgdateTo6 }}</td>
-<td class='x178'>{{ $orgnumHours6 }}</td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition6 }}</td>
+<td colspan='7' height='30' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc3['orgnameAddress6'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom6'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo6'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours6'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition6'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='34' style='mso-height-source:userset;height:25.5pt'>
-<td colspan='7' height='31' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress7 }}</td>
-<td class='x124'>{{ $orgdateFrom7 }}</td>
-<td class='x126'>{{ $orgdateTo7 }}</td>
-<td class='x179'><{{ $orgnumHours6 }}/td>
-<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgPosition7 }}</td>
+<td colspan='7' height='31' class='x348' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress7'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateFrom7'] ?? ' '}}</td>
+<td class='x199'>{{$answersc3['orgdateTo7'] ?? ' '}}</td>
+<td class='x200'>{{$answersc3['orgnumHours7'] ?? ' '}}</td>
+<td colspan='4' class='x346' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgPosition7'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='14' style='mso-height-source:userset;height:10.5pt'>
@@ -16050,192 +16050,192 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'></div></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress8 }}</td>
-<td class='x127'>{{ $orgdateFrom8 }}</td>
-<td class='x127'>{{ $orgdateTo8 }}</td>
-<td class='x128'>{{ $orgnumHours8 }}</td>
-<td class='x129'>{{ $orgType8 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor8 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress8'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom8'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo8'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours8'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType8'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor8'] ?? ' '}}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress9 }}</td>
-<td class='x127'>{{ $orgdateFrom9 }}</td>
-<td class='x127'>{{ $orgdateTo9 }}</td>
-<td class='x128'>{{ $orgnumHours9 }}</td>
-<td class='x129'>{{ $orgType9 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor9 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress9'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom9'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo9'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours9'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType9'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor9'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress10 }}</td>
-<td class='x127'>{{ $orgdateFrom10 }}</td>
-<td class='x127'>{{ $orgdateTo10 }}</td>
-<td class='x128'>{{ $orgnumHours10 }}</td>
-<td class='x129'>{{ $orgType10 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor10 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress10'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom10'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo10'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours10'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType10'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor10'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress11 }}</td>
-<td class='x127'>{{ $orgdateFrom11 }}</td>
-<td class='x127'>{{ $orgdateTo11 }}</td>
-<td class='x128'>{{ $orgnumHours11 }}</td>
-<td class='x129'>{{ $orgType11 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor11 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress11'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom11'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo11'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours11'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType11'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor11'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress12 }}</td>
-<td class='x127'>{{ $orgdateFrom12 }}</td>
-<td class='x127'>{{ $orgdateTo12 }}</td>
-<td class='x128'>{{ $orgnumHours12 }}</td>
-<td class='x129'>{{ $orgType12 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor12 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress12'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom12'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo12'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours12'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType12'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor12'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress13 }}</td>
-<td class='x127'>{{ $orgdateFrom13 }}</td>
-<td class='x127'>{{ $orgdateTo13 }}</td>
-<td class='x128'>{{ $orgnumHours13 }}</td>
-<td class='x129'>{{ $orgType13 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor13 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress13'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom13'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo13'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours13'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType13'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor13'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress14 }}</td>
-<td class='x127'>{{ $orgdateFrom14 }}</td>
-<td class='x127'>{{ $orgdateTo14 }}</td>
-<td class='x128'>{{ $orgnumHours14 }}</td>
-<td class='x129'>{{ $orgType14 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor14 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress14'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom14'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo14'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours14'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType14'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor14'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress15 }}</td>
-<td class='x127'>{{ $orgdateFrom15 }}</td>
-<td class='x127'>{{ $orgdateTo15 }}</td>
-<td class='x128'>{{ $orgnumHours15 }}</td>
-<td class='x129'>{{ $orgType15 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor15 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress15'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom15'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo15'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours15'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType15'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor15'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress16 }}</td>
-<td class='x127'>{{ $orgdateFrom16 }}</td>
-<td class='x127'>{{ $orgdateTo16 }}</td>
-<td class='x128'>{{ $orgnumHours16 }}</td>
-<td class='x129'>{{ $orgType16 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor16 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress16'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom16'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo16'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours16'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType16'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor16'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress17 }}</td>
-<td class='x127'>{{ $orgdateFrom17 }}</td>
-<td class='x127'>{{ $orgdateTo17 }}</td>
-<td class='x128'>{{ $orgnumHours17 }}</td>
-<td class='x129'>{{ $orgType16 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor17 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress17'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom17'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo17'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours17'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType17'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor17'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress18 }}</td>
-<td class='x127'>{{ $orgdateFrom18 }}</td>
-<td class='x127'>{{ $orgdateTo18 }}</td>
-<td class='x128'>{{ $orgnumHours18 }}</td>
-<td class='x129'>{{ $orgType18 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameAddress18 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress18'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom18'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo18'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours18'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType18'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor18'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress19 }}</td>
-<td class='x127'>{{ $orgdateFrom19 }}</td>
-<td class='x127'>{{ $orgdateTo19 }}</td>
-<td class='x128'>{{ $orgnumHours19 }}</td>
-<td class='x129'>{{ $orgType19 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor19 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress19'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom19'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo19'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours19'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType19'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor19'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress20 }}</td>
-<td class='x127'>{{ $orgdateFrom20 }}</td>
-<td class='x127'>{{ $orgdateTo20 }}</td>
-<td class='x128'>{{ $orgnumHours20 }}</td>
-<td class='x129'>{{ $orgType20 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor20 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress20'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom20'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo20'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours20'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType20'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor20'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress21 }}</td>
-<td class='x127'>{{ $orgdateFrom21 }}</td>
-<td class='x127'>{{ $orgdateTo21 }}</td>
-<td class='x128'>{{ $orgnumHours21 }}</td>
-<td class='x129'>{{ $orgType21 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor21 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress21'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom21'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo21'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours21'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType21'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor21'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress22 }}</td>
-<td class='x127'>{{ $orgdateFrom22 }}</td>
-<td class='x127'>{{ $orgdateTo22 }}</td>
-<td class='x128'>{{ $orgnumHours22 }}</td>
-<td class='x129'>{{ $orgType22 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor22 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress22'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom22'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo22'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours22'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType22'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor22'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress23 }}</td>
-<td class='x127'>{{ $orgdateFrom23 }}</td>
-<td class='x127'>{{ $orgdateTo23 }}</td>
-<td class='x128'>{{ $orgnumHours23 }}</td>
-<td class='x129'>{{ $orgType23 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor23 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress23'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom23'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo23'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours23'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType23'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor23'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress24 }}</td>
-<td class='x127'>{{ $orgdateFrom24 }}</td>
-<td class='x127'>{{ $orgdateTo24 }}</td>
-<td class='x128'>{{ $orgnumHours24 }}</td>
-<td class='x129'>{{ $orgType24 }}</td>
-<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor24 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress24'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom24'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo24'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours24'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType24'] ?? ' '}}</td>
+<td colspan='3' class='x712' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor24'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress25 }}</td>
-<td class='x127'>{{ $orgdateFrom25 }}</td>
-<td class='x127'>{{ $orgdateTo25 }}</td>
-<td class='x128'>{{ $orgnumHours25 }}</td>
-<td class='x129'>{{ $orgType25 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor25 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress25'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom25'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo25'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours25'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType25'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor25'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress26 }}</td>
-<td class='x127'>{{ $orgdateFrom26 }}</td>
-<td class='x127'>{{ $orgdateTo26 }}</td>
-<td class='x128'>{{ $orgnumHours26 }}</td>
-<td class='x129'>{{ $orgType26 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor26 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress26'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom26'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo26'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours26'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType26'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor26'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress27 }}</td>
-<td class='x127'>{{ $orgdateFrom27 }}</td>
-<td class='x127'>{{ $orgdateTo27 }}</td>
-<td class='x128'>{{ $orgnumHours27 }}</td>
-<td class='x129'>{{ $orgType27 }}</td>
-<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameSponsor27 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress27'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom27'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo27'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours27'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType27'] ?? ' '}}</td>
+<td colspan='3' class='x403' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameSponsor27'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameAddress28 }}</td>
-<td class='x127'>{{ $orgdateFrom28 }}</td>
-<td class='x127'>{{ $orgdateTo28 }}</td>
-<td class='x130'>{{ $orgnumHours28 }}</td>
-<td class='x131'>{{ $orgType28 }}</td>
-<td colspan='3' class='x406' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{ $orgnameSponsor28 }}</td>
+<td colspan='7' height='31' class='x327' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameAddress28'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateFrom28'] ?? ' '}}</td>
+<td class='x127'>{{$answersc3['orgdateTo28'] ?? ' '}}</td>
+<td class='x128'>{{$answersc3['orgnumHours28'] ?? ' '}}</td>
+<td class='x129'>{{$answersc3['orgType28'] ?? ' '}}</td>
+<td colspan='3' class='x406' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc3['orgnameSponsor28'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
@@ -16254,39 +16254,39 @@ td
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill1 }}</td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct1 }}</td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership1 }}</td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameSkill1'] ?? ' '}}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDisinct1'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameMembership1'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill2 }}</td>
-<td colspan='7' class='x410' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct2 }}</td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership2 }}</td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameSkill2'] ?? ' '}}</td>
+<td colspan='7' class='x410' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDisinct2'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameMembership2'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill3 }}</td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct3 }}</td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership3 }}</td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameSkill3'] ?? ' '}}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDisinct3'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameMembership3'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='30' style='mso-height-source:userset;height:22.5pt'>
-<td colspan='3' height='28' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:21pt;'>{{ $orgnameSkill4 }}</td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct4 }}</td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership4 }}</td>
+<td colspan='3' height='28' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:21pt;'>{{$answersc3['orgnameSkill4'] ?? ' '}}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDisinct4'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameMembership4'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='34' style='mso-height-source:userset;height:25.5pt'>
-<td colspan='3' height='32' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{ $orgnameSkill5 }}</td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct5 }}</td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership5 }}</td>
+<td colspan='3' height='32' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:24pt;'>{{$answersc3['orgnameSkill5'] ?? ' '}}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDistinct5'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameMembership5'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
-<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{ $orgnameSkill6 }}</td>
-<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameDistinct6 }}</td>
-<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $orgnameMembership6 }}</td>
+<td colspan='3' height='31' class='x369' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:23.25pt;'>{{$answersc3['orgnameSkill6'] ?? ' '}}</td>
+<td colspan='7' class='x276' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDistinct6'] ?? ' '}}</td>
+<td colspan='4' class='x276' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc3['orgnameDistinct6'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='33' style='mso-height-source:userset;height:24.75pt'>
@@ -16360,16 +16360,24 @@ td
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>a. within the third degree?</td>
 <td colspan='5' class='x201' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-@if ($a34 == '1' )
+        @if ($answersc4['a34'] == '1' )
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
         <input type="radio" id="Yes"> <label class="radio">No</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
         <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
     <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-@elseif ($a34 == '0')
+@elseif ($answersc4['a34'] == '0')
     <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
         <input type="radio" id="No" checked> <label class="radio">No</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+        <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+
+@elseif ($answersc4['a34'] == 'null')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+        <input type="radio" id="No"> <label class="radio">No</label></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
     <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
         <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
@@ -16383,21 +16391,28 @@ td
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>b. within the fourth degree (for Local Government Unit - Career Employees)?</td>
 <td colspan='5' class='x202' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($b34 == '1' )
+    @if ($answersc4['b34'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($b34 == '0')
+    @elseif ($answersc4['b34'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
             <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-    @endif
+        @elseif ($answersc4['b34'] == 'null')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+        <input type="radio" id="No"> <label class="radio">No</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+        <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+@endif
     </php>
 </td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
@@ -16420,7 +16435,7 @@ td
  </tr>
  <tr height='23' style='mso-height-source:userset;height:17.25pt'>
 <td></td>
-<td colspan='3' style='mso-ignore:colspan;'>{{ $detailsb34 }}</td>
+<td colspan='3' style='mso-ignore:colspan;'>{{$answersc4['detailsb34'] ?? ' '}}</td>
 <td class='x137'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16441,21 +16456,28 @@ td
 <td colspan='8' class='x295' style='border-right:1px solid windowtext;'>a. Have you ever been found guilty of any administrative offense?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($a35 == '1' )
+    @if ($answersc4['a35'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($a35 == '0')
+    @elseif ($answersc4['a35'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
             <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
-    @endif
+        @elseif ($answersc4['a35'] == 'null')
+    <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
+        <input type="radio" id="No"> <label class="radio">No</label></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
+    <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:0px;width:89px;height:45px'>
+        <input type="radio" id="Yes"> <label class="radio">Yes</label></span>
+    <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='281' style='height:24pt;width:160.5pt;background-color:white;'></td></tr></table></span>
+@endif
     </php>
 </td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
@@ -16471,7 +16493,7 @@ td
 <td height='20' class='x142' style='height:15pt;'></td>
 <td colspan='8' class='x420' style='border-right:1px solid windowtext;'></td>
 <td class='x206'></td>
-<td colspan='3' class='x445' style='border-bottom:1px solid windowtext;'>{{ $details35a }}</td>
+<td colspan='3' class='x445' style='border-bottom:1px solid windowtext;'>{{$answersc4['details35a'] ?? ' '}}</td>
 <td class='x143'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16487,14 +16509,14 @@ td
 <td colspan='8' class='x307' style='border-right:1px solid windowtext;'>b. Have you been criminally charged before any court?<br><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 <td colspan='5' class='x147' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($b35 == '1' )
+    @if ($answersc4['b35'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($b35 == '0')
+    @elseif ($answersc4['b35']== '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16519,13 +16541,13 @@ td
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='2' class='x443'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Date Filed:&nbsp;</td>
-<td colspan='2' class='x150' style='mso-ignore:colspan;'>{{ $b35case }}</td>
+<td colspan='2' class='x150' style='mso-ignore:colspan;'>{{$answersc4['b35case'] ?? ' '}}</td>
 <td class='x149'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td colspan='2' class='x444'>Status of Case/s:</td>
-<td class='x152'>{{ $b35date }}</td>
+<td class='x152'>{{$answersc4['b35date'] ?? ' '}}</td>
 <td class='x151'></td>
 <td class='x149'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
@@ -16541,14 +16563,14 @@ td
 <td colspan='8' rowspan='4' height='67' class='x321' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:50.25pt;'>Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by<span style='mso-spacerun:yes;'>&nbsp; </span>any court or tribunal?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($a36 == '1' )
+    @if ($answersc4['a36'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($a36 == '0')
+    @elseif ($answersc4['a36'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16569,7 +16591,7 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td class='x171'></td>
-<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'>{{ $a36details  }}</td>
+<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'>{{$answersc4['a36details'] ?? ' '}}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16584,14 +16606,14 @@ td
 <td colspan='8' rowspan='4' height='64' class='x321' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:48pt;'>Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($a37 == '1' )
+    @if ($answersc4['a37'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($a37 == '0')
+    @elseif ($answersc4['a37'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16613,7 +16635,7 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td class='x171'></td>
-<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'>{{ $a37details }}</td>
+<td colspan='3' class='x388' style='border-bottom:1px solid windowtext;'>{{$answersc4['a37details'] ?? ' '}}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16627,14 +16649,14 @@ td
 <td colspan='8' rowspan='2' height='39' class='x295' style='border-right:1px solid windowtext;height:29.25pt;'>a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($a38 == '1' )
+    @if ($answersc4['a38'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($a38 == '0')
+    @elseif ($answersc4['a38'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16649,7 +16671,7 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td colspan='2' class='x423'>If YES, give details:</td>
-<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'>{{ $a38details }}</td>
+<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'>{{$answersc4['a38details'] ?? ' '}}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16664,14 +16686,14 @@ td
 <td colspan='8' rowspan='3' height='46' class='x297' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:34.5pt;'>b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?</td>
 <td colspan='4' class='x723'>
     <php>
-    @if ($b38 == '1' )
+    @if ($answersc4['b38'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($b38 == '0')
+    @elseif ($answersc4['b38'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16687,7 +16709,7 @@ td
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x144' style='height:15pt;'></td>
 <td colspan='2' class='x423'>If YES, give details:</td>
-<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'>{{ $b38details }}</td>
+<td colspan='2' class='x428' style='border-bottom:1px solid windowtext;'>{{$answersc4['b38details'] ?? ' '}}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16702,14 +16724,14 @@ td
 <td colspan='8' rowspan='4' height='84' class='x295' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:63pt;'>Have you acquired the status of an immigrant or permanent resident of another country?</td>
 <td colspan='5' class='x140' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($a39 == '1' )
+    @if ($answersc4['a39'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($a39 == '0')
+    @elseif ($answersc4['a39'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16730,7 +16752,7 @@ td
  <tr height='26' style='mso-height-source:userset;height:19.5pt'>
 <td height='26' class='x144' style='height:19.5pt;'></td>
 <td class='x208'></td>
-<td colspan='3' class='x170' style='mso-ignore:colspan;'>{{ $a39details }}</td>
+<td colspan='3' class='x170' style='mso-ignore:colspan;'>{{$answersc4['a39details'] ?? ' '}}</td>
 <td class='x154'></td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16745,14 +16767,14 @@ td
 <td colspan='8' rowspan='2' height='39' class='x295' style='border-right:1px solid windowtext;height:29.25pt;'><font class="font17" style="text-decoration: none;">Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972)</font><font class="font17" style="text-decoration: none;">, please answer the following items:</font></td>
 <td colspan='5' class='x157' style='mso-ignore:colspan;border-right:2px solid windowtext;'>
     <php>
-    @if ($a40 == '1' )
+    @if ($answersc4['a40'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($a40 == '0')
+    @elseif ($answersc4['a40'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16780,21 +16802,21 @@ td
 <td height='20' class='x160' style='height:15pt;'></td>
 <td colspan='8' class='x257' style='mso-ignore:colspan;border-right:1px solid windowtext;'></td>
 <td colspan='2' class='x724'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If YES, please specify:<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-<td colspan='19' style='mso-ignore:colspan;'>{{ $a40details }}</td>
+<td colspan='19' style='mso-ignore:colspan;'>{{$answersc4['a40details'] ?? ' '}}</td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x160' style='height:15pt;'><div style='float:right'>b.&nbsp;</div></td>
 <td colspan='8' rowspan='2' height='40' class='x297' style='border-right:1px solid windowtext;height:30pt;'>Are you a person with disability?</td>
 <td>
     <php>
-    @if ($b40 == '1' )
+    @if ($answersc4['a40'] == '1' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($b40 == '0')
+    @elseif ($answersc4['b40'] == '0')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16809,7 +16831,7 @@ td
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x160' style='height:15pt;'></td>
-<td colspan='5' class='x253' style='mso-ignore:colspan;border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp; </span>{{ $b40details }}</td>
+<td colspan='5' class='x253' style='mso-ignore:colspan;border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp; </span>{{$answersc4['b40details'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
@@ -16817,14 +16839,14 @@ td
 <td colspan='8' rowspan='3' height='50' class='x297' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:37.5pt;'>Are you a solo parent?</td>
 <td colspan='5' class='x384' style='border-right:2px solid windowtext;'>
     <php>
-    @if ($c40 == 'male' )
+    @if ($answersc4['c40'] == 'male' )
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:120px;margin-top:5px;width:81px;height:44px'>
             <input type="radio" id="Yes"> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:7;margin-left:7px;margin-top:5px;width:89px;height:45px'>
             <input type="radio" id="Yes" checked> <label class="radio">Yes</label></span>
         <span style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td colspan='3' height='32' class='x324' width='214' style='height:24pt;width:281pt;background-color:white;'></td></tr></table></span>
-    @elseif ($c40 == 'female')
+    @elseif ($answersc4['c40'] == 'female')
         <span style='mso-ignore:vglayout;position:absolute;z-index:8;margin-left:90px;margin-top:0px;width:81px;height:44px'>
             <input type="radio" id="No" checked> <label class="radio">No</label></span>
         <span style='mso-ignore:vglayout;position:absolute;z-index:9;margin-left:7px;margin-top:28px;width:89px;height:38px'></span>
@@ -16838,7 +16860,7 @@ td
  </tr>
  <tr height='20' style='mso-height-source:userset;height:15pt'>
 <td height='20' class='x173' style='height:15pt;'></td>
-<td colspan='5' class='x438' style='border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp; </span>{{ $c40details }}</td>
+<td colspan='5' class='x438' style='border-right:2px solid windowtext;'>If YES, please specify ID No:<span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp; </span>{{$answersc4['c40details'] ?? ' '}}</td>
 <td colspan='16' class='x101' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='10' style='mso-height-source:userset;height:7.5pt'>
@@ -16863,23 +16885,23 @@ td
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
-<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $name41 }}</td>
-<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $address41 }}</td>
-<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $contactno41 }}</td>
+<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc4['name41'] ?? ' '}}</td>
+<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc4['address41'] ?? ' '}}</td>
+<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc4['contactno41'] ?? ' '}}</td>
 <td colspan='4' class='x266' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
-<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{ $name42 }}</td>
-<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{ $address42 }}</td>
-<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $contactno42}}</td>
+<td colspan='5' height='30' class='x728' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;height:22.5pt;'>{{$answersc4['name42'] ?? ' '}}</td>
+<td colspan='2' class='x305' style='border-right:1px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc4['address42'] ?? ' '}}</td>
+<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc4['contactno42'] ?? ' '}}</td>
 <td colspan='4' class='x266' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
  <tr height='32' style='mso-height-source:userset;height:24pt'>
-<td colspan='5' height='29' class='x730' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:21.75pt;'>{{ $name43 }}</td>
-<td colspan='2' class='x284' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{ $address43 }}</td>
-<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{ $contactno43 }}</td>
+<td colspan='5' height='29' class='x730' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;height:21.75pt;'>{{$answersc4['name43'] ?? ' '}}</td>
+<td colspan='2' class='x284' style='border-right:1px solid windowtext;border-bottom:2px solid windowtext;'>{{$answersc4['address43'] ?? ' '}}</td>
+<td colspan='3' class='x286' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>{{$answersc4['contactno43'] ?? ' '}}</td>
 <td colspan='4' class='x266' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='16' style='mso-ignore:colspan;'></td>
  </tr>
@@ -16934,7 +16956,7 @@ td
  <tr height='27' style='mso-height-source:userset;height:20.25pt'>
 <td height='27' class='x222' style='height:20.25pt;'></td>
 <td colspan='2' class='x446' style='border-bottom:1px solid windowtext;'><span style='mso-spacerun:yes;'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Government Issued ID</td>
-<td class='x269'>{{ $govid44 }}</td>
+<td class='x269'>{{$answersc4['govid44'] ?? ' '}}</td>
 <td colspan='2' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td class='x249'></td>
 <td colspan='2' class='x229' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
@@ -16954,7 +16976,7 @@ td
  <tr height='15' style='mso-height-source:userset;height:11.25pt'>
 <td height='15' class='x222' style='height:11.25pt;'></td>
 <td colspan='2' class='x246' style='mso-ignore:colspan;'></td>
-<td class='x249'>{{$valid44}}</td>
+<td class='x249'>{{$answersc4['valid44'] ?? ' '}}</td>
 <td colspan='1' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='1' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='4' class='x432' style='border-right:2px solid windowtext;border-bottom:1px solid windowtext;'>Signature (Sign inside the box)</td>
@@ -16965,7 +16987,7 @@ td
  </tr>
  <tr height='15' style='mso-height-source:userset;height:11.25pt'>
 <td height='15' class='x222' style='height:11.25pt;'></td>
-<td height='14' width='70' style='text-align: left;height:10.5pt;width:52.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:41;margin-left:8px;margin-top:2px;width:127px;height:22px'><img width='127' height='22' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAXCAYAAAAiGpAkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAw9JREFUaIHt10uo1VUUx/GP95o9rNSLkWUgkWjp5SohFgYqaRYI5aBBYYmhE7NBXayJF4NGDXooag+cFKVWCEWDiOhBPihEeyBJEYHm7YFUEISppafB2hf/97DP1b90QHR/R////q+z9m+vvdba+1AoFAqFQqFQKBTOT4bVsJ2OvvR8HJ9hE45mbEegB3uG8HcD5uCLit8T+BbPYSY68X4NjXUYjvW4HA/iKjyCJ9s03zlHRw3bcWLTH8UaXI1XW9jOxNLT+FsoNrrq9/H07RmRHBNr6KvLJFyLJel9pEjGC4bhNe2PoD8992G/COIaXIIurMQyzMLt2IWNGIt/0vfDIkE24o4mv2/gJexN72NEhVb9HxRdp0skzhLRgXLzSL/dhFH4N31bjW4sxuuVNXbjadEVv8ETmbG9InabMRfTsK6F1qmYJxJtDB7CLzX1t4XOGrYTMQXvVsbuwjF8KoJzQgRjGy4Ti1mJ30Rl/44V+EhU/tvJ7wO4BguwCi+Io6MDJ0XAq/678Wvy3RCte2FmnveSzlU4gMfwB3rxrNiQp5LNaCzCFWJzezEB+9I81bErcSl2Jy2T8TFmZLQew/W4P61nzlnobwt12n6OcfhKLGybqPgRTTbTRVDfEQu7GLOxo2JzGJ/jA9xjcCX+kPE/NdnDmyL5cvMM0IPt6XlHem/Fy7gT34mjp9FiLEdOK5FA8JNImrr620Ldtl/ltvT7pfgQW/CwqIyGU5fJQyLwr6Rvt4pAPl/x1a/1xa4v4/+A2IRdmC/aZ26eAX7EjfgaN+HnIdZ1i+gU/WITZ2B809hJ/JXsJ5xGK4OTZdhZ6G8LdTf/bpGxDfyN+3CzyNS5IqsbItgLcC824C3R7qaIIF4nquBM2Jnx3yvuBrPFsbEYn2TmGWAttiZNk7A8+crxp6jGL8WxuE+05erYayIJekSF7h9C6/eZOV6sqf+cZqS45FTpNPhYGe3UHaPrf/BPXKCa/65W52mmy5kddRclP0ONdYikaKaV1hx19RcKhUKhUCgUCoVCoVAoFAqD+Q/S68rpCFWn6wAAAABJRU5ErkJggg==" name='TextBox 20'>{{ $issuancedate44 }}</span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='14' class='x765' width='70' style='height:10.5pt;width:52.5pt;'></td></tr></table></span></td>
+<td height='14' width='70' style='text-align: left;height:10.5pt;width:52.5pt;vertical-align:top;' align='left'><span style='mso-ignore:vglayout;position:absolute;z-index:41;margin-left:8px;margin-top:2px;width:127px;height:22px'><img width='127' height='22' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAAXCAYAAAAiGpAkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAw9JREFUaIHt10uo1VUUx/GP95o9rNSLkWUgkWjp5SohFgYqaRYI5aBBYYmhE7NBXayJF4NGDXooag+cFKVWCEWDiOhBPihEeyBJEYHm7YFUEISppafB2hf/97DP1b90QHR/R////q+z9m+vvdba+1AoFAqFQqFQKBTOT4bVsJ2OvvR8HJ9hE45mbEegB3uG8HcD5uCLit8T+BbPYSY68X4NjXUYjvW4HA/iKjyCJ9s03zlHRw3bcWLTH8UaXI1XW9jOxNLT+FsoNrrq9/H07RmRHBNr6KvLJFyLJel9pEjGC4bhNe2PoD8992G/COIaXIIurMQyzMLt2IWNGIt/0vfDIkE24o4mv2/gJexN72NEhVb9HxRdp0skzhLRgXLzSL/dhFH4N31bjW4sxuuVNXbjadEVv8ETmbG9InabMRfTsK6F1qmYJxJtDB7CLzX1t4XOGrYTMQXvVsbuwjF8KoJzQgRjGy4Ti1mJ30Rl/44V+EhU/tvJ7wO4BguwCi+Io6MDJ0XAq/678Wvy3RCte2FmnveSzlU4gMfwB3rxrNiQp5LNaCzCFWJzezEB+9I81bErcSl2Jy2T8TFmZLQew/W4P61nzlnobwt12n6OcfhKLGybqPgRTTbTRVDfEQu7GLOxo2JzGJ/jA9xjcCX+kPE/NdnDmyL5cvMM0IPt6XlHem/Fy7gT34mjp9FiLEdOK5FA8JNImrr620Ldtl/ltvT7pfgQW/CwqIyGU5fJQyLwr6Rvt4pAPl/x1a/1xa4v4/+A2IRdmC/aZ26eAX7EjfgaN+HnIdZ1i+gU/WITZ2B809hJ/JXsJ5xGK4OTZdhZ6G8LdTf/bpGxDfyN+3CzyNS5IqsbItgLcC824C3R7qaIIF4nquBM2Jnx3yvuBrPFsbEYn2TmGWAttiZNk7A8+crxp6jGL8WxuE+05erYayIJekSF7h9C6/eZOV6sqf+cZqS45FTpNPhYGe3UHaPrf/BPXKCa/65W52mmy5kddRclP0ONdYikaKaV1hx19RcKhUKhUCgUCoVCoVAoFAqD+Q/S68rpCFWn6wAAAABJRU5ErkJggg==" name='TextBox 20'>{{$answersc4['issuancedate44'] ?? ' '}}</span><span  style='mso-ignore:vglayout2'><table cellpadding='0' cellspacing='0'><tr><td height='14' class='x765' width='70' style='height:10.5pt;width:52.5pt;'></td></tr></table></span></td>
 <td colspan='2' class='x245' style='mso-ignore:colspan;'></td>
 <td colspan='2' class='x273' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
 <td colspan='4' class='x241' style='mso-ignore:colspan;border-right:2px solid windowtext;'></td>
@@ -16976,7 +16998,7 @@ td
  </tr>
  <tr height='13' style='mso-height-source:userset;height:9.75pt'>
 <td height='13' class='x222' style='height:9.75pt;'><div style='display:block;overflow:hidden'></div></td>
-<td colspan='3' class='x247' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'>{{ $issuanceplace44 }}</div></td>
+<td colspan='3' class='x247' style='mso-ignore:colspan;'><div style='display:block;overflow:hidden'>{{$answersc4['issuanceplace44'] ?? ' '}}</div></td>
 <td colspan='2' class='x272' style='mso-ignore:colspan;border-right:2px solid windowtext;'><div style='display:block;overflow:hidden'></div></td>
 <td colspan='4' class='x435' style='border-right:2px solid windowtext;border-bottom:2px solid windowtext;'><div style='display:block;overflow:hidden'>Date Accomplished</div></td>
 <td class='x238'><div style='display:block;overflow:hidden'></div></td>
