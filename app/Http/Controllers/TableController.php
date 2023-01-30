@@ -6,7 +6,7 @@ use App\Sheets2;
 use App\Sheets3;
 use App\Sheets4;
 use Barryvdh\Snappy\Facades\SnappyPdf as PDF;
-use C1answers;
+use App\C1answers;
 use Illuminate\Support\Facades\App;
 
 use RealRashid\SweetAlert\Facades\Alert;
@@ -19,8 +19,7 @@ class TableController extends Controller
     {
 
         $products = C1answers::all();
-        $readForm = json_decode($c1answers);                           
-        return view('datatables.datatables',compact('readForm'));
+        return view('datatables.datatables',compact('products'));
 
     }
     public function edit(Sheets $sheets)

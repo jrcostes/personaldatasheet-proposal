@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Sheets;
 use App\Sheets3;
+use App\C1answers;
 
 class HomeController extends Controller
 {
@@ -26,9 +27,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $maleCount = Sheets::where('sex', 'male')->count();
+        $maleCount = C1answers::where('sex', '0')->count();
 
-        $femaleCount = Sheets::where('sex', 'female')->count();
+        $femaleCount = C1answers::where('sex', '1')->count();
 
 
 

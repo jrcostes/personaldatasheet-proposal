@@ -14,7 +14,7 @@ use Maatwebsite\Excel\Facades\Excel;
 
 use function PHPSTORM_META\map;
 
-class PostController 
+class PostController
 {
     //storing functions
     // public function c1form(Request $request){
@@ -26,34 +26,6 @@ class PostController
     //         ->with('success','Entry Saved');
     // }
 
-    public function c2form(Request $request){
-        $request->all();
-
-        Sheets2::create($request->all());
-
-        return redirect('/')
-            ->with('success','Entry Saved');
-    }
-
-    public function c3form(Request $request)
-    {
-        $request->all();
-
-        Sheets3::create($request->all());
-
-        return redirect('/')
-            ->with('success','Entry Saved');
-    }
-
-    public function c4form(Request $request){
-
-        $request->all();
-
-        Sheets4::create($request->all());
-
-        return redirect('/')
-            ->with('success','Entry Saved');
-    }
 
     public function policy()
     {
@@ -100,7 +72,7 @@ class PostController
             'spousesn' => 'max:64',
             'spousefn' => 'max:64',
             'spousenmext' => 'max:5',
-            'spousemn' => 'max:64', 
+            'spousemn' => 'max:64',
             'spouseocc' => 'max:64',
             'spouseempadd' => 'max:32',
             'spousetel' => 'max:9',
@@ -714,12 +686,9 @@ class PostController
         $newForm = new C1answers();
 
         $c1answers = [
-            'surname' => $data['surname'] ?? null,
-            'firstname' => $data['firstname'] ?? null,
             'firstnameext' => $data['nameext'] ?? null,
             'midname' => $data['midname'] ?? null,
             'birthdate' => $data['birthdate'] ?? null,
-            'sex' => $data['sex'] ?? null,
             'placeBirth' => $data['placeofBirth'] ?? null,
             'civilStataus' => $data['civilStatus'] ?? null,
             'height' => $data['height'] ?? null,
@@ -1393,8 +1362,18 @@ class PostController
         $newForm->c2answers = json_encode($c2answers);
         $newForm->c3answers = json_encode($c3answers);
         $newForm->c4answers = json_encode($c4answers);
+        $newForm->surname = $request->surname;
+        $newForm->firstname = $request->firstname;
+        $newForm->sex = $request->sex;
+
+
+
+
 
         $newForm->save();
+
+
+
         return redirect()->back();
     }
 }

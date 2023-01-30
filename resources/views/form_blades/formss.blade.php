@@ -611,8 +611,8 @@ $group = [
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Sex</label>
                                         <select class="form-select" aria-label="Default select example" id="sex"
                                             name="sex">
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
+                                            <option value="0">Male</option>
+                                            <option value="1">Female</option>
                                         </select>
                                     </div>
 

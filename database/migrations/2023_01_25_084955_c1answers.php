@@ -15,6 +15,9 @@ class C1answers extends Migration
     {
         Schema::create('c1answers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('surname');
+            $table->string('firstname');
+            $table->boolean('sex');
             $table->json('c1answers');
             $table->json('c2answers');
             $table->json('c3answers');
