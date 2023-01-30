@@ -132,7 +132,7 @@ return [
             'rule-name' => 'custom-message',
         ],
         //C1 validation error messages
-        'civilOthers' => ['required' => 'Please specify your civil status.',],
+        'civilOthers' => ['reuired' => 'Please specify your civil status.',],
         'surname' => ['max' => 'Maximum amount of characters reached on last name.', 'required' => 'Please enter your last name.',],
         'firstname' => ['max' => 'Maximum amount of characters reached on fisrt name.', 'required' => 'Please enter your first name.',],
         'birthdate' => ['before' => 'You must be at legal age to submit this form.', 'required' => 'Please enter your birthdate.',],
